@@ -3,27 +3,60 @@
 <meta http-equiv='refresh' content='120'>
 <title>FIFA World Cup 2026 &mdash; Sweepstake Live Table</title>
 <style>
- body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#0b1f3a;color:#fff;margin:0;padding:24px}
- h1{font-size:1.4rem;margin:0 0 4px} .sub{color:#9db4d4;font-size:.85rem;margin-bottom:18px}
- table{width:100%;border-collapse:collapse;background:#11294d;border-radius:10px;overflow:hidden}
- th,td{padding:9px 8px;text-align:center;font-size:.9rem} th{background:#1b3a66;color:#bcd2f0;text-transform:uppercase;font-size:.72rem;letter-spacing:.04em}
- td.player{text-align:left;font-weight:600} td.pos{color:#9db4d4;width:28px} td.pts{font-weight:700;color:#7fd1ff}
- tr:nth-child(even) td{background:#0f2546} tr:first-child td.pos{color:#ffd54a}
- .foot{margin-top:12px;color:#6f8bb3;font-size:.75rem}
+ *{box-sizing:border-box}
+ body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(160deg,#0a1c34 0%,#0b1f3a 60%,#0a1730 100%);color:#fff;margin:0;padding:24px 16px;min-height:100vh}
+ .wrap{max-width:880px;margin:0 auto}
+ .hdr{display:flex;align-items:center;gap:12px;margin-bottom:2px}
+ .hdr .ball{font-size:1.6rem}
+ h1{font-size:1.35rem;margin:0;font-weight:800;letter-spacing:-.01em}
+ .sub{color:#9db4d4;font-size:.82rem;margin:2px 0 20px}
+ h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#8fa9cf;margin:22px 0 10px}
+ table{width:100%;border-collapse:collapse;background:#11294d;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+ th,td{padding:10px 6px;text-align:center;font-size:.88rem;white-space:nowrap}
+ th{background:#16335c;color:#bcd2f0;text-transform:uppercase;font-size:.66rem;letter-spacing:.05em;font-weight:700}
+ td.player{text-align:left;font-weight:700;padding-left:12px} td.pos{color:#9db4d4;width:30px;font-weight:700}
+ td.pts{font-weight:800;color:#7fd1ff;font-size:.98rem}
+ td.pick{font-size:.74rem;color:#cfe0f5} td.pick span{margin-left:4px;vertical-align:middle}
+ img.flag{width:18px;height:14px;border-radius:2px;vertical-align:middle;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+ tbody tr:nth-child(even) td{background:#0f2546}
+ tbody tr.leader td{background:linear-gradient(90deg,rgba(255,213,74,.16),rgba(255,213,74,.04))}
+ tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
+ .results{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+ .rcard{background:#11294d;border-radius:10px;padding:10px 8px;text-align:center;border:1px solid #1d3a64}
+ .rcard.empty{grid-column:1/-1;color:#8fa9cf;font-size:.85rem;padding:16px}
+ .rmatch{display:flex;align-items:center;justify-content:center;gap:7px;font-size:1.05rem;font-weight:800}
+ .rmatch .vs{color:#6f8bb3;font-weight:400}
+ .rteams{color:#9db4d4;font-size:.72rem;margin-top:3px}
+ .win{display:inline-block;margin-top:6px;font-size:.68rem;background:#1b3a66;color:#7fd1ff;padding:2px 8px;border-radius:20px}
+ .win.draw{background:#33304a;color:#c9b6ff}
+ .foot{margin-top:18px;color:#6f8bb3;font-size:.72rem;line-height:1.5}
 </style></head><body>
-<h1>FIFA World Cup 2026 &mdash; Sweepstake</h1>
-<div class='sub'>Live league table &middot; auto-refreshes every 2 min</div>
-<table><thead><tr><th>#</th><th>Player</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>Pts</th><th>Pld</th><th>GD</th><th>GF</th><th>GA</th></tr></thead>
+<div class='wrap'>
+<div class='hdr'><span class='ball'>&#9917;</span><h1>FIFA World Cup 2026 &mdash; Sweepstake</h1></div>
+<div class='sub'>Live league table &middot; auto-refreshes every 2 min &middot; 6 matches played</div>
+<table>
+<thead><tr><th>#</th><th>Player</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>Pts</th><th>Pld</th><th>GD</th><th>GF</th><th>GA</th></tr></thead>
 <tbody>
-<tr><td class='pos'>1</td><td class='player'>Elsa</td><td>POR</td><td>USA</td><td>KOR</td><td>EGY</td><td>TUN</td><td>HAI</td><td class='pts'>6</td><td>2</td><td>+4</td><td>6</td><td>2</td></tr>
-<tr><td class='pos'>2</td><td class='player'>Quince</td><td>ARG</td><td>MEX</td><td>AUT</td><td>SWE</td><td>RSA</td><td>BIH</td><td class='pts'>4</td><td>3</td><td>0</td><td>3</td><td>3</td></tr>
-<tr><td class='pos'>3</td><td class='player'>Ellie</td><td>ESP</td><td>GER</td><td>ECU</td><td>CAN</td><td>QAT</td><td>CUW</td><td class='pts'>2</td><td>2</td><td>0</td><td>2</td><td>2</td></tr>
-<tr><td class='pos'>4</td><td class='player'>Big Pewerk</td><td>NED</td><td>COL</td><td>SUI</td><td>CIV</td><td>IRQ</td><td>JOR</td><td class='pts'>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
-<tr><td class='pos'>5</td><td class='player'>Sid</td><td>MAR</td><td>BEL</td><td>TUR</td><td>NOR</td><td>SCO</td><td>CPV</td><td class='pts'>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
-<tr><td class='pos'>6</td><td class='player'>Murray</td><td>BRA</td><td>CRO</td><td>JPN</td><td>PAN</td><td>CZE</td><td>NZL</td><td class='pts'>1</td><td>2</td><td>-1</td><td>2</td><td>3</td></tr>
-<tr><td class='pos'>7</td><td class='player'>Ike</td><td>FRA</td><td>URU</td><td>IRN</td><td>ALG</td><td>UZB</td><td>GHA</td><td class='pts'>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td class='pos'>8</td><td class='player'>Etan</td><td>ENG</td><td>SEN</td><td>AUS</td><td>PAR</td><td>COG</td><td>KSA</td><td class='pts'>0</td><td>1</td><td>-3</td><td>1</td><td>4</td></tr>
+<tr class='leader'><td class='pos'>1</td><td class='player'>Elsa</td><td class='pick' title='Portugal'><img class='flag' src='https://flagcdn.com/18x14/pt.png' alt='' loading='lazy'><span>POR</span></td><td class='pick' title='USA'><img class='flag' src='https://flagcdn.com/18x14/us.png' alt='' loading='lazy'><span>USA</span></td><td class='pick' title='Korea Republic'><img class='flag' src='https://flagcdn.com/18x14/kr.png' alt='' loading='lazy'><span>KOR</span></td><td class='pick' title='Egypt'><img class='flag' src='https://flagcdn.com/18x14/eg.png' alt='' loading='lazy'><span>EGY</span></td><td class='pick' title='Tunisia'><img class='flag' src='https://flagcdn.com/18x14/tn.png' alt='' loading='lazy'><span>TUN</span></td><td class='pick' title='Haiti'><img class='flag' src='https://flagcdn.com/18x14/ht.png' alt='' loading='lazy'><span>HAI</span></td><td class='pts'>6</td><td>2</td><td>+4</td><td>6</td><td>2</td></tr>
+<tr><td class='pos'>2</td><td class='player'>Quince</td><td class='pick' title='Argentina'><img class='flag' src='https://flagcdn.com/18x14/ar.png' alt='' loading='lazy'><span>ARG</span></td><td class='pick' title='Mexico'><img class='flag' src='https://flagcdn.com/18x14/mx.png' alt='' loading='lazy'><span>MEX</span></td><td class='pick' title='Austria'><img class='flag' src='https://flagcdn.com/18x14/at.png' alt='' loading='lazy'><span>AUT</span></td><td class='pick' title='Sweden'><img class='flag' src='https://flagcdn.com/18x14/se.png' alt='' loading='lazy'><span>SWE</span></td><td class='pick' title='South Africa'><img class='flag' src='https://flagcdn.com/18x14/za.png' alt='' loading='lazy'><span>RSA</span></td><td class='pick' title='Bosnia Herzegovina'><img class='flag' src='https://flagcdn.com/18x14/ba.png' alt='' loading='lazy'><span>BIH</span></td><td class='pts'>4</td><td>3</td><td>0</td><td>3</td><td>3</td></tr>
+<tr><td class='pos'>3</td><td class='player'>Ellie</td><td class='pick' title='Spain'><img class='flag' src='https://flagcdn.com/18x14/es.png' alt='' loading='lazy'><span>ESP</span></td><td class='pick' title='Germany'><img class='flag' src='https://flagcdn.com/18x14/de.png' alt='' loading='lazy'><span>GER</span></td><td class='pick' title='Ecuador'><img class='flag' src='https://flagcdn.com/18x14/ec.png' alt='' loading='lazy'><span>ECU</span></td><td class='pick' title='Canada'><img class='flag' src='https://flagcdn.com/18x14/ca.png' alt='' loading='lazy'><span>CAN</span></td><td class='pick' title='Qatar'><img class='flag' src='https://flagcdn.com/18x14/qa.png' alt='' loading='lazy'><span>QAT</span></td><td class='pick' title='CuraÃ§ao'><img class='flag' src='https://flagcdn.com/18x14/cw.png' alt='' loading='lazy'><span>CUW</span></td><td class='pts'>2</td><td>2</td><td>0</td><td>2</td><td>2</td></tr>
+<tr><td class='pos'>4</td><td class='player'>Big Pewerk</td><td class='pick' title='Netherlands'><img class='flag' src='https://flagcdn.com/18x14/nl.png' alt='' loading='lazy'><span>NED</span></td><td class='pick' title='Colombia'><img class='flag' src='https://flagcdn.com/18x14/co.png' alt='' loading='lazy'><span>COL</span></td><td class='pick' title='Switzerland'><img class='flag' src='https://flagcdn.com/18x14/ch.png' alt='' loading='lazy'><span>SUI</span></td><td class='pick' title='Ivory Coast'><img class='flag' src='https://flagcdn.com/18x14/ci.png' alt='' loading='lazy'><span>CIV</span></td><td class='pick' title='Iraq'><img class='flag' src='https://flagcdn.com/18x14/iq.png' alt='' loading='lazy'><span>IRQ</span></td><td class='pick' title='Jordan'><img class='flag' src='https://flagcdn.com/18x14/jo.png' alt='' loading='lazy'><span>JOR</span></td><td class='pts'>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td class='pos'>5</td><td class='player'>Sid</td><td class='pick' title='Morocco'><img class='flag' src='https://flagcdn.com/18x14/ma.png' alt='' loading='lazy'><span>MAR</span></td><td class='pick' title='Belgium'><img class='flag' src='https://flagcdn.com/18x14/be.png' alt='' loading='lazy'><span>BEL</span></td><td class='pick' title='TÃ¼rkiye'><img class='flag' src='https://flagcdn.com/18x14/tr.png' alt='' loading='lazy'><span>TUR</span></td><td class='pick' title='Norway'><img class='flag' src='https://flagcdn.com/18x14/no.png' alt='' loading='lazy'><span>NOR</span></td><td class='pick' title='Scotland'><img class='flag' src='https://flagcdn.com/18x14/gb-sct.png' alt='' loading='lazy'><span>SCO</span></td><td class='pick' title='Cape Verde'><img class='flag' src='https://flagcdn.com/18x14/cv.png' alt='' loading='lazy'><span>CPV</span></td><td class='pts'>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td class='pos'>6</td><td class='player'>Murray</td><td class='pick' title='Brazil'><img class='flag' src='https://flagcdn.com/18x14/br.png' alt='' loading='lazy'><span>BRA</span></td><td class='pick' title='Croatia'><img class='flag' src='https://flagcdn.com/18x14/hr.png' alt='' loading='lazy'><span>CRO</span></td><td class='pick' title='Japan'><img class='flag' src='https://flagcdn.com/18x14/jp.png' alt='' loading='lazy'><span>JPN</span></td><td class='pick' title='Panama'><img class='flag' src='https://flagcdn.com/18x14/pa.png' alt='' loading='lazy'><span>PAN</span></td><td class='pick' title='Czechia'><img class='flag' src='https://flagcdn.com/18x14/cz.png' alt='' loading='lazy'><span>CZE</span></td><td class='pick' title='New Zealand'><img class='flag' src='https://flagcdn.com/18x14/nz.png' alt='' loading='lazy'><span>NZL</span></td><td class='pts'>1</td><td>2</td><td>-1</td><td>2</td><td>3</td></tr>
+<tr><td class='pos'>7</td><td class='player'>Ike</td><td class='pick' title='France'><img class='flag' src='https://flagcdn.com/18x14/fr.png' alt='' loading='lazy'><span>FRA</span></td><td class='pick' title='Uruguay'><img class='flag' src='https://flagcdn.com/18x14/uy.png' alt='' loading='lazy'><span>URU</span></td><td class='pick' title='Iran'><img class='flag' src='https://flagcdn.com/18x14/ir.png' alt='' loading='lazy'><span>IRN</span></td><td class='pick' title='Algeria'><img class='flag' src='https://flagcdn.com/18x14/dz.png' alt='' loading='lazy'><span>ALG</span></td><td class='pick' title='Uzbekistan'><img class='flag' src='https://flagcdn.com/18x14/uz.png' alt='' loading='lazy'><span>UZB</span></td><td class='pick' title='Ghana'><img class='flag' src='https://flagcdn.com/18x14/gh.png' alt='' loading='lazy'><span>GHA</span></td><td class='pts'>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td class='pos'>8</td><td class='player'>Etan</td><td class='pick' title='England'><img class='flag' src='https://flagcdn.com/18x14/gb-eng.png' alt='' loading='lazy'><span>ENG</span></td><td class='pick' title='Senegal'><img class='flag' src='https://flagcdn.com/18x14/sn.png' alt='' loading='lazy'><span>SEN</span></td><td class='pick' title='Australia'><img class='flag' src='https://flagcdn.com/18x14/au.png' alt='' loading='lazy'><span>AUS</span></td><td class='pick' title='Paraguay'><img class='flag' src='https://flagcdn.com/18x14/py.png' alt='' loading='lazy'><span>PAR</span></td><td class='pick' title='Congo Republic'><img class='flag' src='https://flagcdn.com/18x14/cg.png' alt='' loading='lazy'><span>COG</span></td><td class='pick' title='Saudi Arabia'><img class='flag' src='https://flagcdn.com/18x14/sa.png' alt='' loading='lazy'><span>KSA</span></td><td class='pts'>0</td><td>1</td><td>-3</td><td>1</td><td>4</td></tr>
 
 </tbody></table>
-<div class='foot'>Last updated: 14 Jun 2026 03:16 &middot; Scoring: 3 win / 1 draw / 0 loss, GD tiebreaker</div>
+<h2>Recent results</h2>
+<div class='results'>
+<div class='rcard'><div class='rmatch'><img class='flag' src='https://flagcdn.com/18x14/qa.png' alt='' loading='lazy'><b>1</b><span class='vs'>&ndash;</span><b>1</b><img class='flag' src='https://flagcdn.com/18x14/ch.png' alt='' loading='lazy'></div><div class='rteams'>QAT v SUI</div><span class='win draw'>shared</span></div>
+<div class='rcard'><div class='rmatch'><img class='flag' src='https://flagcdn.com/18x14/br.png' alt='' loading='lazy'><b>1</b><span class='vs'>&ndash;</span><b>1</b><img class='flag' src='https://flagcdn.com/18x14/ma.png' alt='' loading='lazy'></div><div class='rteams'>BRA v MAR</div><span class='win draw'>shared</span></div>
+<div class='rcard'><div class='rmatch'><img class='flag' src='https://flagcdn.com/18x14/us.png' alt='' loading='lazy'><b>4</b><span class='vs'>&ndash;</span><b>1</b><img class='flag' src='https://flagcdn.com/18x14/py.png' alt='' loading='lazy'></div><div class='rteams'>USA v PAR</div><span class='win'>Elsa</span></div>
+<div class='rcard'><div class='rmatch'><img class='flag' src='https://flagcdn.com/18x14/ca.png' alt='' loading='lazy'><b>1</b><span class='vs'>&ndash;</span><b>1</b><img class='flag' src='https://flagcdn.com/18x14/ba.png' alt='' loading='lazy'></div><div class='rteams'>CAN v BIH</div><span class='win draw'>shared</span></div>
+<div class='rcard'><div class='rmatch'><img class='flag' src='https://flagcdn.com/18x14/kr.png' alt='' loading='lazy'><b>2</b><span class='vs'>&ndash;</span><b>1</b><img class='flag' src='https://flagcdn.com/18x14/cz.png' alt='' loading='lazy'></div><div class='rteams'>KOR v CZE</div><span class='win'>Elsa</span></div>
+<div class='rcard'><div class='rmatch'><img class='flag' src='https://flagcdn.com/18x14/mx.png' alt='' loading='lazy'><b>2</b><span class='vs'>&ndash;</span><b>0</b><img class='flag' src='https://flagcdn.com/18x14/za.png' alt='' loading='lazy'></div><div class='rteams'>MEX v RSA</div><span class='win'>Quince</span></div>
+
+</div>
+<div class='foot'>Last updated: 14 Jun 2026 03:23 &middot; Scoring: 3 pts win / 1 draw / 0 loss, goal difference tiebreaker &middot; all 104 matches count<br>Hover a team to see its full name.</div>
+</div>
 </body></html>
