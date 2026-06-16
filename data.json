@@ -1,13 +1,13 @@
 ﻿{
     "meta":  {
-                 "stamp":  "16 Jun 2026 01:00",
-                 "playedCount":  14,
+                 "stamp":  "16 Jun 2026 01:05",
+                 "playedCount":  15,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  7,
-                 "ogDesc":  "Quince leads on 7 pts after 14/104 matches"
+                 "ogDesc":  "Quince leads on 7 pts after 15/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -398,10 +398,10 @@
                           "gd":  -1,
                           "gf":  4,
                           "ga":  5,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#80743D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#31625B",
@@ -460,8 +460,8 @@
                                             "iso":  "sa",
                                             "hex":  "#006C35",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  true
+                                            "pts":  1,
+                                            "live":  false
                                         }
                                     ]
                       },
@@ -550,10 +550,10 @@
                           "gd":  0,
                           "gf":  1,
                           "ga":  1,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#2B3944",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#17344B",
@@ -576,8 +576,8 @@
                                             "iso":  "uy",
                                             "hex":  "#4FA8E0",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  true
+                                            "pts":  1,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "IRN",
@@ -619,25 +619,10 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Saudi Arabia",
-                     "away":  "Uruguay",
-                     "homeAbbr":  "KSA",
-                     "awayAbbr":  "URU",
-                     "homeIso":  "sa",
-                     "awayIso":  "uy",
-                     "hOwn":  "Etan",
-                     "aOwn":  "Ike",
-                     "hWin":  0,
-                     "aWin":  0,
-                     "hs":  1,
-                     "as":  1,
-                     "clock":  "90\u0027+4\u0027",
-                     "detail":  "90\u0027+4\u0027"
-                 }
+
              ],
     "story":  [
-                  "Top of the tree: Quince (7 pts), powered by 2 win(s) across their six nations.",
+                  "Quince leads on 7. Their squad\u0027s banked 7 pts off 4 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
                   "It\u0027s dead level at the summit with Elsa \u0026mdash; and with both still to play a chunk of fixtures, this one\u0027s going to the wire.",
                   "Spare a thought for Sid, lumbered with Türkiye \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Ellie\u0027s nations are the entertainers, banging in 10 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
@@ -688,6 +673,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Saudi Arabia",
+                        "away":  "Uruguay",
+                        "homeAbbr":  "KSA",
+                        "awayAbbr":  "URU",
+                        "homeIso":  "sa",
+                        "awayIso":  "uy",
+                        "hOwn":  "Etan",
+                        "aOwn":  "Ike",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  1,
+                        "as":  1
+                    },
                     {
                         "home":  "Belgium",
                         "away":  "Egypt",
@@ -785,20 +784,6 @@
                         "aWin":  -1,
                         "hs":  2,
                         "as":  0
-                    },
-                    {
-                        "home":  "Haiti",
-                        "away":  "Scotland",
-                        "homeAbbr":  "HAI",
-                        "awayAbbr":  "SCO",
-                        "homeIso":  "ht",
-                        "awayIso":  "gb-sct",
-                        "hOwn":  "Elsa",
-                        "aOwn":  "Sid",
-                        "hWin":  -1,
-                        "aWin":  1,
-                        "hs":  0,
-                        "as":  1
                     }
                 ]
 }
