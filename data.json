@@ -1,13 +1,13 @@
 ﻿{
     "meta":  {
-                 "stamp":  "16 Jun 2026 20:00",
+                 "stamp":  "16 Jun 2026 20:05",
                  "playedCount":  16,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  7,
                  "ogDesc":  "Quince leads on 7 pts after 16/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -393,16 +393,16 @@
                           "rank":  6,
                           "name":  "Etan",
                           "isLeader":  false,
-                          "pts":  4,
-                          "pld":  3,
+                          "pts":  5,
+                          "pld":  4,
                           "gd":  -1,
                           "gf":  4,
                           "ga":  5,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#80743D",
+                          "ptsBg":  "#9C883B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#31625B",
                           "gfFg":  "#ffffff",
@@ -425,7 +425,7 @@
                                             "hex":  "#00853F",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  true
                                         },
                                         {
                                             "abbr":  "AUS",
@@ -467,6 +467,82 @@
                       },
                       {
                           "rank":  7,
+                          "name":  "Ike",
+                          "isLeader":  false,
+                          "pts":  3,
+                          "pld":  3,
+                          "gd":  0,
+                          "gf":  3,
+                          "ga":  3,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#636040",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#285356",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#4F3850",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "FRA",
+                                            "name":  "France",
+                                            "iso":  "fr",
+                                            "hex":  "#002654",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  true
+                                        },
+                                        {
+                                            "abbr":  "URU",
+                                            "name":  "Uruguay",
+                                            "iso":  "uy",
+                                            "hex":  "#4FA8E0",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "IRN",
+                                            "name":  "Iran",
+                                            "iso":  "ir",
+                                            "hex":  "#DA0000",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "ALG",
+                                            "name":  "Algeria",
+                                            "iso":  "dz",
+                                            "hex":  "#006233",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "UZB",
+                                            "name":  "Uzbekistan",
+                                            "iso":  "uz",
+                                            "hex":  "#0099B5",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "GHA",
+                                            "name":  "Ghana",
+                                            "iso":  "gh",
+                                            "hex":  "#FCD116",
+                                            "fg":  "#0a1730",
+                                            "pts":  0,
+                                            "live":  false
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  8,
                           "name":  "Murray",
                           "isLeader":  false,
                           "pts":  3,
@@ -540,93 +616,32 @@
                                             "live":  false
                                         }
                                     ]
-                      },
-                      {
-                          "rank":  8,
-                          "name":  "Ike",
-                          "isLeader":  false,
-                          "pts":  2,
-                          "pld":  2,
-                          "gd":  0,
-                          "gf":  3,
-                          "ga":  3,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#474C42",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#285356",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#4F3850",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "FRA",
-                                            "name":  "France",
-                                            "iso":  "fr",
-                                            "hex":  "#002654",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "URU",
-                                            "name":  "Uruguay",
-                                            "iso":  "uy",
-                                            "hex":  "#4FA8E0",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "IRN",
-                                            "name":  "Iran",
-                                            "iso":  "ir",
-                                            "hex":  "#DA0000",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "ALG",
-                                            "name":  "Algeria",
-                                            "iso":  "dz",
-                                            "hex":  "#006233",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "UZB",
-                                            "name":  "Uzbekistan",
-                                            "iso":  "uz",
-                                            "hex":  "#0099B5",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "GHA",
-                                            "name":  "Ghana",
-                                            "iso":  "gh",
-                                            "hex":  "#FCD116",
-                                            "fg":  "#0a1730",
-                                            "pts":  0,
-                                            "live":  false
-                                        }
-                                    ]
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "France",
+                     "away":  "Senegal",
+                     "homeAbbr":  "FRA",
+                     "awayAbbr":  "SEN",
+                     "homeIso":  "fr",
+                     "awayIso":  "sn",
+                     "hOwn":  "Ike",
+                     "aOwn":  "Etan",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "2\u0027",
+                     "detail":  "2\u0027"
+                 }
              ],
     "story":  [
                   "Quince tops the pile on 7 pts \u0026mdash; and with their six teams having played just 4 games between them, there\u0027s plenty more in the tank.",
                   "It\u0027s dead level at the summit with Elsa \u0026mdash; and with both still to play a chunk of fixtures, this one\u0027s going to the wire.",
                   "Spare a thought for Sid, lumbered with Türkiye \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Ellie\u0027s nations are the entertainers, banging in 10 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Ike props up the table on 2 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
+                  "Rock bottom: Murray on 3. Their six have managed just 0 win(s) and 6 goal(s) \u0026mdash; the warm sausage rolls beckon."
               ],
     "fixtures":  [
                      {
@@ -640,8 +655,10 @@
                          "aOwn":  "Etan",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "20:00"
+                         "state":  "live",
+                         "ko":  "20:00",
+                         "hs":  0,
+                         "as":  0
                      },
                      {
                          "home":  "Iraq",
