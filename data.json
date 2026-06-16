@@ -1,13 +1,13 @@
 ﻿{
     "meta":  {
-                 "stamp":  "16 Jun 2026 02:00",
+                 "stamp":  "16 Jun 2026 02:05",
                  "playedCount":  15,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  7,
                  "ogDesc":  "Quince leads on 7 pts after 15/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -469,16 +469,16 @@
                           "rank":  7,
                           "name":  "Murray",
                           "isLeader":  false,
-                          "pts":  2,
-                          "pld":  3,
+                          "pts":  3,
+                          "pld":  4,
                           "gd":  -1,
                           "gf":  4,
                           "ga":  5,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#474C42",
+                          "ptsBg":  "#636040",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#31625B",
                           "gfFg":  "#ffffff",
@@ -537,7 +537,7 @@
                                             "hex":  "#1A1A1A",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  true
                                         }
                                     ]
                       },
@@ -545,16 +545,16 @@
                           "rank":  8,
                           "name":  "Ike",
                           "isLeader":  false,
-                          "pts":  1,
-                          "pld":  1,
+                          "pts":  2,
+                          "pld":  2,
                           "gd":  0,
                           "gf":  1,
                           "ga":  1,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#2B3944",
+                          "ptsBg":  "#474C42",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#17344B",
                           "gfFg":  "#ffffff",
@@ -586,7 +586,7 @@
                                             "hex":  "#DA0000",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  true
                                         },
                                         {
                                             "abbr":  "ALG",
@@ -619,14 +619,29 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Iran",
+                     "away":  "New Zealand",
+                     "homeAbbr":  "IRN",
+                     "awayAbbr":  "NZL",
+                     "homeIso":  "ir",
+                     "awayIso":  "nz",
+                     "hOwn":  "Ike",
+                     "aOwn":  "Murray",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "1\u0027",
+                     "detail":  "1\u0027"
+                 }
              ],
     "story":  [
                   "Quince tops the pile on 7 pts \u0026mdash; and with their six teams having played just 4 games between them, there\u0027s plenty more in the tank.",
                   "It\u0027s dead level at the summit with Elsa \u0026mdash; and with both still to play a chunk of fixtures, this one\u0027s going to the wire.",
                   "Spare a thought for Sid, lumbered with Türkiye \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Ellie\u0027s nations are the entertainers, banging in 10 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Ike props up the table on 1 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
+                  "Ike props up the table on 2 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
               ],
     "fixtures":  [
                      {
