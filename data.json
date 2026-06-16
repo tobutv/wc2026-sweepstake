@@ -1,6 +1,6 @@
 ﻿{
     "meta":  {
-                 "stamp":  "16 Jun 2026 21:45",
+                 "stamp":  "16 Jun 2026 21:50",
                  "playedCount":  16,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -319,8 +319,8 @@
                           "isLeader":  false,
                           "pts":  5,
                           "pld":  3,
-                          "gd":  1,
-                          "gf":  4,
+                          "gd":  2,
+                          "gf":  5,
                           "ga":  3,
                           "livePts":  3,
                           "livePld":  1,
@@ -328,7 +328,7 @@
                           "delta":  0,
                           "ptsBg":  "#9C883B",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#31625B",
+                          "gfBg":  "#397260",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#4F3850",
                           "gaFg":  "#ffffff",
@@ -471,9 +471,9 @@
                           "isLeader":  false,
                           "pts":  4,
                           "pld":  4,
-                          "gd":  -2,
+                          "gd":  -3,
                           "gf":  4,
-                          "ga":  6,
+                          "ga":  7,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
@@ -482,7 +482,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#31625B",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#8E4A5A",
+                          "gaBg":  "#A3505E",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -630,10 +630,10 @@
                      "aOwn":  "Etan",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  1,
+                     "hs":  2,
                      "as":  0,
-                     "clock":  "80\u0027",
-                     "detail":  "80\u0027"
+                     "clock":  "85\u0027",
+                     "detail":  "85\u0027"
                  }
              ],
     "story":  [
@@ -641,7 +641,7 @@
                   "It\u0027s dead level at the summit with Elsa \u0026mdash; and with both still to play a chunk of fixtures, this one\u0027s going to the wire.",
                   "Spare a thought for Sid, lumbered with Türkiye \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Ellie\u0027s nations are the entertainers, banging in 10 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Down in the gutter, Murray (3 pts). With only 4 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
+                  "Murray props up the table on 3 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
               ],
     "fixtures":  [
                      {
@@ -657,7 +657,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "20:00",
-                         "hs":  1,
+                         "hs":  2,
                          "as":  0
                      },
                      {
