@@ -1,13 +1,13 @@
 ﻿{
     "meta":  {
-                 "stamp":  "16 Jun 2026 04:00",
-                 "playedCount":  15,
+                 "stamp":  "16 Jun 2026 04:05",
+                 "playedCount":  16,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  7,
-                 "ogDesc":  "Quince leads on 7 pts after 15/104 matches"
+                 "ogDesc":  "Quince leads on 7 pts after 16/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -474,10 +474,10 @@
                           "gd":  -1,
                           "gf":  6,
                           "ga":  7,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#636040",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#418166",
@@ -536,8 +536,8 @@
                                             "iso":  "nz",
                                             "hex":  "#1A1A1A",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  true
+                                            "pts":  1,
+                                            "live":  false
                                         }
                                     ]
                       },
@@ -550,10 +550,10 @@
                           "gd":  0,
                           "gf":  3,
                           "ga":  3,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#474C42",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#285356",
@@ -585,8 +585,8 @@
                                             "iso":  "ir",
                                             "hex":  "#DA0000",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  true
+                                            "pts":  1,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "ALG",
@@ -619,25 +619,10 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Iran",
-                     "away":  "New Zealand",
-                     "homeAbbr":  "IRN",
-                     "awayAbbr":  "NZL",
-                     "homeIso":  "ir",
-                     "awayIso":  "nz",
-                     "hOwn":  "Ike",
-                     "aOwn":  "Murray",
-                     "hWin":  0,
-                     "aWin":  0,
-                     "hs":  2,
-                     "as":  2,
-                     "clock":  "90\u0027+2\u0027",
-                     "detail":  "90\u0027+2\u0027"
-                 }
+
              ],
     "story":  [
-                  "Quince tops the pile on 7 pts \u0026mdash; and with their six teams having played just 4 games between them, there\u0027s plenty more in the tank.",
+                  "Top of the tree: Quince (7 pts), powered by 2 win(s) across their six nations.",
                   "It\u0027s dead level at the summit with Elsa \u0026mdash; and with both still to play a chunk of fixtures, this one\u0027s going to the wire.",
                   "Spare a thought for Sid, lumbered with Türkiye \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Ellie\u0027s nations are the entertainers, banging in 10 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
@@ -688,6 +673,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Iran",
+                        "away":  "New Zealand",
+                        "homeAbbr":  "IRN",
+                        "awayAbbr":  "NZL",
+                        "homeIso":  "ir",
+                        "awayIso":  "nz",
+                        "hOwn":  "Ike",
+                        "aOwn":  "Murray",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  2,
+                        "as":  2
+                    },
                     {
                         "home":  "Saudi Arabia",
                         "away":  "Uruguay",
@@ -785,20 +784,6 @@
                         "aWin":  -1,
                         "hs":  7,
                         "as":  1
-                    },
-                    {
-                        "home":  "Australia",
-                        "away":  "Türkiye",
-                        "homeAbbr":  "AUS",
-                        "awayAbbr":  "TUR",
-                        "homeIso":  "au",
-                        "awayIso":  "tr",
-                        "hOwn":  "Etan",
-                        "aOwn":  "Sid",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  2,
-                        "as":  0
                     }
                 ]
 }
