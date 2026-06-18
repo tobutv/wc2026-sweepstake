@@ -1,11 +1,11 @@
 {
     "meta":  {
-                 "stamp":  "18 Jun 2026 21:40",
-                 "playedCount":  24,
+                 "stamp":  "18 Jun 2026 21:42",
+                 "playedCount":  25,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
-                 "leaderPts":  13,
-                 "ogDesc":  "Quince leads on 13 pts after 24/104 matches"
+                 "leaderPts":  14,
+                 "ogDesc":  "Quince leads on 14 pts after 25/104 matches"
              },
     "anyLive":  true,
     "standings":  [
@@ -13,20 +13,20 @@
                           "rank":  1,
                           "name":  "Quince",
                           "isLeader":  true,
-                          "pts":  13,
-                          "pld":  7,
+                          "pts":  14,
+                          "pld":  8,
                           "gd":  8,
-                          "gf":  14,
-                          "ga":  6,
+                          "gf":  15,
+                          "ga":  7,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
-                          "delta":  0,
+                          "delta":  1,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#844758",
+                          "gaBg":  "#8C4A5A",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -71,7 +71,7 @@
                                             "iso":  "za",
                                             "hex":  "#007749",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
+                                            "pts":  1,
                                             "live":  false
                                         },
                                         {
@@ -98,11 +98,11 @@
                           "livePld":  1,
                           "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#B69A39",
-                          "ptsFg":  "#0a1730",
-                          "gfBg":  "#4B926C",
+                          "ptsBg":  "#AA913A",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#478B69",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E56368",
+                          "gaBg":  "#D45F65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -174,11 +174,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#97853C",
+                          "ptsBg":  "#8E7E3C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#397260",
+                          "gfBg":  "#366C5F",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#704155",
+                          "gaBg":  "#693F54",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -250,11 +250,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#887A3D",
+                          "ptsBg":  "#80743D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#4B926C",
+                          "gfBg":  "#478B69",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E56368",
+                          "gaBg":  "#D45F65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -326,11 +326,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#887A3D",
+                          "ptsBg":  "#80743D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#458768",
+                          "gfBg":  "#418166",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D15E65",
+                          "gaBg":  "#C25962",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -402,11 +402,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#887A3D",
+                          "ptsBg":  "#80743D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#3F7C64",
+                          "gfBg":  "#3C7762",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D15E65",
+                          "gaBg":  "#C25962",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -478,11 +478,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#6A653F",
+                          "ptsBg":  "#636040",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#4B926C",
+                          "gfBg":  "#478B69",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E56368",
+                          "gaBg":  "#D45F65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -545,18 +545,18 @@
                           "rank":  8,
                           "name":  "Murray",
                           "isLeader":  false,
-                          "pts":  3,
-                          "pld":  6,
+                          "pts":  4,
+                          "pld":  7,
                           "gd":  -4,
-                          "gf":  8,
-                          "ga":  12,
+                          "gf":  9,
+                          "ga":  13,
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#3C4543",
+                          "delta":  1,
+                          "ptsBg":  "#474C42",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#3F7C64",
+                          "gfBg":  "#418166",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
@@ -603,7 +603,7 @@
                                             "iso":  "cz",
                                             "hex":  "#D7141A",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
+                                            "pts":  1,
                                             "live":  false
                                         },
                                         {
@@ -632,16 +632,16 @@
                      "aWin":  -1,
                      "hs":  1,
                      "as":  0,
-                     "clock":  "80\u0027",
-                     "detail":  "80\u0027"
+                     "clock":  "83\u0027",
+                     "detail":  "83\u0027"
                  }
              ],
     "story":  [
-                  "Quince leads on 13. Their squad\u0027s banked 13 pts off 6 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
-                  "Big Pewerk is 2 back with the same number of games played \u0026mdash; no excuses, just a straight shootout.",
+                  "Quince leads on 14. Their squad\u0027s banked 14 pts off 7 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
-                  "Quince\u0027s nations are the entertainers, banging in 14 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Down in the gutter, Murray (3 pts). With only 6 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
+                  "Quince\u0027s nations are the entertainers, banging in 15 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
+                  "Murray props up the table on 4 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
               ],
     "fixtures":  [
                      {
@@ -706,6 +706,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Czechia",
+                        "away":  "South Africa",
+                        "homeAbbr":  "CZE",
+                        "awayAbbr":  "RSA",
+                        "homeIso":  "cz",
+                        "awayIso":  "za",
+                        "hOwn":  "Murray",
+                        "aOwn":  "Quince",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  1,
+                        "as":  1
+                    },
                     {
                         "home":  "Uzbekistan",
                         "away":  "Colombia",
@@ -803,20 +817,6 @@
                         "aWin":  1,
                         "hs":  1,
                         "as":  4
-                    },
-                    {
-                        "home":  "France",
-                        "away":  "Senegal",
-                        "homeAbbr":  "FRA",
-                        "awayAbbr":  "SEN",
-                        "homeIso":  "fr",
-                        "awayIso":  "sn",
-                        "hOwn":  "Ike",
-                        "aOwn":  "Etan",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  3,
-                        "as":  1
                     }
                 ]
 }
