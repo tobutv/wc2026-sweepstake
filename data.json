@@ -1,11 +1,11 @@
 {
     "meta":  {
-                 "stamp":  "17 Jun 2026 23:53",
-                 "playedCount":  22,
+                 "stamp":  "18 Jun 2026 09:15",
+                 "playedCount":  24,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  13,
-                 "ogDesc":  "Quince leads on 13 pts after 22/104 matches"
+                 "ogDesc":  "Quince leads on 13 pts after 24/104 matches"
              },
     "anyLive":  false,
     "standings":  [
@@ -26,7 +26,7 @@
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#794457",
+                          "gaBg":  "#704155",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -102,7 +102,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#397260",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#794457",
+                          "gaBg":  "#704155",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -173,12 +173,12 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  4,
+                          "delta":  0,
                           "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4B926C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#F8696B",
+                          "gaBg":  "#E56368",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -249,12 +249,12 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  1,
+                          "delta":  0,
                           "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#458768",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E36368",
+                          "gaBg":  "#D15E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -315,6 +315,158 @@
                       },
                       {
                           "rank":  5,
+                          "name":  "Big Pewerk",
+                          "isLeader":  false,
+                          "pts":  8,
+                          "pld":  6,
+                          "gd":  -2,
+                          "gf":  9,
+                          "ga":  11,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
+                          "ptsBg":  "#887A3D",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#458768",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#E56368",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "NED",
+                                            "name":  "Netherlands",
+                                            "iso":  "nl",
+                                            "hex":  "#FF6600",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "COL",
+                                            "name":  "Colombia",
+                                            "iso":  "co",
+                                            "hex":  "#FCD116",
+                                            "fg":  "#0a1730",
+                                            "pts":  3,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "SUI",
+                                            "name":  "Switzerland",
+                                            "iso":  "ch",
+                                            "hex":  "#DA291C",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "CIV",
+                                            "name":  "Ivory Coast",
+                                            "iso":  "ci",
+                                            "hex":  "#F77F00",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "IRQ",
+                                            "name":  "Iraq",
+                                            "iso":  "iq",
+                                            "hex":  "#007A33",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "JOR",
+                                            "name":  "Jordan",
+                                            "iso":  "jo",
+                                            "hex":  "#1A1A1A",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  6,
+                          "name":  "Ike",
+                          "isLeader":  false,
+                          "pts":  8,
+                          "pld":  6,
+                          "gd":  -2,
+                          "gf":  8,
+                          "ga":  10,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
+                          "ptsBg":  "#887A3D",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#3F7C64",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#D15E65",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "FRA",
+                                            "name":  "France",
+                                            "iso":  "fr",
+                                            "hex":  "#002654",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "URU",
+                                            "name":  "Uruguay",
+                                            "iso":  "uy",
+                                            "hex":  "#4FA8E0",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "IRN",
+                                            "name":  "Iran",
+                                            "iso":  "ir",
+                                            "hex":  "#DA0000",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "ALG",
+                                            "name":  "Algeria",
+                                            "iso":  "dz",
+                                            "hex":  "#006233",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "UZB",
+                                            "name":  "Uzbekistan",
+                                            "iso":  "uz",
+                                            "hex":  "#0099B5",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "GHA",
+                                            "name":  "Ghana",
+                                            "iso":  "gh",
+                                            "hex":  "#FCD116",
+                                            "fg":  "#0a1730",
+                                            "pts":  3,
+                                            "live":  false
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  7,
                           "name":  "Ellie",
                           "isLeader":  false,
                           "pts":  6,
@@ -330,7 +482,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4B926C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#F8696B",
+                          "gaBg":  "#E56368",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -390,166 +542,14 @@
                                     ]
                       },
                       {
-                          "rank":  6,
-                          "name":  "Ike",
-                          "isLeader":  false,
-                          "pts":  5,
-                          "pld":  4,
-                          "gd":  -1,
-                          "gf":  6,
-                          "ga":  7,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#5B5A40",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#33675D",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#A3505E",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "FRA",
-                                            "name":  "France",
-                                            "iso":  "fr",
-                                            "hex":  "#002654",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "URU",
-                                            "name":  "Uruguay",
-                                            "iso":  "uy",
-                                            "hex":  "#4FA8E0",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "IRN",
-                                            "name":  "Iran",
-                                            "iso":  "ir",
-                                            "hex":  "#DA0000",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "ALG",
-                                            "name":  "Algeria",
-                                            "iso":  "dz",
-                                            "hex":  "#006233",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "UZB",
-                                            "name":  "Uzbekistan",
-                                            "iso":  "uz",
-                                            "hex":  "#0099B5",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "GHA",
-                                            "name":  "Ghana",
-                                            "iso":  "gh",
-                                            "hex":  "#FCD116",
-                                            "fg":  "#0a1730",
-                                            "pts":  0,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
-                          "rank":  7,
-                          "name":  "Big Pewerk",
-                          "isLeader":  false,
-                          "pts":  5,
-                          "pld":  5,
-                          "gd":  -4,
-                          "gf":  6,
-                          "ga":  10,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#5B5A40",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#33675D",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#E36368",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "NED",
-                                            "name":  "Netherlands",
-                                            "iso":  "nl",
-                                            "hex":  "#FF6600",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "COL",
-                                            "name":  "Colombia",
-                                            "iso":  "co",
-                                            "hex":  "#FCD116",
-                                            "fg":  "#0a1730",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "SUI",
-                                            "name":  "Switzerland",
-                                            "iso":  "ch",
-                                            "hex":  "#DA291C",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "CIV",
-                                            "name":  "Ivory Coast",
-                                            "iso":  "ci",
-                                            "hex":  "#F77F00",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "IRQ",
-                                            "name":  "Iraq",
-                                            "iso":  "iq",
-                                            "hex":  "#007A33",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "JOR",
-                                            "name":  "Jordan",
-                                            "iso":  "jo",
-                                            "hex":  "#1A1A1A",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
                           "rank":  8,
                           "name":  "Murray",
                           "isLeader":  false,
                           "pts":  3,
-                          "pld":  5,
-                          "gd":  -3,
+                          "pld":  6,
+                          "gd":  -4,
                           "gf":  8,
-                          "ga":  11,
+                          "ga":  12,
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
@@ -622,91 +622,99 @@
 
              ],
     "story":  [
-                  "Quince leads on 13. Their squad\u0027s banked 13 pts off 6 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Top of the tree: Quince (13 pts), powered by 4 win(s) across their six nations.",
                   "Sid is 4 back with the same number of games played \u0026mdash; no excuses, just a straight shootout.",
-                  "Spare a thought for Elsa, lumbered with Tunisia \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
+                  "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Quince\u0027s nations are the entertainers, banging in 14 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Down in the gutter, Murray (3 pts). With only 5 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
+                  "Murray props up the table on 3 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
               ],
     "fixtures":  [
                      {
-                         "home":  "Austria",
-                         "away":  "Jordan",
-                         "homeAbbr":  "AUT",
-                         "awayAbbr":  "JOR",
-                         "homeIso":  "at",
-                         "awayIso":  "jo",
+                         "home":  "Czechia",
+                         "away":  "South Africa",
+                         "homeAbbr":  "CZE",
+                         "awayAbbr":  "RSA",
+                         "homeIso":  "cz",
+                         "awayIso":  "za",
+                         "hOwn":  "Murray",
+                         "aOwn":  "Quince",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "17:00"
+                     },
+                     {
+                         "home":  "Switzerland",
+                         "away":  "Bosnia-Herzegovina",
+                         "homeAbbr":  "SUI",
+                         "awayAbbr":  "BIH",
+                         "homeIso":  "ch",
+                         "awayIso":  "ba",
+                         "hOwn":  "Big Pewerk",
+                         "aOwn":  "Quince",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "20:00"
+                     },
+                     {
+                         "home":  "Canada",
+                         "away":  "Qatar",
+                         "homeAbbr":  "CAN",
+                         "awayAbbr":  "QAT",
+                         "homeIso":  "ca",
+                         "awayIso":  "qa",
+                         "hOwn":  "Ellie",
+                         "aOwn":  "Ellie",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "23:00"
+                     },
+                     {
+                         "home":  "Mexico",
+                         "away":  "South Korea",
+                         "homeAbbr":  "MEX",
+                         "awayAbbr":  "KOR",
+                         "homeIso":  "mx",
+                         "awayIso":  "kr",
                          "hOwn":  "Quince",
-                         "aOwn":  "Big Pewerk",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "05:00",
-                         "hs":  3,
-                         "as":  1
-                     },
-                     {
-                         "home":  "Portugal",
-                         "away":  "Congo DR",
-                         "homeAbbr":  "POR",
-                         "awayAbbr":  "COG",
-                         "homeIso":  "pt",
-                         "awayIso":  "cg",
-                         "hOwn":  "Elsa",
-                         "aOwn":  "Etan",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "ft",
-                         "ko":  "18:00",
-                         "hs":  1,
-                         "as":  1
-                     },
-                     {
-                         "home":  "England",
-                         "away":  "Croatia",
-                         "homeAbbr":  "ENG",
-                         "awayAbbr":  "CRO",
-                         "homeIso":  "gb-eng",
-                         "awayIso":  "hr",
-                         "hOwn":  "Etan",
-                         "aOwn":  "Murray",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "21:00",
-                         "hs":  4,
-                         "as":  2
-                     },
-                     {
-                         "home":  "Ghana",
-                         "away":  "Panama",
-                         "homeAbbr":  "GHA",
-                         "awayAbbr":  "PAN",
-                         "homeIso":  "gh",
-                         "awayIso":  "pa",
-                         "hOwn":  "Ike",
-                         "aOwn":  "Murray",
+                         "aOwn":  "Elsa",
                          "hWin":  0,
                          "aWin":  0,
                          "state":  "ko",
-                         "ko":  "00:00"
-                     },
-                     {
-                         "home":  "Uzbekistan",
-                         "away":  "Colombia",
-                         "homeAbbr":  "UZB",
-                         "awayAbbr":  "COL",
-                         "homeIso":  "uz",
-                         "awayIso":  "co",
-                         "hOwn":  "Ike",
-                         "aOwn":  "Big Pewerk",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "03:00"
+                         "ko":  "02:00"
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Uzbekistan",
+                        "away":  "Colombia",
+                        "homeAbbr":  "UZB",
+                        "awayAbbr":  "COL",
+                        "homeIso":  "uz",
+                        "awayIso":  "co",
+                        "hOwn":  "Ike",
+                        "aOwn":  "Big Pewerk",
+                        "hWin":  -1,
+                        "aWin":  1,
+                        "hs":  1,
+                        "as":  3
+                    },
+                    {
+                        "home":  "Ghana",
+                        "away":  "Panama",
+                        "homeAbbr":  "GHA",
+                        "awayAbbr":  "PAN",
+                        "homeIso":  "gh",
+                        "awayIso":  "pa",
+                        "hOwn":  "Ike",
+                        "aOwn":  "Murray",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  1,
+                        "as":  0
+                    },
                     {
                         "home":  "England",
                         "away":  "Croatia",
@@ -789,34 +797,6 @@
                         "hWin":  1,
                         "aWin":  -1,
                         "hs":  3,
-                        "as":  1
-                    },
-                    {
-                        "home":  "Iran",
-                        "away":  "New Zealand",
-                        "homeAbbr":  "IRN",
-                        "awayAbbr":  "NZL",
-                        "homeIso":  "ir",
-                        "awayIso":  "nz",
-                        "hOwn":  "Ike",
-                        "aOwn":  "Murray",
-                        "hWin":  0,
-                        "aWin":  0,
-                        "hs":  2,
-                        "as":  2
-                    },
-                    {
-                        "home":  "Saudi Arabia",
-                        "away":  "Uruguay",
-                        "homeAbbr":  "KSA",
-                        "awayAbbr":  "URU",
-                        "homeIso":  "sa",
-                        "awayIso":  "uy",
-                        "hOwn":  "Etan",
-                        "aOwn":  "Ike",
-                        "hWin":  0,
-                        "aWin":  0,
-                        "hs":  1,
                         "as":  1
                     }
                 ]
