@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "18 Jun 2026 23:30",
+                 "stamp":  "18 Jun 2026 23:35",
                  "playedCount":  26,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -244,17 +244,17 @@
                           "pts":  9,
                           "pld":  8,
                           "gd":  -1,
-                          "gf":  11,
-                          "ga":  12,
+                          "gf":  12,
+                          "ga":  13,
                           "livePts":  3,
                           "livePld":  2,
                           "hasLive":  true,
                           "delta":  0,
                           "ptsBg":  "#8E7E3C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#498E6A",
+                          "gfBg":  "#4E986E",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E66468",
+                          "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -630,14 +630,14 @@
                      "aOwn":  "Ellie",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  1,
+                     "hs":  2,
                      "as":  0,
-                     "clock":  "29\u0027",
-                     "detail":  "29\u0027"
+                     "clock":  "34\u0027",
+                     "detail":  "34\u0027"
                  }
              ],
     "story":  [
-                  "Quince leads on 14. Their squad\u0027s banked 14 pts off 8 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Quince tops the pile on 14 pts \u0026mdash; and with their six teams having played just 8 games between them, there\u0027s plenty more in the tank.",
                   "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Quince\u0027s nations are the entertainers, banging in 16 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
@@ -689,7 +689,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "23:00",
-                         "hs":  1,
+                         "hs":  2,
                          "as":  0
                      },
                      {
