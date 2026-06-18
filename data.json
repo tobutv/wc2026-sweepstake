@@ -1,32 +1,32 @@
 {
     "meta":  {
-                 "stamp":  "18 Jun 2026 18:55",
+                 "stamp":  "18 Jun 2026 19:00",
                  "playedCount":  24,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
-                 "leaderPts":  14,
-                 "ogDesc":  "Quince leads on 14 pts after 24/104 matches"
+                 "leaderPts":  13,
+                 "ogDesc":  "Quince leads on 13 pts after 24/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
                           "name":  "Quince",
                           "isLeader":  true,
-                          "pts":  14,
-                          "pld":  7,
+                          "pts":  13,
+                          "pld":  6,
                           "gd":  9,
-                          "gf":  15,
-                          "ga":  6,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "gf":  14,
+                          "ga":  5,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#7B4457",
+                          "gaBg":  "#704155",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -72,7 +72,7 @@
                                             "hex":  "#007749",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  true
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "BIH",
@@ -98,11 +98,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#8E7E3C",
+                          "ptsBg":  "#97853C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#366C5F",
+                          "gfBg":  "#397260",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#693F54",
+                          "gaBg":  "#704155",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -174,11 +174,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#80743D",
+                          "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#478B69",
+                          "gfBg":  "#4B926C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D45F65",
+                          "gaBg":  "#E56368",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -250,11 +250,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#80743D",
+                          "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#418166",
+                          "gfBg":  "#458768",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#C25962",
+                          "gaBg":  "#D15E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -326,11 +326,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#80743D",
+                          "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#418166",
+                          "gfBg":  "#458768",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D45F65",
+                          "gaBg":  "#E56368",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -402,11 +402,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#80743D",
+                          "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#3C7762",
+                          "gfBg":  "#3F7C64",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#C25962",
+                          "gaBg":  "#D15E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -478,11 +478,11 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#636040",
+                          "ptsBg":  "#6A653F",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#478B69",
+                          "gfBg":  "#4B926C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D45F65",
+                          "gaBg":  "#E56368",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -545,18 +545,18 @@
                           "rank":  8,
                           "name":  "Murray",
                           "isLeader":  false,
-                          "pts":  4,
-                          "pld":  7,
+                          "pts":  3,
+                          "pld":  6,
                           "gd":  -4,
-                          "gf":  9,
-                          "ga":  13,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "gf":  8,
+                          "ga":  12,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#474C42",
+                          "ptsBg":  "#3C4543",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#418166",
+                          "gfBg":  "#3F7C64",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
@@ -604,7 +604,7 @@
                                             "hex":  "#D7141A",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  true
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "NZL",
@@ -619,29 +619,14 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Czechia",
-                     "away":  "South Africa",
-                     "homeAbbr":  "CZE",
-                     "awayAbbr":  "RSA",
-                     "homeIso":  "cz",
-                     "awayIso":  "za",
-                     "hOwn":  "Murray",
-                     "aOwn":  "Quince",
-                     "hWin":  0,
-                     "aWin":  0,
-                     "hs":  1,
-                     "as":  1,
-                     "clock":  "90\u0027+3\u0027",
-                     "detail":  "90\u0027+3\u0027"
-                 }
+
              ],
     "story":  [
-                  "Quince tops the pile on 14 pts \u0026mdash; and with their six teams having played just 6 games between them, there\u0027s plenty more in the tank.",
-                  "Sid is 5 back with the same number of games played \u0026mdash; no excuses, just a straight shootout.",
+                  "Quince leads on 13. Their squad\u0027s banked 13 pts off 6 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Sid is 4 back with the same number of games played \u0026mdash; no excuses, just a straight shootout.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Quince\u0027s nations are the entertainers, banging in 14 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Murray props up the table on 4 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
+                  "Down in the gutter, Murray (3 pts). With only 6 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
               ],
     "fixtures":  [
                      {
@@ -655,7 +640,7 @@
                          "aOwn":  "Quince",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "live",
+                         "state":  "ft",
                          "ko":  "17:00",
                          "hs":  1,
                          "as":  1
