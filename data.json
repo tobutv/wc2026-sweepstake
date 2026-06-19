@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "19 Jun 2026 23:16",
+                 "stamp":  "19 Jun 2026 23:17",
                  "playedCount":  29,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -21,7 +21,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
@@ -249,7 +249,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#8E7E3C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#458868",
@@ -325,7 +325,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#776E3E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#5EB578",
@@ -637,7 +637,7 @@
                  }
              ],
     "story":  [
-                  "Top of the tree: Quince (17 pts), powered by 5 win(s) across their six nations.",
+                  "Quince leads on 17. Their squad\u0027s banked 17 pts off 9 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
                   "Sid trails by 5 \u0026mdash; and worryingly for them, their teams have 3 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Quince\u0027s nations are the entertainers, banging in 17 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
