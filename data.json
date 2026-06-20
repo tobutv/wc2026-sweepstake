@@ -1,94 +1,18 @@
 {
     "meta":  {
-                 "stamp":  "20 Jun 2026 22:30",
+                 "stamp":  "20 Jun 2026 22:35",
                  "playedCount":  33,
                  "totalMatches":  104,
-                 "leaderName":  "Big Pewerk",
+                 "leaderName":  "Quince",
                  "leaderPts":  17,
-                 "ogDesc":  "Big Pewerk leads on 17 pts after 33/104 matches"
+                 "ogDesc":  "Quince leads on 17 pts after 33/104 matches"
              },
     "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
-                          "name":  "Big Pewerk",
-                          "isLeader":  true,
-                          "pts":  17,
-                          "pld":  9,
-                          "gd":  6,
-                          "gf":  19,
-                          "ga":  13,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
-                          "ptsBg":  "#D4AF37",
-                          "ptsFg":  "#0a1730",
-                          "gfBg":  "#63BE7B",
-                          "gfFg":  "#0a1730",
-                          "gaBg":  "#B75661",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "NED",
-                                            "name":  "Netherlands",
-                                            "iso":  "nl",
-                                            "hex":  "#FF6600",
-                                            "fg":  "#ffffff",
-                                            "pts":  4,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "COL",
-                                            "name":  "Colombia",
-                                            "iso":  "co",
-                                            "hex":  "#FCD116",
-                                            "fg":  "#0a1730",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "SUI",
-                                            "name":  "Switzerland",
-                                            "iso":  "ch",
-                                            "hex":  "#DA291C",
-                                            "fg":  "#ffffff",
-                                            "pts":  4,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "CIV",
-                                            "name":  "Ivory Coast",
-                                            "iso":  "ci",
-                                            "hex":  "#F77F00",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  true
-                                        },
-                                        {
-                                            "abbr":  "IRQ",
-                                            "name":  "Iraq",
-                                            "iso":  "iq",
-                                            "hex":  "#007A33",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "JOR",
-                                            "name":  "Jordan",
-                                            "iso":  "jo",
-                                            "hex":  "#1A1A1A",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
-                          "rank":  2,
                           "name":  "Quince",
-                          "isLeader":  false,
+                          "isLeader":  true,
                           "pts":  17,
                           "pld":  10,
                           "gd":  3,
@@ -157,6 +81,82 @@
                                             "hex":  "#002F6C",
                                             "fg":  "#ffffff",
                                             "pts":  1,
+                                            "live":  false
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  2,
+                          "name":  "Big Pewerk",
+                          "isLeader":  false,
+                          "pts":  15,
+                          "pld":  9,
+                          "gd":  5,
+                          "gf":  19,
+                          "ga":  14,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#BD9F39",
+                          "ptsFg":  "#0a1730",
+                          "gfBg":  "#63BE7B",
+                          "gfFg":  "#0a1730",
+                          "gaBg":  "#C45A63",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "NED",
+                                            "name":  "Netherlands",
+                                            "iso":  "nl",
+                                            "hex":  "#FF6600",
+                                            "fg":  "#ffffff",
+                                            "pts":  4,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "COL",
+                                            "name":  "Colombia",
+                                            "iso":  "co",
+                                            "hex":  "#FCD116",
+                                            "fg":  "#0a1730",
+                                            "pts":  3,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "SUI",
+                                            "name":  "Switzerland",
+                                            "iso":  "ch",
+                                            "hex":  "#DA291C",
+                                            "fg":  "#ffffff",
+                                            "pts":  4,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "CIV",
+                                            "name":  "Ivory Coast",
+                                            "iso":  "ci",
+                                            "hex":  "#F77F00",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  true
+                                        },
+                                        {
+                                            "abbr":  "IRQ",
+                                            "name":  "Iraq",
+                                            "iso":  "iq",
+                                            "hex":  "#007A33",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "JOR",
+                                            "name":  "Jordan",
+                                            "iso":  "jo",
+                                            "hex":  "#1A1A1A",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
                                             "live":  false
                                         }
                                     ]
@@ -393,18 +393,18 @@
                           "rank":  6,
                           "name":  "Ellie",
                           "isLeader":  false,
-                          "pts":  9,
+                          "pts":  10,
                           "pld":  9,
-                          "gd":  -2,
-                          "gf":  16,
+                          "gd":  -1,
+                          "gf":  17,
                           "ga":  18,
-                          "livePts":  0,
+                          "livePts":  1,
                           "livePld":  1,
                           "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#776E3E",
+                          "ptsBg":  "#83763D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#56A673",
+                          "gfBg":  "#5AAE75",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
@@ -628,20 +628,20 @@
                      "awayIso":  "ci",
                      "hOwn":  "Ellie",
                      "aOwn":  "Big Pewerk",
-                     "hWin":  -1,
-                     "aWin":  1,
-                     "hs":  0,
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  1,
                      "as":  1,
-                     "clock":  "66\u0027",
-                     "detail":  "66\u0027"
+                     "clock":  "72\u0027",
+                     "detail":  "72\u0027"
                  }
              ],
     "story":  [
-                  "Big Pewerk leads on 17. Their squad\u0027s banked 14 pts off 8 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
-                  "It\u0027s dead level at the summit with Quince \u0026mdash; and with both still to play a chunk of fixtures, this one\u0027s going to the wire.",
+                  "Quince leads on 17. Their squad\u0027s banked 17 pts off 10 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Big Pewerk trails by 2 \u0026mdash; and worryingly for them, their teams have 2 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Big Pewerk\u0027s nations are the entertainers, banging in 18 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Rock bottom: Murray on 7. Their six have managed just 1 win(s) and 12 goal(s) \u0026mdash; the warm sausage rolls beckon."
+                  "Murray props up the table on 7 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
               ],
     "fixtures":  [
                      {
@@ -673,7 +673,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "21:00",
-                         "hs":  0,
+                         "hs":  1,
                          "as":  1
                      },
                      {
