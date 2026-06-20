@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "20 Jun 2026 19:15",
+                 "stamp":  "20 Jun 2026 19:20",
                  "playedCount":  32,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -15,9 +15,9 @@
                           "isLeader":  true,
                           "pts":  17,
                           "pld":  10,
-                          "gd":  4,
+                          "gd":  3,
                           "gf":  17,
-                          "ga":  13,
+                          "ga":  14,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
@@ -26,7 +26,7 @@
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#C15962",
+                          "gaBg":  "#CF5D64",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -91,8 +91,8 @@
                           "isLeader":  false,
                           "pts":  14,
                           "pld":  8,
-                          "gd":  4,
-                          "gf":  16,
+                          "gd":  5,
+                          "gf":  17,
                           "ga":  12,
                           "livePts":  3,
                           "livePld":  1,
@@ -100,8 +100,8 @@
                           "delta":  0,
                           "ptsBg":  "#B1973A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#5EB578",
-                          "gfFg":  "#ffffff",
+                          "gfBg":  "#63BE7B",
+                          "gfFg":  "#0a1730",
                           "gaBg":  "#B35560",
                           "gaFg":  "#ffffff",
                           "picks":  [
@@ -630,10 +630,10 @@
                      "aOwn":  "Quince",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  3,
+                     "hs":  4,
                      "as":  0,
-                     "clock":  "54\u0027",
-                     "detail":  "54\u0027"
+                     "clock":  "59\u0027",
+                     "detail":  "59\u0027"
                  }
              ],
     "story":  [
@@ -641,7 +641,7 @@
                   "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 2 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Quince\u0027s nations are the entertainers, banging in 17 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Rock bottom: Murray on 7. Their six have managed just 1 win(s) and 12 goal(s) \u0026mdash; the warm sausage rolls beckon."
+                  "Down in the gutter, Murray (7 pts). With only 6 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
               ],
     "fixtures":  [
                      {
@@ -657,7 +657,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "18:00",
-                         "hs":  3,
+                         "hs":  4,
                          "as":  0
                      },
                      {
