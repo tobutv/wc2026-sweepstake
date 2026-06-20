@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "20 Jun 2026 23:00",
-                 "playedCount":  33,
+                 "stamp":  "20 Jun 2026 23:05",
+                 "playedCount":  34,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  17,
-                 "ogDesc":  "Quince leads on 17 pts after 33/104 matches"
+                 "ogDesc":  "Quince leads on 17 pts after 34/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -95,8 +95,8 @@
                           "gf":  19,
                           "ga":  15,
                           "livePts":  0,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
                           "ptsBg":  "#B1973A",
                           "ptsFg":  "#ffffff",
@@ -139,7 +139,7 @@
                                             "hex":  "#F77F00",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  true
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "IRQ",
@@ -246,10 +246,10 @@
                           "gd":  0,
                           "gf":  18,
                           "ga":  18,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#9A863B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#5FB678",
@@ -272,8 +272,8 @@
                                             "iso":  "de",
                                             "hex":  "#000000",
                                             "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  true
+                                            "pts":  6,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "ECU",
@@ -619,29 +619,14 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Germany",
-                     "away":  "Ivory Coast",
-                     "homeAbbr":  "GER",
-                     "awayAbbr":  "CIV",
-                     "homeIso":  "de",
-                     "awayIso":  "ci",
-                     "hOwn":  "Ellie",
-                     "aOwn":  "Big Pewerk",
-                     "hWin":  1,
-                     "aWin":  -1,
-                     "hs":  2,
-                     "as":  1,
-                     "clock":  "90\u0027+7\u0027",
-                     "detail":  "90\u0027+7\u0027"
-                 }
+
              ],
     "story":  [
-                  "Quince tops the pile on 17 pts \u0026mdash; and with their six teams having played just 10 games between them, there\u0027s plenty more in the tank.",
-                  "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 2 fewer game(s) banked than the leader. Ground to make up, fast.",
+                  "Quince leads on 17. Their squad\u0027s banked 17 pts off 10 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
-                  "Big Pewerk\u0027s nations are the entertainers, banging in 18 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Murray props up the table on 7 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
+                  "Big Pewerk\u0027s nations are the entertainers, banging in 19 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
+                  "Down in the gutter, Murray (7 pts). With only 6 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
               ],
     "fixtures":  [
                      {
@@ -669,9 +654,9 @@
                          "awayIso":  "ci",
                          "hOwn":  "Ellie",
                          "aOwn":  "Big Pewerk",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
+                         "hWin":  1,
+                         "aWin":  -1,
+                         "state":  "ft",
                          "ko":  "21:00",
                          "hs":  2,
                          "as":  1
@@ -692,6 +677,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Germany",
+                        "away":  "Ivory Coast",
+                        "homeAbbr":  "GER",
+                        "awayAbbr":  "CIV",
+                        "homeIso":  "de",
+                        "awayIso":  "ci",
+                        "hOwn":  "Ellie",
+                        "aOwn":  "Big Pewerk",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  2,
+                        "as":  1
+                    },
                     {
                         "home":  "Netherlands",
                         "away":  "Sweden",
@@ -789,20 +788,6 @@
                         "aWin":  -1,
                         "hs":  6,
                         "as":  0
-                    },
-                    {
-                        "home":  "Switzerland",
-                        "away":  "Bosnia Herzegovina",
-                        "homeAbbr":  "SUI",
-                        "awayAbbr":  "BIH",
-                        "homeIso":  "ch",
-                        "awayIso":  "ba",
-                        "hOwn":  "Big Pewerk",
-                        "aOwn":  "Quince",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  4,
-                        "as":  1
                     }
                 ]
 }
