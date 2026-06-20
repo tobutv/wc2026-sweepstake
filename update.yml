@@ -1,0 +1,43 @@
+name: Update sweepstake data
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate data.json
+        run: python cloud/update.py
+        env:
+          OUT_DIR: ${{ github.workspace }}
+
+      - name: Commit data.json if changed
+        run: |
+          git config user.name "sweepstake-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data.json)" ]; then
+            git add data.json
+            git commit -m "data: update league table [skip ci]"
+            git push
+            echo "Pushed updated data.json"
+          else
+            echo "No change in data.json"
+          fi
