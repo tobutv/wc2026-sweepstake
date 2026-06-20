@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "20 Jun 2026 00:55",
-                 "playedCount":  29,
+                 "stamp":  "20 Jun 2026 01:00",
+                 "playedCount":  30,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  17,
-                 "ogDesc":  "Quince leads on 17 pts after 29/104 matches"
+                 "ogDesc":  "Quince leads on 17 pts after 30/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -94,10 +94,10 @@
                           "gd":  2,
                           "gf":  8,
                           "ga":  6,
-                          "livePts":  3,
-                          "livePld":  2,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#9A863B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#376D5F",
@@ -111,8 +111,8 @@
                                             "iso":  "ma",
                                             "hex":  "#C1272D",
                                             "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  true
+                                            "pts":  4,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "BEL",
@@ -148,7 +148,7 @@
                                             "hex":  "#0065BD",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  true
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "CPV",
@@ -619,93 +619,74 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Scotland",
-                     "away":  "Morocco",
-                     "homeAbbr":  "SCO",
-                     "awayAbbr":  "MAR",
-                     "homeIso":  "gb-sct",
-                     "awayIso":  "ma",
-                     "hOwn":  "Sid",
-                     "aOwn":  "Sid",
-                     "hWin":  -1,
-                     "aWin":  1,
-                     "hs":  0,
-                     "as":  1,
-                     "clock":  "90\u0027+2\u0027",
-                     "detail":  "90\u0027+2\u0027"
-                 }
+
              ],
     "story":  [
                   "Top of the tree: Quince (17 pts), powered by 5 win(s) across their six nations.",
-                  "Sid trails by 5 \u0026mdash; and worryingly for them, their teams have 3 fewer game(s) banked than the leader. Ground to make up, fast.",
+                  "Sid trails by 5 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Quince\u0027s nations are the entertainers, banging in 17 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Murray props up the table on 4 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
+                  "Down in the gutter, Murray (4 pts). With only 6 of their teams having even kicked a ball in anger, there\u0027s a sliver of hope\u0026hellip; barely."
               ],
     "fixtures":  [
                      {
-                         "home":  "United States",
-                         "away":  "Australia",
-                         "homeAbbr":  "USA",
-                         "awayAbbr":  "AUS",
-                         "homeIso":  "us",
-                         "awayIso":  "au",
-                         "hOwn":  "Elsa",
-                         "aOwn":  "Etan",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "20:00",
-                         "hs":  2,
-                         "as":  0
-                     },
-                     {
-                         "home":  "Scotland",
-                         "away":  "Morocco",
-                         "homeAbbr":  "SCO",
-                         "awayAbbr":  "MAR",
-                         "homeIso":  "gb-sct",
-                         "awayIso":  "ma",
-                         "hOwn":  "Sid",
-                         "aOwn":  "Sid",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
-                         "ko":  "23:00",
-                         "hs":  0,
-                         "as":  1
-                     },
-                     {
-                         "home":  "Brazil",
-                         "away":  "Haiti",
-                         "homeAbbr":  "BRA",
-                         "awayAbbr":  "HAI",
-                         "homeIso":  "br",
-                         "awayIso":  "ht",
-                         "hOwn":  "Murray",
-                         "aOwn":  "Elsa",
+                         "home":  "Netherlands",
+                         "away":  "Sweden",
+                         "homeAbbr":  "NED",
+                         "awayAbbr":  "SWE",
+                         "homeIso":  "nl",
+                         "awayIso":  "se",
+                         "hOwn":  "Big Pewerk",
+                         "aOwn":  "Quince",
                          "hWin":  0,
                          "aWin":  0,
                          "state":  "ko",
-                         "ko":  "01:30"
+                         "ko":  "18:00"
                      },
                      {
-                         "home":  "Türkiye",
-                         "away":  "Paraguay",
-                         "homeAbbr":  "TUR",
-                         "awayAbbr":  "PAR",
-                         "homeIso":  "tr",
-                         "awayIso":  "py",
-                         "hOwn":  "Sid",
-                         "aOwn":  "Etan",
+                         "home":  "Germany",
+                         "away":  "Ivory Coast",
+                         "homeAbbr":  "GER",
+                         "awayAbbr":  "CIV",
+                         "homeIso":  "de",
+                         "awayIso":  "ci",
+                         "hOwn":  "Ellie",
+                         "aOwn":  "Big Pewerk",
                          "hWin":  0,
                          "aWin":  0,
                          "state":  "ko",
-                         "ko":  "04:00"
+                         "ko":  "21:00"
+                     },
+                     {
+                         "home":  "Ecuador",
+                         "away":  "Curaçao",
+                         "homeAbbr":  "ECU",
+                         "awayAbbr":  "CUW",
+                         "homeIso":  "ec",
+                         "awayIso":  "cw",
+                         "hOwn":  "Ellie",
+                         "aOwn":  "Ellie",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "01:00"
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Scotland",
+                        "away":  "Morocco",
+                        "homeAbbr":  "SCO",
+                        "awayAbbr":  "MAR",
+                        "homeIso":  "gb-sct",
+                        "awayIso":  "ma",
+                        "hOwn":  "Sid",
+                        "aOwn":  "Sid",
+                        "hWin":  -1,
+                        "aWin":  1,
+                        "hs":  0,
+                        "as":  1
+                    },
                     {
                         "home":  "USA",
                         "away":  "Australia",
@@ -803,20 +784,6 @@
                         "aWin":  -1,
                         "hs":  1,
                         "as":  0
-                    },
-                    {
-                        "home":  "England",
-                        "away":  "Croatia",
-                        "homeAbbr":  "ENG",
-                        "awayAbbr":  "CRO",
-                        "homeIso":  "gb-eng",
-                        "awayIso":  "hr",
-                        "hOwn":  "Etan",
-                        "aOwn":  "Murray",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  4,
-                        "as":  2
                     }
                 ]
 }
