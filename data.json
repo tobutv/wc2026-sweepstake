@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 22:00",
-                 "playedCount":  37,
+                 "stamp":  "21 Jun 2026 22:05",
+                 "playedCount":  38,
                  "totalMatches":  104,
                  "leaderName":  "Ellie",
                  "leaderPts":  17,
-                 "ogDesc":  "Ellie leads on 17 pts after 37/104 matches"
+                 "ogDesc":  "Ellie leads on 17 pts after 38/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -246,10 +246,10 @@
                           "gd":  1,
                           "gf":  8,
                           "ga":  7,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#A68F3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#2E5D59",
@@ -272,8 +272,8 @@
                                             "iso":  "be",
                                             "hex":  "#ED2939",
                                             "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  true
+                                            "pts":  2,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "TUR",
@@ -550,10 +550,10 @@
                           "gd":  -2,
                           "gf":  8,
                           "ga":  10,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#776E3E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#2E5D59",
@@ -585,8 +585,8 @@
                                             "iso":  "ir",
                                             "hex":  "#DA0000",
                                             "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  true
+                                            "pts":  2,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "ALG",
@@ -619,26 +619,11 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Belgium",
-                     "away":  "Iran",
-                     "homeAbbr":  "BEL",
-                     "awayAbbr":  "IRN",
-                     "homeIso":  "be",
-                     "awayIso":  "ir",
-                     "hOwn":  "Sid",
-                     "aOwn":  "Ike",
-                     "hWin":  0,
-                     "aWin":  0,
-                     "hs":  0,
-                     "as":  0,
-                     "clock":  "90\u0027+4\u0027",
-                     "detail":  "90\u0027+4\u0027"
-                 }
+
              ],
     "story":  [
                   "At the very summit, \u003cb\u003eEllie\u003c/b\u003e is grinding out 5 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
-                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 3 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eEtan\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 17 shipped already, with Saudi Arabia (will park eleven buses and party at 0-0) alone waving in 5. And clinging on by their fingernails, \u003cb\u003eElsa\u003c/b\u003e is running a full-blown one-nation hostage situation \u0026mdash; USA (calling it soccer with their whole chest) alone props up 55% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea.",
+                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 4 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eEtan\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 17 shipped already, with Saudi Arabia (will park eleven buses and party at 0-0) alone waving in 5. And clinging on by their fingernails, \u003cb\u003eElsa\u003c/b\u003e is running a full-blown one-nation hostage situation \u0026mdash; USA (calling it soccer with their whole chest) alone props up 55% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea.",
                   "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 16 goals banged in (GD +3), spearheaded by Japan (tidy, disciplined, devastatingly polite). And scraping the very bottom of the barrel, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug."
               ],
     "fixtures":  [
@@ -685,7 +670,7 @@
                          "aOwn":  "Ike",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "live",
+                         "state":  "ft",
                          "ko":  "20:00",
                          "hs":  0,
                          "as":  0
@@ -720,6 +705,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Belgium",
+                        "away":  "Iran",
+                        "homeAbbr":  "BEL",
+                        "awayAbbr":  "IRN",
+                        "homeIso":  "be",
+                        "awayIso":  "ir",
+                        "hOwn":  "Sid",
+                        "aOwn":  "Ike",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  0,
+                        "as":  0
+                    },
                     {
                         "home":  "Spain",
                         "away":  "Saudi Arabia",
@@ -817,20 +816,6 @@
                         "aWin":  -1,
                         "hs":  3,
                         "as":  0
-                    },
-                    {
-                        "home":  "Scotland",
-                        "away":  "Morocco",
-                        "homeAbbr":  "SCO",
-                        "awayAbbr":  "MAR",
-                        "homeIso":  "gb-sct",
-                        "awayIso":  "ma",
-                        "hOwn":  "Sid",
-                        "aOwn":  "Sid",
-                        "hWin":  -1,
-                        "aWin":  1,
-                        "hs":  0,
-                        "as":  1
                     }
                 ]
 }
