@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 01:00",
+                 "stamp":  "21 Jun 2026 01:05",
                  "playedCount":  34,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  17,
                  "ogDesc":  "Quince leads on 17 pts after 34/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -163,6 +163,82 @@
                       },
                       {
                           "rank":  3,
+                          "name":  "Ellie",
+                          "isLeader":  false,
+                          "pts":  14,
+                          "pld":  11,
+                          "gd":  0,
+                          "gf":  18,
+                          "ga":  18,
+                          "livePts":  2,
+                          "livePld":  2,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#B1973A",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#5FB678",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#F8696B",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "ESP",
+                                            "name":  "Spain",
+                                            "iso":  "es",
+                                            "hex":  "#AA151B",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "GER",
+                                            "name":  "Germany",
+                                            "iso":  "de",
+                                            "hex":  "#000000",
+                                            "fg":  "#ffffff",
+                                            "pts":  6,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "ECU",
+                                            "name":  "Ecuador",
+                                            "iso":  "ec",
+                                            "hex":  "#FFD100",
+                                            "fg":  "#0a1730",
+                                            "pts":  0,
+                                            "live":  true
+                                        },
+                                        {
+                                            "abbr":  "CAN",
+                                            "name":  "Canada",
+                                            "iso":  "ca",
+                                            "hex":  "#D52B1E",
+                                            "fg":  "#ffffff",
+                                            "pts":  4,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "QAT",
+                                            "name":  "Qatar",
+                                            "iso":  "qa",
+                                            "hex":  "#8A1538",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "CUW",
+                                            "name":  "Curaçao",
+                                            "iso":  "cw",
+                                            "hex":  "#002B7F",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  true
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  4,
                           "name":  "Sid",
                           "isLeader":  false,
                           "pts":  12,
@@ -233,82 +309,6 @@
                                             "hex":  "#003893",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
-                          "rank":  4,
-                          "name":  "Ellie",
-                          "isLeader":  false,
-                          "pts":  12,
-                          "pld":  9,
-                          "gd":  0,
-                          "gf":  18,
-                          "ga":  18,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#9A863B",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#5FB678",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#F8696B",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "ESP",
-                                            "name":  "Spain",
-                                            "iso":  "es",
-                                            "hex":  "#AA151B",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "GER",
-                                            "name":  "Germany",
-                                            "iso":  "de",
-                                            "hex":  "#000000",
-                                            "fg":  "#ffffff",
-                                            "pts":  6,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "ECU",
-                                            "name":  "Ecuador",
-                                            "iso":  "ec",
-                                            "hex":  "#FFD100",
-                                            "fg":  "#0a1730",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "CAN",
-                                            "name":  "Canada",
-                                            "iso":  "ca",
-                                            "hex":  "#D52B1E",
-                                            "fg":  "#ffffff",
-                                            "pts":  4,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "QAT",
-                                            "name":  "Qatar",
-                                            "iso":  "qa",
-                                            "hex":  "#8A1538",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "CUW",
-                                            "name":  "Curaçao",
-                                            "iso":  "cw",
-                                            "hex":  "#002B7F",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
                                             "live":  false
                                         }
                                     ]
@@ -619,10 +619,25 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Ecuador",
+                     "away":  "Curaçao",
+                     "homeAbbr":  "ECU",
+                     "awayAbbr":  "CUW",
+                     "homeIso":  "ec",
+                     "awayIso":  "cw",
+                     "hOwn":  "Ellie",
+                     "aOwn":  "Ellie",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "4\u0027",
+                     "detail":  "4\u0027"
+                 }
              ],
     "story":  [
-                  "Quince tops the pile on 17 pts \u0026mdash; and with their six teams having played just 10 games between them, there\u0027s plenty more in the tank.",
+                  "Top of the tree: Quince (17 pts), powered by 5 win(s) across their six nations.",
                   "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Big Pewerk\u0027s nations are the entertainers, banging in 19 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
