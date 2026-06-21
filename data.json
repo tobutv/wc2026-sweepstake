@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 22:05",
+                 "stamp":  "21 Jun 2026 22:10",
                  "playedCount":  38,
                  "totalMatches":  104,
                  "leaderName":  "Ellie",
@@ -249,7 +249,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  1,
+                          "delta":  0,
                           "ptsBg":  "#A68F3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#2E5D59",
@@ -553,7 +553,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  1,
+                          "delta":  0,
                           "ptsBg":  "#776E3E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#2E5D59",
