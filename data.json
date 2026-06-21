@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 20:45",
+                 "stamp":  "21 Jun 2026 20:50",
                  "playedCount":  37,
                  "totalMatches":  104,
                  "leaderName":  "Ellie",
@@ -632,8 +632,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "45\u0027",
-                     "detail":  "45\u0027"
+                     "clock":  "45\u0027+5\u0027",
+                     "detail":  "45\u0027+5\u0027"
                  }
              ],
     "story":  [
