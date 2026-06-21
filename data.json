@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 01:05",
+                 "stamp":  "21 Jun 2026 01:07",
                  "playedCount":  34,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -632,16 +632,19 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "4\u0027",
-                     "detail":  "4\u0027"
+                     "clock":  "6\u0027",
+                     "detail":  "6\u0027"
                  }
              ],
     "story":  [
-                  "Top of the tree: Quince (17 pts), powered by 5 win(s) across their six nations.",
-                  "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
-                  "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
-                  "Big Pewerk\u0027s nations are the entertainers, banging in 19 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Murray props up the table on 7 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
+                  "Top of the pile, \u003cb\u003eQuince\u003c/b\u003e owns the biggest hammering so far \u0026mdash; Sweden winning 5-1.",
+                  "\u003cb\u003eBig Pewerk\u003c/b\u003e is lugging dead weight: Iraq has played and banked precisely nothing.",
+                  "\u003cb\u003eEllie\u003c/b\u003e is essentially a one-nation portfolio: Germany alone accounts for 50% of their points. If that lot wobble, the whole thing topples.",
+                  "\u003cb\u003eSid\u003c/b\u003e has quietly kept 3 clean sheet(s) \u0026mdash; winning ugly, but winning.",
+                  "\u003cb\u003eEtan\u003c/b\u003e\u0027s nations are the entertainers \u0026mdash; 11 goals between them, GD of -2. Box office.",
+                  "\u003cb\u003eElsa\u003c/b\u003e\u0027s defence is more of a suggestion \u0026mdash; 14 conceded already, Tunisia alone shipping 5.",
+                  "\u003cb\u003eIke\u003c/b\u003e\u0027s standout result is France\u0027s 3-1 demolition job.",
+                  "Propping it all up, \u003cb\u003eMurray\u003c/b\u003e is the draw specialist of the group: 4 stalemates and counting. A point\u0027s a point."
               ],
     "fixtures":  [
                      {
