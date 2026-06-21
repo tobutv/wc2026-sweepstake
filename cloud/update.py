@@ -93,6 +93,7 @@ def main():
     teams = cfg["teams"]
     players_cfg = cfg["players"]
     total_matches = cfg["totalMatches"]
+    flair = cfg.get("flair", {})
 
     # canonical full-name -> abbr
     canon_to_abbr = {canon(meta["name"]): ab for ab, meta in teams.items()}
@@ -305,7 +306,7 @@ def main():
 
     # --- The Story So Far ---
     played = len(finished)
-    story = build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches)
+    story = build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches, flair)
 
     leader = ranked[0]
     stamp = datetime.now(UK).strftime("%d %b %Y %H:%M")
@@ -329,7 +330,7 @@ def main():
     print("DATA written: %s (played=%d, leader=%s %d)" % (out, played, leader["name"], leader["ProjPts"]))
 
 
-def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches):
+def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches, flair):
     """A funny, flowing 3-paragraph round-up. Each participant (first to last) gets a
     distinct 'beyond the table' quirk, stitched together with connective tissue.
     Deterministic so it only changes when the stats do, not on every refresh."""
@@ -340,7 +341,7 @@ def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches
     used = set()
     beats = []
     for idx, rp in enumerate(ranked):
-        cands = player_insights(rp, idx + 1, n, players_cfg, stat, teams, team_matches)
+        cands = player_insights(rp, idx + 1, n, players_cfg, stat, teams, team_matches, flair)
         cands.sort(key=lambda c: -c[0])
         chosen = next((c for c in cands if c[1] not in used), cands[0] if cands else None)
         if chosen:
@@ -367,7 +368,7 @@ def tname(teams, ab):
     return teams.get(ab, {}).get("name", ab)
 
 
-def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches):
+def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches, flair):
     """Return a list of (salience, type, html) candidate observations for one player.
     Texts are name-led and self-contained (paragraph assembly handles position)."""
     name = rp["name"]
@@ -407,11 +408,17 @@ def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches):
     share = round(100.0 * contrib[best_ab] / pts) if (best_ab and pts > 0) else 0
     sign = "+" if gd >= 0 else ""
     nm = "<b>%s</b>" % name
+
+    def tnf(ab):  # team name + national cliché, e.g. "Germany (ruthlessly, tediously efficient)"
+        base = tname(teams, ab)
+        fl = flair.get(ab, "")
+        return ("%s (%s)" % (base, fl)) if fl else base
+
     c = []
 
     if pts > 0 and share >= 50 and contrib[best_ab] > 0:
         c.append((share + 20, "reliance",
-                  "%s is running a full-blown one-nation hostage situation &mdash; %s alone props up %d%% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea." % (nm, tname(teams, best_ab), share)))
+                  "%s is running a full-blown one-nation hostage situation &mdash; %s alone props up %d%% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea." % (nm, tnf(best_ab), share)))
     if pld >= 2 and l == 0 and w >= 2 and d == 0:
         c.append((92, "perfect",
                   "%s is being utterly unbearable about it: every single team they own that's kicked off has won. Somebody frisk them for a crystal ball." % nm))
@@ -425,19 +432,20 @@ def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches):
                   "%s still has %d team(s) yet to so much as lace a boot (%s) &mdash; either untapped genius or fresh heartbreak, still loading." % (nm, len(yet), names)))
     if zero_played:
         c.append((62, "deadweight",
-                  "%s is hauling %s around like a dead fridge up a fire escape &mdash; it's played, and contributed the square root of sod all." % (nm, tname(teams, zero_played[0]))))
+                  "%s is hauling %s around like a dead fridge up a fire escape &mdash; it's played, and contributed the square root of sod all." % (nm, tnf(zero_played[0]))))
     if big_rout and big_rout[0] >= 4:
         c.append((58 + big_rout[0], "rout",
-                  "%s bagged the pasting of the tournament so far, %s romping home %d-%d. Borderline rude." % (nm, tname(teams, big_rout[2]), big_rout[0], big_rout[1])))
+                  "%s bagged the pasting of the tournament so far, %s romping home %d-%d. Borderline rude." % (nm, tnf(big_rout[2]), big_rout[0], big_rout[1])))
     elif best_match and best_match[0] >= 2:
         c.append((50 + best_match[0], "bigwin",
-                  "%s's pride and joy is %s's tidy %d-%d spanking &mdash; ruthless, efficient, faintly smug." % (nm, tname(teams, best_match[3]), best_match[1], best_match[2])))
+                  "%s's pride and joy is a tidy %d-%d spanking from %s &mdash; ruthless, efficient, faintly smug." % (nm, best_match[1], best_match[2], tnf(best_match[3]))))
     if gf >= 6:
+        topgf = max(picks, key=lambda a: stat.get(a, {}).get("GF", 0))
         c.append((40 + gf, "goals",
-                  "%s's lot have collectively decided defending is for cowards &mdash; %d goals banged in, GD of %s%d, pure box office." % (nm, gf, sign, gd)))
+                  "%s's lot have collectively decided defending is for cowards &mdash; %d goals banged in (GD %s%d), spearheaded by %s." % (nm, gf, sign, gd, tnf(topgf))))
     if ga >= 7:
         leak = max(played_teams, key=lambda a: stat[a]["GA"]) if played_teams else None
-        leaktxt = (", with %s alone waving in %d." % (tname(teams, leak), stat[leak]["GA"])) if leak else "."
+        leaktxt = (", with %s alone waving in %d." % (tnf(leak), stat[leak]["GA"])) if leak else "."
         c.append((38 + ga, "leaky",
                   "%s's backline has the structural integrity of a wet paper bag &mdash; %d shipped already%s" % (nm, ga, leaktxt)))
     if clean >= 2:
@@ -448,7 +456,7 @@ def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches):
                   "%s is the undisputed sultan of the stalemate: %d draws and counting. Edge-of-the-seat stuff it is not." % (nm, d)))
     if worst_def and worst_def[0] >= 3:
         c.append((42 + worst_def[0], "thumped",
-                  "%s's %s got taken to the absolute cleaners %d-%d &mdash; a scoreline best discussed in hushed, pitying tones." % (nm, tname(teams, worst_def[3]), worst_def[1], worst_def[2])))
+                  "%s watched %s get taken to the absolute cleaners %d-%d &mdash; a scoreline best discussed in hushed, pitying tones." % (nm, tnf(worst_def[3]), worst_def[1], worst_def[2])))
     scoring_teams = [a for a in played_teams if contrib[a] > 0]
     if pts >= 6 and len(scoring_teams) >= 4 and share <= 35:
         c.append((46, "spread",
