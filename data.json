@@ -1,11 +1,11 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 18:45",
-                 "playedCount":  36,
+                 "stamp":  "21 Jun 2026 20:25",
+                 "playedCount":  37,
                  "totalMatches":  104,
                  "leaderName":  "Ellie",
                  "leaderPts":  17,
-                 "ogDesc":  "Ellie leads on 17 pts after 36/104 matches"
+                 "ogDesc":  "Ellie leads on 17 pts after 37/104 matches"
              },
     "anyLive":  true,
     "standings":  [
@@ -18,10 +18,10 @@
                           "gd":  4,
                           "gf":  22,
                           "ga":  18,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
@@ -35,8 +35,8 @@
                                             "iso":  "es",
                                             "hex":  "#AA151B",
                                             "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  true
+                                            "pts":  4,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "GER",
@@ -241,16 +241,16 @@
                           "rank":  4,
                           "name":  "Sid",
                           "isLeader":  false,
-                          "pts":  12,
-                          "pld":  9,
+                          "pts":  13,
+                          "pld":  10,
                           "gd":  1,
                           "gf":  8,
                           "ga":  7,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#9A863B",
+                          "ptsBg":  "#A68F3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#2E5D59",
                           "gfFg":  "#ffffff",
@@ -273,7 +273,7 @@
                                             "hex":  "#ED2939",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
+                                            "live":  true
                                         },
                                         {
                                             "abbr":  "TUR",
@@ -323,8 +323,8 @@
                           "gf":  11,
                           "ga":  17,
                           "livePts":  0,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
                           "ptsBg":  "#8E7E3C",
                           "ptsFg":  "#ffffff",
@@ -385,7 +385,7 @@
                                             "hex":  "#006C35",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  true
+                                            "live":  false
                                         }
                                     ]
                       },
@@ -545,16 +545,16 @@
                           "rank":  8,
                           "name":  "Ike",
                           "isLeader":  false,
-                          "pts":  8,
-                          "pld":  6,
+                          "pts":  9,
+                          "pld":  7,
                           "gd":  -2,
                           "gf":  8,
                           "ga":  10,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#6C663F",
+                          "ptsBg":  "#776E3E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#2E5D59",
                           "gfFg":  "#ffffff",
@@ -586,7 +586,7 @@
                                             "hex":  "#DA0000",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
+                                            "live":  true
                                         },
                                         {
                                             "abbr":  "ALG",
@@ -620,26 +620,26 @@
                   ],
     "live":  [
                  {
-                     "home":  "Spain",
-                     "away":  "Saudi Arabia",
-                     "homeAbbr":  "ESP",
-                     "awayAbbr":  "KSA",
-                     "homeIso":  "es",
-                     "awayIso":  "sa",
-                     "hOwn":  "Ellie",
-                     "aOwn":  "Etan",
-                     "hWin":  1,
-                     "aWin":  -1,
-                     "hs":  4,
+                     "home":  "Belgium",
+                     "away":  "Iran",
+                     "homeAbbr":  "BEL",
+                     "awayAbbr":  "IRN",
+                     "homeIso":  "be",
+                     "awayIso":  "ir",
+                     "hOwn":  "Sid",
+                     "aOwn":  "Ike",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
                      "as":  0,
-                     "clock":  "82\u0027",
-                     "detail":  "82\u0027"
+                     "clock":  "25\u0027",
+                     "detail":  "25\u0027"
                  }
              ],
     "story":  [
-                  "At the very summit, \u003cb\u003eEllie\u003c/b\u003e is the undisputed sultan of the stalemate: 5 draws and counting. Edge-of-the-seat stuff it is not. Hot on their heels, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
-                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is grinding out 3 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Keeping them grim company, \u003cb\u003eEtan\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 11 goals banged in (GD -2), spearheaded by England (bravely marching toward an inevitable penalty heartbreak). And clinging on by their fingernails, \u003cb\u003eElsa\u003c/b\u003e is running a full-blown one-nation hostage situation \u0026mdash; USA (calling it soccer with their whole chest) alone props up 55% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea.",
-                  "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 13 shipped already, with Croatia (old, wily, and will run you into the turf) alone waving in 4. And scraping the very bottom of the barrel, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug."
+                  "At the very summit, \u003cb\u003eEllie\u003c/b\u003e is grinding out 5 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
+                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 3 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eEtan\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 17 shipped already, with Saudi Arabia (will park eleven buses and party at 0-0) alone waving in 5. And clinging on by their fingernails, \u003cb\u003eElsa\u003c/b\u003e is running a full-blown one-nation hostage situation \u0026mdash; USA (calling it soccer with their whole chest) alone props up 55% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea.",
+                  "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 16 goals banged in (GD +3), spearheaded by Japan (tidy, disciplined, devastatingly polite). And scraping the very bottom of the barrel, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug."
               ],
     "fixtures":  [
                      {
@@ -667,9 +667,9 @@
                          "awayIso":  "sa",
                          "hOwn":  "Ellie",
                          "aOwn":  "Etan",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
+                         "hWin":  1,
+                         "aWin":  -1,
+                         "state":  "ft",
                          "ko":  "17:00",
                          "hs":  4,
                          "as":  0
@@ -685,8 +685,10 @@
                          "aOwn":  "Ike",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "20:00"
+                         "state":  "live",
+                         "ko":  "20:00",
+                         "hs":  0,
+                         "as":  0
                      },
                      {
                          "home":  "Uruguay",
@@ -718,6 +720,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Spain",
+                        "away":  "Saudi Arabia",
+                        "homeAbbr":  "ESP",
+                        "awayAbbr":  "KSA",
+                        "homeIso":  "es",
+                        "awayIso":  "sa",
+                        "hOwn":  "Ellie",
+                        "aOwn":  "Etan",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  4,
+                        "as":  0
+                    },
                     {
                         "home":  "Tunisia",
                         "away":  "Japan",
@@ -815,20 +831,6 @@
                         "aWin":  1,
                         "hs":  0,
                         "as":  1
-                    },
-                    {
-                        "home":  "USA",
-                        "away":  "Australia",
-                        "homeAbbr":  "USA",
-                        "awayAbbr":  "AUS",
-                        "homeIso":  "us",
-                        "awayIso":  "au",
-                        "hOwn":  "Elsa",
-                        "aOwn":  "Etan",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  2,
-                        "as":  0
                     }
                 ]
 }
