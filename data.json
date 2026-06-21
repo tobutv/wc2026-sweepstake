@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "21 Jun 2026 00:55",
+                 "stamp":  "21 Jun 2026 01:00",
                  "playedCount":  34,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -622,58 +622,82 @@
 
              ],
     "story":  [
-                  "Quince leads on 17. Their squad\u0027s banked 17 pts off 10 games \u0026mdash; ruthless efficiency, or simply insufferable. You decide.",
+                  "Quince tops the pile on 17 pts \u0026mdash; and with their six teams having played just 10 games between them, there\u0027s plenty more in the tank.",
                   "Big Pewerk trails by 3 \u0026mdash; and worryingly for them, their teams have 1 fewer game(s) banked than the leader. Ground to make up, fast.",
                   "Spare a thought for Big Pewerk, lumbered with Iraq \u0026mdash; played, contributed precisely nothing, and already feeling like a wasted pick.",
                   "Big Pewerk\u0027s nations are the entertainers, banging in 19 goals between them \u0026mdash; box office, even if the points haven\u0027t all followed.",
-                  "Rock bottom: Murray on 7. Their six have managed just 1 win(s) and 12 goal(s) \u0026mdash; the warm sausage rolls beckon."
+                  "Murray props up the table on 7 \u0026mdash; a portfolio currently generating about as much return as a Qatari striker."
               ],
     "fixtures":  [
                      {
-                         "home":  "Netherlands",
-                         "away":  "Sweden",
-                         "homeAbbr":  "NED",
-                         "awayAbbr":  "SWE",
-                         "homeIso":  "nl",
-                         "awayIso":  "se",
-                         "hOwn":  "Big Pewerk",
-                         "aOwn":  "Quince",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "18:00",
-                         "hs":  5,
-                         "as":  1
-                     },
-                     {
-                         "home":  "Germany",
-                         "away":  "Ivory Coast",
-                         "homeAbbr":  "GER",
-                         "awayAbbr":  "CIV",
-                         "homeIso":  "de",
-                         "awayIso":  "ci",
-                         "hOwn":  "Ellie",
-                         "aOwn":  "Big Pewerk",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "21:00",
-                         "hs":  2,
-                         "as":  1
-                     },
-                     {
-                         "home":  "Ecuador",
-                         "away":  "Curaçao",
-                         "homeAbbr":  "ECU",
-                         "awayAbbr":  "CUW",
-                         "homeIso":  "ec",
-                         "awayIso":  "cw",
-                         "hOwn":  "Ellie",
-                         "aOwn":  "Ellie",
+                         "home":  "Tunisia",
+                         "away":  "Japan",
+                         "homeAbbr":  "TUN",
+                         "awayAbbr":  "JPN",
+                         "homeIso":  "tn",
+                         "awayIso":  "jp",
+                         "hOwn":  "Elsa",
+                         "aOwn":  "Murray",
                          "hWin":  0,
                          "aWin":  0,
                          "state":  "ko",
-                         "ko":  "01:00"
+                         "ko":  "05:00"
+                     },
+                     {
+                         "home":  "Spain",
+                         "away":  "Saudi Arabia",
+                         "homeAbbr":  "ESP",
+                         "awayAbbr":  "KSA",
+                         "homeIso":  "es",
+                         "awayIso":  "sa",
+                         "hOwn":  "Ellie",
+                         "aOwn":  "Etan",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "17:00"
+                     },
+                     {
+                         "home":  "Belgium",
+                         "away":  "Iran",
+                         "homeAbbr":  "BEL",
+                         "awayAbbr":  "IRN",
+                         "homeIso":  "be",
+                         "awayIso":  "ir",
+                         "hOwn":  "Sid",
+                         "aOwn":  "Ike",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "20:00"
+                     },
+                     {
+                         "home":  "Uruguay",
+                         "away":  "Cape Verde",
+                         "homeAbbr":  "URU",
+                         "awayAbbr":  "CPV",
+                         "homeIso":  "uy",
+                         "awayIso":  "cv",
+                         "hOwn":  "Ike",
+                         "aOwn":  "Sid",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "23:00"
+                     },
+                     {
+                         "home":  "New Zealand",
+                         "away":  "Egypt",
+                         "homeAbbr":  "NZL",
+                         "awayAbbr":  "EGY",
+                         "homeIso":  "nz",
+                         "awayIso":  "eg",
+                         "hOwn":  "Murray",
+                         "aOwn":  "Elsa",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "02:00"
                      }
                  ],
     "results":  [
