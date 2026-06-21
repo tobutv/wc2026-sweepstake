@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "22 Jun 2026 00:25",
+                 "stamp":  "22 Jun 2026 00:30",
                  "playedCount":  38,
                  "totalMatches":  104,
                  "leaderName":  "Ellie",
@@ -241,18 +241,18 @@
                           "rank":  4,
                           "name":  "Sid",
                           "isLeader":  false,
-                          "pts":  13,
+                          "pts":  14,
                           "pld":  11,
-                          "gd":  0,
-                          "gf":  9,
+                          "gd":  1,
+                          "gf":  10,
                           "ga":  9,
-                          "livePts":  0,
+                          "livePts":  1,
                           "livePld":  1,
                           "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#A68F3B",
+                          "ptsBg":  "#B1973A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#31645C",
+                          "gfBg":  "#356B5E",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#844758",
                           "gaFg":  "#ffffff",
@@ -315,82 +315,6 @@
                       },
                       {
                           "rank":  5,
-                          "name":  "Ike",
-                          "isLeader":  false,
-                          "pts":  12,
-                          "pld":  8,
-                          "gd":  -1,
-                          "gf":  10,
-                          "ga":  11,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
-                          "ptsBg":  "#9A863B",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#356B5E",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#9D4F5D",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "FRA",
-                                            "name":  "France",
-                                            "iso":  "fr",
-                                            "hex":  "#002654",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "URU",
-                                            "name":  "Uruguay",
-                                            "iso":  "uy",
-                                            "hex":  "#4FA8E0",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  true
-                                        },
-                                        {
-                                            "abbr":  "IRN",
-                                            "name":  "Iran",
-                                            "iso":  "ir",
-                                            "hex":  "#DA0000",
-                                            "fg":  "#ffffff",
-                                            "pts":  2,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "ALG",
-                                            "name":  "Algeria",
-                                            "iso":  "dz",
-                                            "hex":  "#006233",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "UZB",
-                                            "name":  "Uzbekistan",
-                                            "iso":  "uz",
-                                            "hex":  "#0099B5",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "GHA",
-                                            "name":  "Ghana",
-                                            "iso":  "gh",
-                                            "hex":  "#FCD116",
-                                            "fg":  "#0a1730",
-                                            "pts":  3,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
-                          "rank":  6,
                           "name":  "Etan",
                           "isLeader":  false,
                           "pts":  11,
@@ -466,7 +390,7 @@
                                     ]
                       },
                       {
-                          "rank":  7,
+                          "rank":  6,
                           "name":  "Elsa",
                           "isLeader":  false,
                           "pts":  11,
@@ -542,7 +466,7 @@
                                     ]
                       },
                       {
-                          "rank":  8,
+                          "rank":  7,
                           "name":  "Murray",
                           "isLeader":  false,
                           "pts":  10,
@@ -616,6 +540,82 @@
                                             "live":  false
                                         }
                                     ]
+                      },
+                      {
+                          "rank":  8,
+                          "name":  "Ike",
+                          "isLeader":  false,
+                          "pts":  10,
+                          "pld":  8,
+                          "gd":  -2,
+                          "gf":  10,
+                          "ga":  12,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#83763D",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#356B5E",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#AA525F",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "FRA",
+                                            "name":  "France",
+                                            "iso":  "fr",
+                                            "hex":  "#002654",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "URU",
+                                            "name":  "Uruguay",
+                                            "iso":  "uy",
+                                            "hex":  "#4FA8E0",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  true
+                                        },
+                                        {
+                                            "abbr":  "IRN",
+                                            "name":  "Iran",
+                                            "iso":  "ir",
+                                            "hex":  "#DA0000",
+                                            "fg":  "#ffffff",
+                                            "pts":  2,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "ALG",
+                                            "name":  "Algeria",
+                                            "iso":  "dz",
+                                            "hex":  "#006233",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "UZB",
+                                            "name":  "Uzbekistan",
+                                            "iso":  "uz",
+                                            "hex":  "#0099B5",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "GHA",
+                                            "name":  "Ghana",
+                                            "iso":  "gh",
+                                            "hex":  "#FCD116",
+                                            "fg":  "#0a1730",
+                                            "pts":  3,
+                                            "live":  false
+                                        }
+                                    ]
                       }
                   ],
     "live":  [
@@ -628,18 +628,18 @@
                      "awayIso":  "cv",
                      "hOwn":  "Ike",
                      "aOwn":  "Sid",
-                     "hWin":  1,
-                     "aWin":  -1,
+                     "hWin":  0,
+                     "aWin":  0,
                      "hs":  2,
-                     "as":  1,
-                     "clock":  "59\u0027",
-                     "detail":  "59\u0027"
+                     "as":  2,
+                     "clock":  "64\u0027",
+                     "detail":  "64\u0027"
                  }
              ],
     "story":  [
                   "At the very summit, \u003cb\u003eEllie\u003c/b\u003e is grinding out 5 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
-                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 4 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug. And clinging on by their fingernails, \u003cb\u003eEtan\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 17 shipped already, with Saudi Arabia (will park eleven buses and party at 0-0) alone waving in 5.",
-                  "Down in the cheap seats, \u003cb\u003eElsa\u003c/b\u003e is running a full-blown one-nation hostage situation \u0026mdash; USA (calling it soccer with their whole chest) alone props up 55% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea. And scraping the very bottom of the barrel, \u003cb\u003eMurray\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 16 goals banged in (GD +3), spearheaded by Japan (tidy, disciplined, devastatingly polite)."
+                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 4 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eEtan\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 17 shipped already, with Saudi Arabia (will park eleven buses and party at 0-0) alone waving in 5. And clinging on by their fingernails, \u003cb\u003eElsa\u003c/b\u003e is running a full-blown one-nation hostage situation \u0026mdash; USA (calling it soccer with their whole chest) alone props up 55% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea.",
+                  "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 16 goals banged in (GD +3), spearheaded by Japan (tidy, disciplined, devastatingly polite). And scraping the very bottom of the barrel, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug."
               ],
     "fixtures":  [
                      {
@@ -704,7 +704,7 @@
                          "state":  "live",
                          "ko":  "23:00",
                          "hs":  2,
-                         "as":  1
+                         "as":  2
                      },
                      {
                          "home":  "New Zealand",
