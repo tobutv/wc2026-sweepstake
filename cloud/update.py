@@ -144,6 +144,7 @@ def main():
 
     # --- team standings from finished matches (3/1/0 on FT score) ---
     stat = {ab: {"Pld": 0, "W": 0, "D": 0, "GF": 0, "GA": 0, "Pts": 0} for ab in teams}
+    team_matches = {ab: [] for ab in teams}   # per-team match log for "beyond the table" quirks
     for m in finished:
         ha, aa = resolve(m["home"]), resolve(m["away"])
         hs, as_ = m["hs"], m["as"]
@@ -151,10 +152,12 @@ def main():
             s = stat[ha]; s["Pld"] += 1; s["GF"] += hs; s["GA"] += as_
             if hs > as_: s["W"] += 1
             elif hs == as_: s["D"] += 1
+            team_matches[ha].append({"gf": hs, "ga": as_, "opp": m["away"]})
         if aa in stat:
             s = stat[aa]; s["Pld"] += 1; s["GF"] += as_; s["GA"] += hs
             if as_ > hs: s["W"] += 1
             elif as_ == hs: s["D"] += 1
+            team_matches[aa].append({"gf": as_, "ga": hs, "opp": m["home"]})
     for ab, s in stat.items():
         s["Pts"] = s["W"] * 3 + s["D"]
 
@@ -302,7 +305,7 @@ def main():
 
     # --- The Story So Far ---
     played = len(finished)
-    story = build_story(ranked, players_cfg, stat, team_pts, teams, played)
+    story = build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches)
 
     leader = ranked[0]
     stamp = datetime.now(UK).strftime("%d %b %Y %H:%M")
@@ -326,74 +329,138 @@ def main():
     print("DATA written: %s (played=%d, leader=%s %d)" % (out, played, leader["name"], leader["ProjPts"]))
 
 
-def player_agg(name, players_cfg, stat):
-    picks = next(p["picks"] for p in players_cfg if p["name"] == name)
-    tot = {"Pts": 0, "Pld": 0, "GF": 0, "GA": 0, "Wins": 0, "Scored": 0, "TeamsPlayed": 0, "Contrib": {}}
-    for ab in picks:
-        s = stat.get(ab)
-        if s:
-            tot["Pts"] += s["Pts"]; tot["Pld"] += s["Pld"]; tot["GF"] += s["GF"]; tot["GA"] += s["GA"]; tot["Wins"] += s["W"]
-            if s["Pld"] > 0: tot["TeamsPlayed"] += 1
-            if s["GF"] > 0: tot["Scored"] += 1
-            tot["Contrib"][ab] = s["Pts"]
-        else:
-            tot["Contrib"][ab] = 0
-    return tot
-
-
-def build_story(ranked, players_cfg, stat, team_pts, teams, played):
-    bits = []
+def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches):
+    """One paragraph per participant, ordered first to last, each surfacing a distinct
+    'beyond the table' quirk. Deterministic (no randomness) so it only changes when the
+    underlying stats change, not on every refresh."""
     if played == 0:
-        bits.append("Nothing's kicked off yet. Eight brave souls, 48 teams, and a frankly unhealthy amount of office trash talk waiting to be unleashed. Strap in.")
-        return bits
-    leader, second, last = ranked[0], ranked[1], ranked[-1]
-    lp, sp2 = leader["ProjPts"], second["ProjPts"]
-    gap = lp - sp2
-    lA = player_agg(leader["name"], players_cfg, stat)
-    sA = player_agg(second["name"], players_cfg, stat)
-    bits.append("%s tops the pile on %d pts &mdash; their six teams have banked %d points off %d games between them." % (leader["name"], lp, lA["Pts"], lA["Pld"]))
-    in_hand = sA["Pld"] - lA["Pld"]
-    if gap == 0:
-        bits.append("It's dead level at the summit with %s &mdash; this one's going to the wire." % second["name"])
-    elif in_hand > 0:
-        bits.append("%s sits %d back, but their teams have played %d more game(s) than the leader's &mdash; %s has fixtures in hand." % (second["name"], gap, in_hand, leader["name"]))
-    elif in_hand < 0:
-        bits.append("%s trails by %d &mdash; and their teams have %d fewer game(s) banked than the leader. Ground to make up." % (second["name"], gap, abs(in_hand)))
-    else:
-        bits.append("%s is %d back with the same games played &mdash; a straight shootout." % (second["name"], gap))
-    # reliance: one team carrying a contender
-    for nm in (leader["name"], second["name"]):
-        a = player_agg(nm, players_cfg, stat)
-        if a["Pts"] > 0:
-            best_ab = max(a["Contrib"], key=lambda k: a["Contrib"][k])
-            share = round(100.0 * a["Contrib"][best_ab] / max(a["Pts"], 1))
-            if share >= 60:
-                bn = teams.get(best_ab, {}).get("name", best_ab)
-                bits.append("%s is leaning hard on %s &mdash; that one team is propping up %d%% of their total." % (nm, bn, share))
-                break
-    # dead weight
-    for p in players_cfg:
-        done = False
-        for ab in p["picks"]:
-            s = stat.get(ab)
-            if s and s["Pld"] >= 1 and s["Pts"] == 0:
-                bits.append("Spare a thought for %s, lumbered with %s &mdash; played, and contributed precisely nothing." % (p["name"], teams.get(ab, {}).get("name", ab)))
-                done = True
-                break
-        if done:
-            break
-    # goal machine
-    best_gf, best_gf_p = -1, ""
-    for p in players_cfg:
-        a = player_agg(p["name"], players_cfg, stat)
-        if a["GF"] > best_gf:
-            best_gf, best_gf_p = a["GF"], p["name"]
-    if best_gf > 0:
-        bits.append("%s's nations are the entertainers, banging in %d goals between them." % (best_gf_p, best_gf))
-    # wooden spoon
-    lowA = player_agg(last["name"], players_cfg, stat)
-    bits.append("Rock bottom: %s on %d. Their six have managed just %d win(s) and %d goal(s) &mdash; the warm sausage rolls beckon." % (last["name"], last["ProjPts"], lowA["Wins"], lowA["GF"]))
+        return ["Nothing's kicked off yet. Eight brave souls, 48 teams, and a frankly "
+                "unhealthy amount of office trash talk waiting to be unleashed. Strap in."]
+    n = len(ranked)
+    used = set()
+    bits = []
+    for idx, rp in enumerate(ranked):
+        cands = player_insights(rp, idx + 1, n, players_cfg, stat, teams, team_matches)
+        cands.sort(key=lambda c: -c[0])
+        chosen = next((c for c in cands if c[1] not in used), cands[0] if cands else None)
+        if chosen:
+            used.add(chosen[1])
+            bits.append(chosen[2])
+        else:
+            bits.append("<b>%s</b> is quietly keeping their powder dry." % rp["name"])
     return bits
+
+
+def tname(teams, ab):
+    return teams.get(ab, {}).get("name", ab)
+
+
+def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches):
+    """Return a list of (salience, type, html) candidate observations for one player."""
+    name = rp["name"]
+    picks = next(p["picks"] for p in players_cfg if p["name"] == name)
+    pts = gf = ga = w = d = l = pld = 0
+    contrib = {}
+    yet = []
+    played_teams = []
+    zero_played = []
+    best_match = None      # biggest win margin (gf-ga, gf, ga, ab)
+    big_rout = None        # most goals in one match (gf, ga, ab)
+    worst_def = None       # heaviest defeat (ga-gf, gf, ga, ab)
+    clean = 0
+    for ab in picks:
+        s = stat.get(ab, {"Pld": 0, "W": 0, "D": 0, "GF": 0, "GA": 0, "Pts": 0})
+        pts += s["Pts"]; gf += s["GF"]; ga += s["GA"]; w += s["W"]; d += s["D"]; pld += s["Pld"]
+        contrib[ab] = s["Pts"]
+        if s["Pld"] == 0:
+            yet.append(ab)
+        else:
+            played_teams.append(ab)
+            if s["Pts"] == 0:
+                zero_played.append(ab)
+        for m in team_matches.get(ab, []):
+            margin = m["gf"] - m["ga"]
+            if m["ga"] == 0:
+                clean += 1
+            if m["gf"] > m["ga"] and (best_match is None or margin > best_match[0]):
+                best_match = (margin, m["gf"], m["ga"], ab)
+            if big_rout is None or m["gf"] > big_rout[0]:
+                big_rout = (m["gf"], m["ga"], ab)
+            if m["ga"] > m["gf"] and (worst_def is None or (m["ga"] - m["gf"]) > worst_def[0]):
+                worst_def = (m["ga"] - m["gf"], m["gf"], m["ga"], ab)
+    l = pld - w - d
+    gd = gf - ga
+    best_ab = max(contrib, key=lambda k: contrib[k]) if contrib else None
+    share = round(100.0 * contrib[best_ab] / pts) if (best_ab and pts > 0) else 0
+
+    pos = ("Top of the pile, " if rank == 1 else ("Propping it all up, " if rank == n else ""))
+    nm = "<b>%s</b>" % name
+    c = []
+
+    # reliance — one nation carrying the campaign
+    if pts > 0 and share >= 50 and contrib[best_ab] > 0:
+        c.append((share + 20, "reliance",
+                  "%s%s is essentially a one-nation portfolio: %s alone accounts for %d%% of their points. If that lot wobble, the whole thing topples." % (pos, nm, tname(teams, best_ab), share)))
+    # perfect record
+    if pld >= 2 and l == 0 and w >= 2 and d == 0:
+        c.append((92, "perfect",
+                  "%s%s hasn't put a foot wrong &mdash; all %d of their teams that have played have won. Insufferable, frankly." % (pos, nm, w)))
+    # winless despite playing
+    if pld >= 2 and w == 0:
+        tail = ("just %d draw%s keeping them off the floor" % (d, "" if d == 1 else "s")) if d > 0 else "and nothing yet to show for it"
+        c.append((88, "winless",
+                  "%s%s is still chasing a first win &mdash; %d games played, not one victory, %s." % (pos, nm, pld, tail)))
+    # games in hand
+    if len(yet) >= 1:
+        names = ", ".join(tname(teams, a) for a in yet)
+        c.append((40 + 12 * len(yet), "inhand",
+                  "%s%s still has %d of their six yet to kick a ball (%s) &mdash; whatever they've got, there's plenty more in the tank." % (pos, nm, len(yet), names)))
+    # dead weight
+    if zero_played:
+        za = zero_played[0]
+        c.append((62, "deadweight",
+                  "%s%s is lugging dead weight: %s has played and banked precisely nothing." % (pos, nm, tname(teams, za))))
+    # rout / biggest scoreline
+    if big_rout and big_rout[0] >= 4:
+        c.append((58 + big_rout[0], "rout",
+                  "%s%s owns the biggest hammering so far &mdash; %s winning %d-%d." % (pos, nm, tname(teams, big_rout[2]), big_rout[0], big_rout[1])))
+    # biggest win margin (if not already a rout)
+    elif best_match and best_match[0] >= 2:
+        c.append((50 + best_match[0], "bigwin",
+                  "%s%s's standout result is %s's %d-%d demolition job." % (pos, nm, tname(teams, best_match[3]), best_match[1], best_match[2])))
+    # goal machine
+    if gf >= 6:
+        c.append((40 + gf, "goals",
+                  "%s%s's nations are the entertainers &mdash; %d goals between them, GD of %s%d. Box office." % (pos, nm, gf, ("+" if gd >= 0 else ""), gd)))
+    # leaky defence
+    if ga >= 7:
+        leak = max(played_teams, key=lambda a: stat[a]["GA"]) if played_teams else None
+        leaktxt = (" %s alone shipping %d." % (tname(teams, leak), stat[leak]["GA"])) if leak else ""
+        c.append((38 + ga, "leaky",
+                  "%s%s's defence is more of a suggestion &mdash; %d conceded already,%s" % (pos, nm, ga, leaktxt)))
+    # clean sheets
+    if clean >= 2:
+        c.append((44 + 6 * clean, "cleansheets",
+                  "%s%s has quietly kept %d clean sheets &mdash; winning ugly, but winning." % (pos, nm, clean)))
+    # draw merchant
+    if d >= 3:
+        c.append((40 + 6 * d, "draws",
+                  "%s%s is the draw specialist of the group: %d stalemates and counting. A point's a point." % (pos, nm, d)))
+    # heavy defeat
+    if worst_def and worst_def[0] >= 3:
+        c.append((42 + worst_def[0], "thumped",
+                  "%s%s took the heaviest hiding of their lot &mdash; %s done %d-%d." % (pos, nm, tname(teams, worst_def[3]), worst_def[1], worst_def[2])))
+    # even spread (anti-reliance) — points well distributed
+    scoring_teams = [a for a in played_teams if contrib[a] > 0]
+    if pts >= 6 and len(scoring_teams) >= 4 and share <= 35:
+        c.append((46, "spread",
+                  "%s%s is the model of diversification &mdash; %d of their teams have chipped in points, no single passenger carrying the load." % (pos, nm, len(scoring_teams))))
+
+    # always-available fallback so everyone gets a line
+    c.append((5, "summary",
+              "%s%s &mdash; %d pts from %d games (%d W, %d D, %d L), GD %s%d." % (
+                  pos, nm, pts, pld, w, d, l, ("+" if gd >= 0 else ""), gd)))
+    return c
 
 
 if __name__ == "__main__":
