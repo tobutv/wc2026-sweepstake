@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "22 Jun 2026 19:55",
+                 "stamp":  "22 Jun 2026 20:00",
                  "playedCount":  40,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -16,17 +16,17 @@
                           "pts":  20,
                           "pld":  12,
                           "gd":  3,
-                          "gf":  19,
-                          "ga":  16,
+                          "gf":  20,
+                          "ga":  17,
                           "livePts":  3,
                           "livePld":  2,
                           "hasLive":  true,
                           "delta":  0,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
-                          "gfBg":  "#58A974",
+                          "gfBg":  "#5BB076",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D35E65",
+                          "gaBg":  "#DF6267",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -630,10 +630,10 @@
                      "aOwn":  "Quince",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  1,
+                     "hs":  2,
                      "as":  0,
-                     "clock":  "90\u0027+1\u0027",
-                     "detail":  "90\u0027+1\u0027"
+                     "clock":  "90\u0027+6\u0027",
+                     "detail":  "90\u0027+6\u0027"
                  }
              ],
     "story":  [
@@ -655,7 +655,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "18:00",
-                         "hs":  1,
+                         "hs":  2,
                          "as":  0
                      },
                      {
