@@ -1,18 +1,94 @@
 {
     "meta":  {
-                 "stamp":  "22 Jun 2026 18:00",
+                 "stamp":  "22 Jun 2026 18:05",
                  "playedCount":  40,
                  "totalMatches":  104,
-                 "leaderName":  "Ellie",
-                 "leaderPts":  17,
-                 "ogDesc":  "Ellie leads on 17 pts after 40/104 matches"
+                 "leaderName":  "Quince",
+                 "leaderPts":  19,
+                 "ogDesc":  "Quince leads on 19 pts after 40/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
-                          "name":  "Ellie",
+                          "name":  "Quince",
                           "isLeader":  true,
+                          "pts":  19,
+                          "pld":  12,
+                          "gd":  3,
+                          "gf":  18,
+                          "ga":  15,
+                          "livePts":  2,
+                          "livePld":  2,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#D4AF37",
+                          "ptsFg":  "#0a1730",
+                          "gfBg":  "#54A271",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#C75B63",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "ARG",
+                                            "name":  "Argentina",
+                                            "iso":  "ar",
+                                            "hex":  "#75AADB",
+                                            "fg":  "#0a1730",
+                                            "pts":  3,
+                                            "live":  true
+                                        },
+                                        {
+                                            "abbr":  "MEX",
+                                            "name":  "Mexico",
+                                            "iso":  "mx",
+                                            "hex":  "#006847",
+                                            "fg":  "#ffffff",
+                                            "pts":  6,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "AUT",
+                                            "name":  "Austria",
+                                            "iso":  "at",
+                                            "hex":  "#ED2939",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  true
+                                        },
+                                        {
+                                            "abbr":  "SWE",
+                                            "name":  "Sweden",
+                                            "iso":  "se",
+                                            "hex":  "#FECC00",
+                                            "fg":  "#0a1730",
+                                            "pts":  3,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "RSA",
+                                            "name":  "South Africa",
+                                            "iso":  "za",
+                                            "hex":  "#007749",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        },
+                                        {
+                                            "abbr":  "BIH",
+                                            "name":  "Bosnia Herzegovina",
+                                            "iso":  "ba",
+                                            "hex":  "#002F6C",
+                                            "fg":  "#ffffff",
+                                            "pts":  1,
+                                            "live":  false
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  2,
+                          "name":  "Ellie",
+                          "isLeader":  false,
                           "pts":  17,
                           "pld":  12,
                           "gd":  4,
@@ -22,7 +98,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#D4AF37",
+                          "ptsBg":  "#BFA039",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
@@ -86,82 +162,6 @@
                                     ]
                       },
                       {
-                          "rank":  2,
-                          "name":  "Quince",
-                          "isLeader":  false,
-                          "pts":  17,
-                          "pld":  10,
-                          "gd":  3,
-                          "gf":  18,
-                          "ga":  15,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#D4AF37",
-                          "ptsFg":  "#0a1730",
-                          "gfBg":  "#54A271",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#C75B63",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "ARG",
-                                            "name":  "Argentina",
-                                            "iso":  "ar",
-                                            "hex":  "#75AADB",
-                                            "fg":  "#0a1730",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "MEX",
-                                            "name":  "Mexico",
-                                            "iso":  "mx",
-                                            "hex":  "#006847",
-                                            "fg":  "#ffffff",
-                                            "pts":  6,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "AUT",
-                                            "name":  "Austria",
-                                            "iso":  "at",
-                                            "hex":  "#ED2939",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "SWE",
-                                            "name":  "Sweden",
-                                            "iso":  "se",
-                                            "hex":  "#FECC00",
-                                            "fg":  "#0a1730",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "RSA",
-                                            "name":  "South Africa",
-                                            "iso":  "za",
-                                            "hex":  "#007749",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "BIH",
-                                            "name":  "Bosnia Herzegovina",
-                                            "iso":  "ba",
-                                            "hex":  "#002F6C",
-                                            "fg":  "#ffffff",
-                                            "pts":  1,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
                           "rank":  3,
                           "name":  "Big Pewerk",
                           "isLeader":  false,
@@ -174,7 +174,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#B1973A",
+                          "ptsBg":  "#A08B3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#58A974",
                           "gfFg":  "#ffffff",
@@ -250,7 +250,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#B1973A",
+                          "ptsBg":  "#A08B3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#356B5E",
                           "gfFg":  "#ffffff",
@@ -326,7 +326,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#B1973A",
+                          "ptsBg":  "#A08B3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#448668",
                           "gfFg":  "#ffffff",
@@ -402,7 +402,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#8E7E3C",
+                          "ptsBg":  "#81753D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#397260",
                           "gfFg":  "#ffffff",
@@ -478,7 +478,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#83763D",
+                          "ptsBg":  "#776E3E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#509B6F",
                           "gfFg":  "#ffffff",
@@ -554,7 +554,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#83763D",
+                          "ptsBg":  "#776E3E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#356B5E",
                           "gfFg":  "#ffffff",
@@ -619,10 +619,25 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Argentina",
+                     "away":  "Austria",
+                     "homeAbbr":  "ARG",
+                     "awayAbbr":  "AUT",
+                     "homeIso":  "ar",
+                     "awayIso":  "at",
+                     "hOwn":  "Quince",
+                     "aOwn":  "Quince",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "4\u0027",
+                     "detail":  "4\u0027"
+                 }
              ],
     "story":  [
-                  "At the very summit, \u003cb\u003eEllie\u003c/b\u003e is grinding out 5 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
+                  "At the very summit, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Hot on their heels, \u003cb\u003eEllie\u003c/b\u003e is grinding out 5 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
                   "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 5 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eElsa\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 19 shipped already, with Tunisia (stubborn, organised, impossible to love) alone waving in 9. And clinging on by their fingernails, \u003cb\u003eEtan\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 11 goals banged in (GD -6), spearheaded by England (bravely marching toward an inevitable penalty heartbreak).",
                   "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e is simply... there \u0026mdash; 10 pts from 10 games (2W 4D 4L), the beige wallpaper of the leaderboard. And scraping the very bottom of the barrel, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug."
               ],
@@ -638,8 +653,10 @@
                          "aOwn":  "Quince",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "18:00"
+                         "state":  "live",
+                         "ko":  "18:00",
+                         "hs":  0,
+                         "as":  0
                      },
                      {
                          "home":  "France",
