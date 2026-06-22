@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "23 Jun 2026 00:05",
+                 "stamp":  "23 Jun 2026 00:10",
                  "playedCount":  41,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -633,7 +633,7 @@
                      "hs":  1,
                      "as":  0,
                      "clock":  "45\u0027+3\u0027",
-                     "detail":  "HT"
+                     "detail":  "Delay"
                  }
              ],
     "story":  [
@@ -669,10 +669,8 @@
                          "aOwn":  "Big Pewerk",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "live",
-                         "ko":  "22:00",
-                         "hs":  1,
-                         "as":  0
+                         "state":  "ko",
+                         "ko":  "22:00"
                      },
                      {
                          "home":  "Norway",
