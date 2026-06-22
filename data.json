@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "22 Jun 2026 03:40",
+                 "stamp":  "22 Jun 2026 03:45",
                  "playedCount":  39,
                  "totalMatches":  104,
                  "leaderName":  "Ellie",
@@ -319,8 +319,8 @@
                           "isLeader":  false,
                           "pts":  14,
                           "pld":  11,
-                          "gd":  -6,
-                          "gf":  13,
+                          "gd":  -5,
+                          "gf":  14,
                           "ga":  19,
                           "livePts":  3,
                           "livePld":  1,
@@ -328,7 +328,7 @@
                           "delta":  0,
                           "ptsBg":  "#B1973A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#417F65",
+                          "gfBg":  "#448668",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
@@ -471,9 +471,9 @@
                           "isLeader":  false,
                           "pts":  10,
                           "pld":  10,
-                          "gd":  2,
+                          "gd":  1,
                           "gf":  17,
-                          "ga":  15,
+                          "ga":  16,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
@@ -482,7 +482,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#509B6F",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#C75B63",
+                          "gaBg":  "#D35E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -631,9 +631,9 @@
                      "hWin":  -1,
                      "aWin":  1,
                      "hs":  1,
-                     "as":  2,
-                     "clock":  "79\u0027",
-                     "detail":  "79\u0027"
+                     "as":  3,
+                     "clock":  "84\u0027",
+                     "detail":  "84\u0027"
                  }
              ],
     "story":  [
