@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "22 Jun 2026 20:00",
-                 "playedCount":  40,
+                 "stamp":  "22 Jun 2026 20:05",
+                 "playedCount":  41,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  20,
-                 "ogDesc":  "Quince leads on 20 pts after 40/104 matches"
+                 "ogDesc":  "Quince leads on 20 pts after 41/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -18,10 +18,10 @@
                           "gd":  3,
                           "gf":  20,
                           "ga":  17,
-                          "livePts":  3,
-                          "livePld":  2,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#5BB076",
@@ -35,8 +35,8 @@
                                             "iso":  "ar",
                                             "hex":  "#75AADB",
                                             "fg":  "#0a1730",
-                                            "pts":  3,
-                                            "live":  true
+                                            "pts":  6,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "MEX",
@@ -54,7 +54,7 @@
                                             "hex":  "#ED2939",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  true
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "SWE",
@@ -619,26 +619,11 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Argentina",
-                     "away":  "Austria",
-                     "homeAbbr":  "ARG",
-                     "awayAbbr":  "AUT",
-                     "homeIso":  "ar",
-                     "awayIso":  "at",
-                     "hOwn":  "Quince",
-                     "aOwn":  "Quince",
-                     "hWin":  1,
-                     "aWin":  -1,
-                     "hs":  2,
-                     "as":  0,
-                     "clock":  "90\u0027+6\u0027",
-                     "detail":  "90\u0027+6\u0027"
-                 }
+
              ],
     "story":  [
-                  "At the very summit, \u003cb\u003eQuince\u003c/b\u003e bagged the pasting of the tournament so far, Sweden (tall, blond and flat-pack efficient) romping home 5-1. Borderline rude. Hot on their heels, \u003cb\u003eEllie\u003c/b\u003e is grinding out 5 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e is hauling Iraq (all passion, light on polish) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
-                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 5 draws and counting. Edge-of-the-seat stuff it is not. Keeping them grim company, \u003cb\u003eElsa\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 19 shipped already, with Tunisia (stubborn, organised, impossible to love) alone waving in 9. And clinging on by their fingernails, \u003cb\u003eEtan\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 11 goals banged in (GD -6), spearheaded by England (bravely marching toward an inevitable penalty heartbreak).",
+                  "At the very summit, \u003cb\u003eQuince\u003c/b\u003e is grinding out 4 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eEllie\u003c/b\u003e is the undisputed sultan of the stalemate: 5 draws and counting. Edge-of-the-seat stuff it is not. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e bagged the pasting of the tournament so far, Netherlands (beautiful football, then a fistfight among themselves) romping home 5-1. Borderline rude.",
+                  "Wading into the midtable swamp, \u003cb\u003eSid\u003c/b\u003e is hauling Türkiye (100% passion, 100% chaos, 0% chill) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all. Keeping them grim company, \u003cb\u003eElsa\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 19 shipped already, with Tunisia (stubborn, organised, impossible to love) alone waving in 9. And clinging on by their fingernails, \u003cb\u003eEtan\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 11 goals banged in (GD -6), spearheaded by England (bravely marching toward an inevitable penalty heartbreak).",
                   "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e is simply... there \u0026mdash; 10 pts from 10 games (2W 4D 4L), the beige wallpaper of the leaderboard. And scraping the very bottom of the barrel, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-1 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug."
               ],
     "fixtures":  [
@@ -651,9 +636,9 @@
                          "awayIso":  "at",
                          "hOwn":  "Quince",
                          "aOwn":  "Quince",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
+                         "hWin":  1,
+                         "aWin":  -1,
+                         "state":  "ft",
                          "ko":  "18:00",
                          "hs":  2,
                          "as":  0
@@ -702,6 +687,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Argentina",
+                        "away":  "Austria",
+                        "homeAbbr":  "ARG",
+                        "awayAbbr":  "AUT",
+                        "homeIso":  "ar",
+                        "awayIso":  "at",
+                        "hOwn":  "Quince",
+                        "aOwn":  "Quince",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  2,
+                        "as":  0
+                    },
                     {
                         "home":  "New Zealand",
                         "away":  "Egypt",
@@ -798,20 +797,6 @@
                         "hWin":  1,
                         "aWin":  -1,
                         "hs":  2,
-                        "as":  1
-                    },
-                    {
-                        "home":  "Netherlands",
-                        "away":  "Sweden",
-                        "homeAbbr":  "NED",
-                        "awayAbbr":  "SWE",
-                        "homeIso":  "nl",
-                        "awayIso":  "se",
-                        "hOwn":  "Big Pewerk",
-                        "aOwn":  "Quince",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  5,
                         "as":  1
                     }
                 ]
