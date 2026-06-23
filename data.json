@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "23 Jun 2026 02:10",
+                 "stamp":  "23 Jun 2026 02:15",
                  "playedCount":  42,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -167,9 +167,9 @@
                           "isLeader":  false,
                           "pts":  17,
                           "pld":  12,
-                          "gd":  3,
+                          "gd":  2,
                           "gf":  12,
-                          "ga":  9,
+                          "ga":  10,
                           "livePts":  3,
                           "livePld":  1,
                           "hasLive":  true,
@@ -178,7 +178,7 @@
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#3D7863",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#7D4558",
+                          "gaBg":  "#8A4959",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -471,8 +471,8 @@
                           "isLeader":  false,
                           "pts":  11,
                           "pld":  10,
-                          "gd":  -8,
-                          "gf":  11,
+                          "gd":  -7,
+                          "gf":  12,
                           "ga":  19,
                           "livePts":  0,
                           "livePld":  1,
@@ -480,7 +480,7 @@
                           "delta":  0,
                           "ptsBg":  "#7B713E",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#397260",
+                          "gfBg":  "#3D7863",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
@@ -631,9 +631,9 @@
                      "hWin":  1,
                      "aWin":  -1,
                      "hs":  2,
-                     "as":  0,
-                     "clock":  "50\u0027",
-                     "detail":  "50\u0027"
+                     "as":  1,
+                     "clock":  "55\u0027",
+                     "detail":  "55\u0027"
                  }
              ],
     "story":  [
