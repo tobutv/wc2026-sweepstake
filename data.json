@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "23 Jun 2026 01:15",
+                 "stamp":  "23 Jun 2026 01:20",
                  "playedCount":  41,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -632,8 +632,8 @@
                      "aWin":  -1,
                      "hs":  2,
                      "as":  0,
-                     "clock":  "59\u0027",
-                     "detail":  "59\u0027"
+                     "clock":  "64\u0027",
+                     "detail":  "64\u0027"
                  },
                  {
                      "home":  "Norway",
@@ -648,8 +648,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "15\u0027",
-                     "detail":  "15\u0027"
+                     "clock":  "20\u0027",
+                     "detail":  "20\u0027"
                  }
              ],
     "story":  [
