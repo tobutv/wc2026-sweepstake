@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "23 Jun 2026 18:15",
+                 "stamp":  "23 Jun 2026 18:20",
                  "playedCount":  44,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -243,8 +243,8 @@
                           "isLeader":  false,
                           "pts":  17,
                           "pld":  12,
-                          "gd":  -4,
-                          "gf":  15,
+                          "gd":  -3,
+                          "gf":  16,
                           "ga":  19,
                           "livePts":  3,
                           "livePld":  1,
@@ -252,7 +252,7 @@
                           "delta":  0,
                           "ptsBg":  "#B69A39",
                           "ptsFg":  "#0a1730",
-                          "gfBg":  "#488D6A",
+                          "gfBg":  "#4C946D",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#EC6669",
                           "gaFg":  "#ffffff",
@@ -319,9 +319,9 @@
                           "isLeader":  false,
                           "pts":  16,
                           "pld":  11,
-                          "gd":  1,
+                          "gd":  0,
                           "gf":  15,
-                          "ga":  14,
+                          "ga":  15,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
@@ -330,7 +330,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#488D6A",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#B25560",
+                          "gaBg":  "#BE5862",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -630,10 +630,10 @@
                      "aOwn":  "Ike",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  1,
+                     "hs":  2,
                      "as":  0,
-                     "clock":  "15\u0027",
-                     "detail":  "15\u0027"
+                     "clock":  "20\u0027",
+                     "detail":  "20\u0027"
                  }
              ],
     "story":  [
@@ -655,7 +655,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "18:00",
-                         "hs":  1,
+                         "hs":  2,
                          "as":  0
                      },
                      {
