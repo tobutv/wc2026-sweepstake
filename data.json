@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "23 Jun 2026 18:25",
+                 "stamp":  "23 Jun 2026 18:30",
                  "playedCount":  44,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -243,9 +243,9 @@
                           "isLeader":  false,
                           "pts":  17,
                           "pld":  12,
-                          "gd":  -3,
+                          "gd":  -4,
                           "gf":  16,
-                          "ga":  19,
+                          "ga":  20,
                           "livePts":  3,
                           "livePld":  1,
                           "hasLive":  true,
@@ -254,7 +254,7 @@
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#4C946D",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#EC6669",
+                          "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -319,8 +319,8 @@
                           "isLeader":  false,
                           "pts":  16,
                           "pld":  11,
-                          "gd":  0,
-                          "gf":  15,
+                          "gd":  1,
+                          "gf":  16,
                           "ga":  15,
                           "livePts":  0,
                           "livePld":  1,
@@ -328,7 +328,7 @@
                           "delta":  0,
                           "ptsBg":  "#AD933A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#488D6A",
+                          "gfBg":  "#4C946D",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#BE5862",
                           "gaFg":  "#ffffff",
@@ -631,9 +631,9 @@
                      "hWin":  1,
                      "aWin":  -1,
                      "hs":  2,
-                     "as":  0,
-                     "clock":  "25\u0027",
-                     "detail":  "25\u0027"
+                     "as":  1,
+                     "clock":  "29\u0027",
+                     "detail":  "29\u0027"
                  }
              ],
     "story":  [
@@ -656,7 +656,7 @@
                          "state":  "live",
                          "ko":  "18:00",
                          "hs":  2,
-                         "as":  0
+                         "as":  1
                      },
                      {
                          "home":  "England",
