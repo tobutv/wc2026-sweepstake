@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "23 Jun 2026 01:10",
+                 "stamp":  "23 Jun 2026 01:15",
                  "playedCount":  41,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -243,9 +243,9 @@
                           "isLeader":  false,
                           "pts":  14,
                           "pld":  10,
-                          "gd":  3,
+                          "gd":  2,
                           "gf":  19,
-                          "ga":  16,
+                          "ga":  17,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
@@ -254,7 +254,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#58A974",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D35E65",
+                          "gaBg":  "#DF6267",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -395,8 +395,8 @@
                           "isLeader":  false,
                           "pts":  13,
                           "pld":  9,
-                          "gd":  -1,
-                          "gf":  11,
+                          "gd":  0,
+                          "gf":  12,
                           "ga":  12,
                           "livePts":  3,
                           "livePld":  1,
@@ -404,7 +404,7 @@
                           "delta":  0,
                           "ptsBg":  "#8F7F3C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#397260",
+                          "gfBg":  "#3D7863",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#A2505D",
                           "gaFg":  "#ffffff",
@@ -630,10 +630,10 @@
                      "aOwn":  "Big Pewerk",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  1,
+                     "hs":  2,
                      "as":  0,
-                     "clock":  "54\u0027",
-                     "detail":  "54\u0027"
+                     "clock":  "59\u0027",
+                     "detail":  "59\u0027"
                  },
                  {
                      "home":  "Norway",
@@ -648,8 +648,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "9\u0027",
-                     "detail":  "9\u0027"
+                     "clock":  "15\u0027",
+                     "detail":  "15\u0027"
                  }
              ],
     "story":  [
