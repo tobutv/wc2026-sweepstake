@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "26 Jun 2026 00:45",
+                 "stamp":  "26 Jun 2026 00:50",
                  "playedCount":  56,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -632,8 +632,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "45\u0027",
-                     "detail":  "45\u0027"
+                     "clock":  "45\u0027+5\u0027",
+                     "detail":  "45\u0027+5\u0027"
                  },
                  {
                      "home":  "Tunisia",
@@ -648,8 +648,8 @@
                      "aWin":  1,
                      "hs":  0,
                      "as":  2,
-                     "clock":  "45\u0027",
-                     "detail":  "45\u0027"
+                     "clock":  "45\u0027+3\u0027",
+                     "detail":  "HT"
                  }
              ],
     "story":  [
