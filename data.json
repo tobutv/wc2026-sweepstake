@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "25 Jun 2026 22:53",
+                 "stamp":  "25 Jun 2026 22:55",
                  "playedCount":  54,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -632,8 +632,8 @@
                      "aWin":  1,
                      "hs":  0,
                      "as":  2,
-                     "clock":  "90\u0027+2\u0027",
-                     "detail":  "90\u0027+2\u0027"
+                     "clock":  "90\u0027+4\u0027",
+                     "detail":  "90\u0027+4\u0027"
                  },
                  {
                      "home":  "Ecuador",
@@ -648,8 +648,8 @@
                      "aWin":  -1,
                      "hs":  2,
                      "as":  1,
-                     "clock":  "90\u0027+2\u0027",
-                     "detail":  "90\u0027+2\u0027"
+                     "clock":  "90\u0027+4\u0027",
+                     "detail":  "90\u0027+4\u0027"
                  }
              ],
     "story":  [
