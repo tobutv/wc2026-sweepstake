@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "26 Jun 2026 01:10",
-                 "playedCount":  56,
+                 "stamp":  "26 Jun 2026 09:35",
+                 "playedCount":  60,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  30,
-                 "ogDesc":  "Quince leads on 30 pts after 56/104 matches"
+                 "ogDesc":  "Quince leads on 30 pts after 60/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -16,17 +16,17 @@
                           "pts":  30,
                           "pld":  16,
                           "gd":  9,
-                          "gf":  27,
-                          "ga":  18,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "gf":  28,
+                          "ga":  19,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#A5515E",
+                          "gaBg":  "#A3505D",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -62,8 +62,8 @@
                                             "iso":  "se",
                                             "hex":  "#FECC00",
                                             "fg":  "#0a1730",
-                                            "pts":  3,
-                                            "live":  true
+                                            "pts":  4,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "RSA",
@@ -92,17 +92,17 @@
                           "pts":  26,
                           "pld":  15,
                           "gd":  6,
-                          "gf":  27,
-                          "ga":  21,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "gf":  28,
+                          "ga":  22,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#BA9D39",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#BE5862",
+                          "gaBg":  "#BA5761",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -111,8 +111,8 @@
                                             "iso":  "nl",
                                             "hex":  "#FF6600",
                                             "fg":  "#ffffff",
-                                            "pts":  4,
-                                            "live":  true
+                                            "pts":  7,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "COL",
@@ -165,20 +165,20 @@
                           "rank":  3,
                           "name":  "Sid",
                           "isLeader":  false,
-                          "pts":  20,
-                          "pld":  14,
-                          "gd":  1,
-                          "gf":  17,
-                          "ga":  16,
+                          "pts":  23,
+                          "pld":  15,
+                          "gd":  2,
+                          "gf":  20,
+                          "ga":  18,
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#92813C",
+                          "delta":  3,
+                          "ptsBg":  "#A68F3A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#448567",
+                          "gfBg":  "#4B926C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#944C5B",
+                          "gaBg":  "#9B4E5C",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -205,7 +205,7 @@
                                             "iso":  "tr",
                                             "hex":  "#E30A17",
                                             "fg":  "#ffffff",
-                                            "pts":  0,
+                                            "pts":  3,
                                             "live":  false
                                         },
                                         {
@@ -252,9 +252,9 @@
                           "delta":  0,
                           "ptsBg":  "#92813C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#63BE7B",
+                          "gfBg":  "#60B979",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#F8696B",
+                          "gaBg":  "#E86469",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -320,17 +320,17 @@
                           "pts":  17,
                           "pld":  15,
                           "gd":  1,
-                          "gf":  21,
-                          "ga":  20,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "gf":  22,
+                          "ga":  21,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#7F733E",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#509C6F",
+                          "gfBg":  "#519D70",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#B55660",
+                          "gaBg":  "#B25560",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -357,8 +357,8 @@
                                             "iso":  "jp",
                                             "hex":  "#0033A0",
                                             "fg":  "#ffffff",
-                                            "pts":  4,
-                                            "live":  true
+                                            "pts":  5,
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "PAN",
@@ -404,9 +404,9 @@
                           "delta":  0,
                           "ptsBg":  "#7F733E",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#3E7A63",
+                          "gfBg":  "#3C7762",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#A5515E",
+                          "gaBg":  "#9B4E5C",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -470,19 +470,19 @@
                           "name":  "Elsa",
                           "isLeader":  false,
                           "pts":  17,
-                          "pld":  15,
-                          "gd":  -5,
-                          "gf":  21,
-                          "ga":  26,
+                          "pld":  16,
+                          "gd":  -6,
+                          "gf":  24,
+                          "ga":  30,
                           "livePts":  0,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
                           "ptsBg":  "#7F733E",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#509C6F",
+                          "gfBg":  "#57A873",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E76468",
+                          "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -528,7 +528,7 @@
                                             "hex":  "#E70013",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  true
+                                            "live":  false
                                         },
                                         {
                                             "abbr":  "HAI",
@@ -545,20 +545,20 @@
                           "rank":  8,
                           "name":  "Etan",
                           "isLeader":  false,
-                          "pts":  12,
-                          "pld":  12,
+                          "pts":  14,
+                          "pld":  14,
                           "gd":  -8,
                           "gf":  13,
                           "ga":  21,
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#5E5C40",
+                          "delta":  2,
+                          "ptsBg":  "#6B653F",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#376F60",
+                          "gfBg":  "#366C5F",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#BE5862",
+                          "gaBg":  "#B25560",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -585,7 +585,7 @@
                                             "iso":  "au",
                                             "hex":  "#00843D",
                                             "fg":  "#ffffff",
-                                            "pts":  3,
+                                            "pts":  4,
                                             "live":  false
                                         },
                                         {
@@ -594,7 +594,7 @@
                                             "iso":  "py",
                                             "hex":  "#D52B1E",
                                             "fg":  "#ffffff",
-                                            "pts":  3,
+                                            "pts":  4,
                                             "live":  false
                                         },
                                         {
@@ -619,41 +619,10 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Japan",
-                     "away":  "Sweden",
-                     "homeAbbr":  "JPN",
-                     "awayAbbr":  "SWE",
-                     "homeIso":  "jp",
-                     "awayIso":  "se",
-                     "hOwn":  "Murray",
-                     "aOwn":  "Quince",
-                     "hWin":  0,
-                     "aWin":  0,
-                     "hs":  0,
-                     "as":  0,
-                     "clock":  "49\u0027",
-                     "detail":  "49\u0027"
-                 },
-                 {
-                     "home":  "Tunisia",
-                     "away":  "Netherlands",
-                     "homeAbbr":  "TUN",
-                     "awayAbbr":  "NED",
-                     "homeIso":  "tn",
-                     "awayIso":  "nl",
-                     "hOwn":  "Elsa",
-                     "aOwn":  "Big Pewerk",
-                     "hWin":  -1,
-                     "aWin":  1,
-                     "hs":  0,
-                     "as":  2,
-                     "clock":  "50\u0027",
-                     "detail":  "50\u0027"
-                 }
+
              ],
     "story":  [
-                  "At the very summit, \u003cb\u003eQuince\u003c/b\u003e is grinding out 6 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 25 goals banged in (GD +4), spearheaded by Switzerland (neutral, punctual and quietly annoying). Rounding out the smug end of the table, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 5 draws and counting. Edge-of-the-seat stuff it is not.",
+                  "At the very summit, \u003cb\u003eQuince\u003c/b\u003e is grinding out 6 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 28 goals banged in (GD +6), spearheaded by Netherlands (beautiful football, then a fistfight among themselves). Rounding out the smug end of the table, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 5 draws and counting. Edge-of-the-seat stuff it is not.",
                   "Wading into the midtable swamp, \u003cb\u003eEllie\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 28 shipped already, with Qatar (lavishly funded, modestly threatening) alone waving in 10. Keeping them grim company, \u003cb\u003eMurray\u003c/b\u003e is hauling Panama (spirited gatecrashers having the time of their lives) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all. And clinging on by their fingernails, \u003cb\u003eIke\u003c/b\u003e\u0027s pride and joy is a tidy 3-0 spanking from France (world-beaters one dressing-room row from civil war) \u0026mdash; ruthless, efficient, faintly smug.",
                   "Down in the cheap seats, \u003cb\u003eElsa\u003c/b\u003e bagged the pasting of the tournament so far, Portugal (all flair, pout and theatrical collapses) romping home 5-0. Borderline rude. And scraping the very bottom of the barrel, \u003cb\u003eEtan\u003c/b\u003e watched Saudi Arabia (will park eleven buses and party at 0-0) get taken to the absolute cleaners 0-4 \u0026mdash; a scoreline best discussed in hushed, pitying tones."
               ],
@@ -745,6 +714,62 @@
                  ],
     "results":  [
                     {
+                        "home":  "Paraguay",
+                        "away":  "Australia",
+                        "homeAbbr":  "PAR",
+                        "awayAbbr":  "AUS",
+                        "homeIso":  "py",
+                        "awayIso":  "au",
+                        "hOwn":  "Etan",
+                        "aOwn":  "Etan",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  0,
+                        "as":  0
+                    },
+                    {
+                        "home":  "Türkiye",
+                        "away":  "USA",
+                        "homeAbbr":  "TUR",
+                        "awayAbbr":  "USA",
+                        "homeIso":  "tr",
+                        "awayIso":  "us",
+                        "hOwn":  "Sid",
+                        "aOwn":  "Elsa",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  3,
+                        "as":  2
+                    },
+                    {
+                        "home":  "Tunisia",
+                        "away":  "Netherlands",
+                        "homeAbbr":  "TUN",
+                        "awayAbbr":  "NED",
+                        "homeIso":  "tn",
+                        "awayIso":  "nl",
+                        "hOwn":  "Elsa",
+                        "aOwn":  "Big Pewerk",
+                        "hWin":  -1,
+                        "aWin":  1,
+                        "hs":  1,
+                        "as":  3
+                    },
+                    {
+                        "home":  "Japan",
+                        "away":  "Sweden",
+                        "homeAbbr":  "JPN",
+                        "awayAbbr":  "SWE",
+                        "homeIso":  "jp",
+                        "awayIso":  "se",
+                        "hOwn":  "Murray",
+                        "aOwn":  "Quince",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  1,
+                        "as":  1
+                    },
+                    {
                         "home":  "Ecuador",
                         "away":  "Germany",
                         "homeAbbr":  "ECU",
@@ -799,62 +824,6 @@
                         "aWin":  1,
                         "hs":  0,
                         "as":  3
-                    },
-                    {
-                        "home":  "Morocco",
-                        "away":  "Haiti",
-                        "homeAbbr":  "MAR",
-                        "awayAbbr":  "HAI",
-                        "homeIso":  "ma",
-                        "awayIso":  "ht",
-                        "hOwn":  "Sid",
-                        "aOwn":  "Elsa",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  4,
-                        "as":  2
-                    },
-                    {
-                        "home":  "Scotland",
-                        "away":  "Brazil",
-                        "homeAbbr":  "SCO",
-                        "awayAbbr":  "BRA",
-                        "homeIso":  "gb-sct",
-                        "awayIso":  "br",
-                        "hOwn":  "Sid",
-                        "aOwn":  "Murray",
-                        "hWin":  -1,
-                        "aWin":  1,
-                        "hs":  0,
-                        "as":  3
-                    },
-                    {
-                        "home":  "Bosnia Herzegovina",
-                        "away":  "Qatar",
-                        "homeAbbr":  "BIH",
-                        "awayAbbr":  "QAT",
-                        "homeIso":  "ba",
-                        "awayIso":  "qa",
-                        "hOwn":  "Quince",
-                        "aOwn":  "Ellie",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  3,
-                        "as":  1
-                    },
-                    {
-                        "home":  "Switzerland",
-                        "away":  "Canada",
-                        "homeAbbr":  "SUI",
-                        "awayAbbr":  "CAN",
-                        "homeIso":  "ch",
-                        "awayIso":  "ca",
-                        "hOwn":  "Big Pewerk",
-                        "aOwn":  "Ellie",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  2,
-                        "as":  1
                     }
                 ]
 }
