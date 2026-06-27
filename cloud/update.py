@@ -69,6 +69,29 @@ def parse_iso(s):
     return None
 
 
+STANDINGS = "https://site.api.espn.com/apis/v2/sports/soccer/fifa.world/standings?season=2026"
+
+
+def fetch_eliminated(resolve):
+    """Read ESPN's authoritative group standings and return a set of abbrs ESPN marks
+    'Eliminated'. ESPN does the full qualification maths (incl. best-third), so we just
+    trust its note. Returns empty set on any failure (fail-safe: nobody greyed)."""
+    out = set()
+    try:
+        data = fetch(STANDINGS)
+    except Exception as e:
+        print("WARN standings fetch failed: %s" % e)
+        return out
+    for grp in data.get("children", []):
+        for entry in grp.get("standings", {}).get("entries", []):
+            note = (entry.get("note") or {}).get("description", "") or ""
+            if "eliminat" in note.lower():
+                ab = resolve(entry.get("team", {}).get("displayName", ""))
+                if ab:
+                    out.add(ab)
+    return out
+
+
 def text_on(hexcol):
     h = hexcol.lstrip("#")
     r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
@@ -94,6 +117,7 @@ def main():
     players_cfg = cfg["players"]
     total_matches = cfg["totalMatches"]
     flair = cfg.get("flair", {})
+    groups = cfg.get("groups", {})
 
     # canonical full-name -> abbr
     canon_to_abbr = {canon(meta["name"]): ab for ab, meta in teams.items()}
@@ -137,9 +161,17 @@ def main():
                 continue
             if st.get("name") != "STATUS_FULL_TIME":
                 continue
+            pen = None
+            hsh, ash = h.get("shootoutScore"), a.get("shootoutScore")
+            if hsh is not None or ash is not None:
+                try:
+                    if int(hsh or 0) > int(ash or 0): pen = hn
+                    elif int(ash or 0) > int(hsh or 0): pen = an
+                except Exception:
+                    pass
             finished.append({"home": hn, "away": an,
                              "hs": int(h.get("score", 0)), "as": int(a.get("score", 0)),
-                             "ko": ko})
+                             "ko": ko, "penWinner": pen})
 
     print("ESPN finished=%d live=%d" % (len(finished), len(live)))
 
@@ -163,6 +195,27 @@ def main():
         s["Pts"] = s["W"] * 3 + s["D"]
 
     team_pts = {ab: s["Pts"] for ab, s in stat.items()}
+
+    # --- eliminated teams: ESPN's authoritative group-stage notes + knockout losers ---
+    elim = fetch_eliminated(resolve)              # group stage (ESPN does the best-third maths)
+    team_group = {}
+    for g, abs_ in groups.items():
+        for ab in abs_:
+            team_group[ab] = g
+    for m in finished:                            # knockout = any finished inter-group tie
+        ha, aa = resolve(m["home"]), resolve(m["away"])
+        if not ha or not aa:
+            continue
+        if team_group.get(ha) and team_group.get(ha) == team_group.get(aa):
+            continue                              # intra-group = group match, never elimination
+        hs, as_ = m["hs"], m["as"]
+        loser = None
+        if hs > as_: loser = aa
+        elif as_ > hs: loser = ha
+        elif m.get("penWinner"): loser = aa if m["penWinner"] == ha else (ha if m["penWinner"] == aa else None)
+        if loser:
+            elim.add(loser)
+    print("eliminated: %s" % (", ".join(sorted(elim)) if elim else "(none)"))
 
     # --- live overlay: provisional pts/goals from in-progress matches ---
     owner_of = {}
@@ -216,10 +269,11 @@ def main():
         meta = teams.get(ab)
         tp = team_pts.get(ab, 0)
         is_live = ab in live_teams
+        out_ = ab in elim
         if meta:
             return {"abbr": ab, "name": meta["name"], "iso": meta["iso"], "hex": meta["hex"],
-                    "fg": text_on(meta["hex"]), "pts": tp, "live": is_live}
-        return {"abbr": ab, "name": ab, "iso": None, "hex": None, "fg": None, "pts": tp, "live": is_live}
+                    "fg": text_on(meta["hex"]), "pts": tp, "live": is_live, "out": out_}
+        return {"abbr": ab, "name": ab, "iso": None, "hex": None, "fg": None, "pts": tp, "live": is_live, "out": out_}
 
     standings = []
     for i, p in enumerate(ranked):
