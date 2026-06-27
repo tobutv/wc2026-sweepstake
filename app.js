@@ -27,8 +27,10 @@
   function pickCell(p) {
     if (!p) return "<td class='pick'></td>";
     if (p.hex) {
-      return "<td class='pick' title='" + esc(p.name) + "'>" +
-        "<span class='chip' style='background:" + p.hex + ";color:" + p.fg + "'>" +
+      var cls = 'chip' + (p.out ? ' out' : '');
+      var title = esc(p.name) + (p.out ? ' — eliminated' : '');
+      return "<td class='pick' title='" + title + "'>" +
+        "<span class='" + cls + "' style='background:" + p.hex + ";color:" + p.fg + "'>" +
         flag(p.iso, 18) + "<span>" + esc(p.abbr) + "</span></span></td>";
     }
     return "<td class='pick'>" + esc(p.abbr) + "</td>";
@@ -38,11 +40,13 @@
     var bd = '';
     (row.picks || []).forEach(function (p) {
       var liveMark = p.live ? "<i class='blive'>LIVE</i>" : '';
+      var outMark = p.out ? "<i class='bout'>OUT</i>" : '';
+      var cls = 'bchip' + (p.out ? ' out' : '');
       if (p.hex) {
-        bd += "<span class='bchip' style='background:" + p.hex + ";color:" + p.fg + "'>" +
-          flag(p.iso, 14) + "<span>" + esc(p.name) + "</span><b>" + p.pts + "</b>" + liveMark + "</span>";
+        bd += "<span class='" + cls + "' style='background:" + p.hex + ";color:" + p.fg + "'>" +
+          flag(p.iso, 14) + "<span>" + esc(p.name) + "</span><b>" + p.pts + "</b>" + liveMark + outMark + "</span>";
       } else {
-        bd += "<span class='bchip'>" + esc(p.abbr) + " <b>" + p.pts + "</b>" + liveMark + "</span>";
+        bd += "<span class='" + cls + "'>" + esc(p.abbr) + " <b>" + p.pts + "</b>" + liveMark + outMark + "</span>";
       }
     });
     return "<tr class='brow' id='brow-" + row.rank + "'><td colspan='13'>" +
