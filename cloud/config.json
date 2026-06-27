@@ -2,6 +2,20 @@
   "totalMatches": 104,
   "tournamentStart": "20260611",
   "scoringNote": "3 pts win / 1 draw / 0 loss on the full-time score. Penalty shootouts do not change points.",
+  "groups": {
+    "A": ["MEX","RSA","KOR","CZE"],
+    "B": ["CAN","BIH","QAT","SUI"],
+    "C": ["BRA","MAR","HAI","SCO"],
+    "D": ["USA","PAR","AUS","TUR"],
+    "E": ["CIV","ECU","GER","CUW"],
+    "F": ["NED","JPN","SWE","TUN"],
+    "G": ["IRN","NZL","BEL","EGY"],
+    "H": ["KSA","URU","ESP","CPV"],
+    "I": ["FRA","SEN","IRQ","NOR"],
+    "J": ["ARG","ALG","AUT","JOR"],
+    "K": ["POR","COG","UZB","COL"],
+    "L": ["GHA","PAN","ENG","CRO"]
+  },
   "flair": {
     "BRA": "all silk and hips, defending strictly optional",
     "ARG": "nine parts drama to one part genius",
