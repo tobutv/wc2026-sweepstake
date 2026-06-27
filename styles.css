@@ -41,6 +41,13 @@ td.pick{font-size:.74rem} td.pick span{vertical-align:middle}
 .chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:20px;font-weight:800;font-size:.72rem;box-shadow:0 0 0 1px rgba(255,255,255,.1)}
 .chip img.flag{box-shadow:none}
 img.flag{border-radius:3px;vertical-align:middle;box-shadow:0 0 0 1px rgba(255,255,255,.18);object-fit:cover}
+/* eliminated teams — greyed out, desaturated, struck through */
+.chip.out,.bchip.out{background:#2b2740 !important;color:#8c84a6 !important;box-shadow:0 0 0 1px rgba(255,255,255,.06)}
+.chip.out img.flag,.bchip.out img.flag{filter:grayscale(1);opacity:.5}
+.chip.out span,.bchip.out span{text-decoration:line-through;text-decoration-thickness:1px;opacity:.85}
+.bchip.out b{background:rgba(0,0,0,.25);color:#8c84a6}
+.bchip .bout{font-style:normal;font-size:.56rem;font-weight:900;background:#6a6480;color:#1a0c33;padding:0 4px;border-radius:6px;margin-left:2px;text-decoration:none}
+.bchip.out .bout{text-decoration:none}
 tbody tr:nth-child(4n+3) td{background:rgba(28,12,54,.5)}
 tbody tr.leader td{background:linear-gradient(90deg,rgba(255,45,155,.22),rgba(123,47,247,.08))}
 tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
