@@ -389,8 +389,8 @@ def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches
     distinct 'beyond the table' quirk, stitched together with connective tissue.
     Deterministic so it only changes when the stats do, not on every refresh."""
     if played == 0:
-        return ["Not a ball kicked, not a point banked &mdash; just eight wild-eyed optimists and "
-                "48 teams about to find out exactly how misplaced that confidence was. Buckle up."]
+        return ["Not a ball kicked, not a point banked &mdash; just eight deluded optimists about to "
+                "discover their judgement was a catastrophic mistake. Strap in for the humiliation."]
     n = len(ranked)
     used = set()
     beats = []
@@ -402,11 +402,11 @@ def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches
             used.add(chosen[1])
             beats.append(chosen[2])
         else:
-            beats.append("<b>%s</b> is keeping suspiciously quiet." % rp["name"])
+            beats.append("<b>%s</b> is doing absolutely nothing worth mentioning." % rp["name"])
 
-    p1 = ["At the very summit, ", "Hot on their heels, ", "Rounding out the smug end of the table, "]
-    p2 = ["Wading into the midtable swamp, ", "Keeping them grim company, ", "And clinging on by their fingernails, "]
-    p3 = ["Down in the cheap seats, ", "And scraping the very bottom of the barrel, "]
+    p1 = ["Lording it at the top, ", "Smugly in tow, ", "Rounding out the insufferable elite, "]
+    p2 = ["Wallowing in mid-table sludge, ", "Equally forgettable, ", "Barely clinging to relevance, "]
+    p3 = ["Down in the dregs, ", "And scraping the very bottom of the barrel, "]
 
     def para(slice_, leads):
         out = []
@@ -472,52 +472,52 @@ def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches, flair):
 
     if pts > 0 and share >= 50 and contrib[best_ab] > 0:
         c.append((share + 20, "reliance",
-                  "%s is running a full-blown one-nation hostage situation &mdash; %s alone props up %d%% of their points, and if that lot trip over their laces the whole house of cards flutters off into the sea." % (nm, tnf(best_ab), share)))
+                  "%s is a one-team fraud &mdash; %s carries %d%% of their points while the other five freeload; one bad afternoon and the whole charade collapses." % (nm, tnf(best_ab), share)))
     if pld >= 2 and l == 0 and w >= 2 and d == 0:
         c.append((92, "perfect",
-                  "%s is being utterly unbearable about it: every single team they own that's kicked off has won. Somebody frisk them for a crystal ball." % nm))
+                  "%s is being absolutely insufferable &mdash; every team they own that's played has won and they will NOT shut up about it. Someone trip them on the way to the kettle." % nm))
     if pld >= 2 and w == 0:
-        tail = ("just %d draw%s for company" % (d, "" if d == 1 else "s")) if d > 0 else "and precisely nothing to show for it"
+        tail = ("just %d draw%s for company" % (d, "" if d == 1 else "s")) if d > 0 else "and nothing whatsoever to show for it"
         c.append((88, "winless",
-                  "%s is still hunting a first win like a 2am kebab &mdash; %d games deep, zero victories, %s." % (nm, pld, tail)))
+                  "%s is still hunting a first win like the dignity they misplaced weeks ago &mdash; %d games deep, zero victories, %s. Genuinely grim to watch." % (nm, pld, tail)))
     if len(yet) >= 1:
         names = ", ".join(tname(teams, a) for a in yet)
         c.append((40 + 12 * len(yet), "inhand",
-                  "%s still has %d team(s) yet to so much as lace a boot (%s) &mdash; either untapped genius or fresh heartbreak, still loading." % (nm, len(yet), names)))
+                  "%s has %d team(s) yet to so much as lace a boot (%s) &mdash; a stay of execution, not a reprieve." % (nm, len(yet), names)))
     if zero_played:
         c.append((62, "deadweight",
-                  "%s is hauling %s around like a dead fridge up a fire escape &mdash; it's played, and contributed the square root of sod all." % (nm, tnf(zero_played[0]))))
+                  "%s is dragging %s around like a corpse they can't be bothered to bury &mdash; played, achieved nothing, actively dragging the rest down with it." % (nm, tnf(zero_played[0]))))
     if big_rout and big_rout[0] >= 4:
         c.append((58 + big_rout[0], "rout",
-                  "%s bagged the pasting of the tournament so far, %s romping home %d-%d. Borderline rude." % (nm, tnf(big_rout[2]), big_rout[0], big_rout[1])))
+                  "%s got the one moment of joy they'll be dining out on for years &mdash; %s romping home %d-%d. Savour it; it's all downhill from here." % (nm, tnf(big_rout[2]), big_rout[0], big_rout[1])))
     elif best_match and best_match[0] >= 2:
         c.append((50 + best_match[0], "bigwin",
-                  "%s's pride and joy is a tidy %d-%d spanking from %s &mdash; ruthless, efficient, faintly smug." % (nm, best_match[1], best_match[2], tnf(best_match[3]))))
+                  "%s's entire highlight reel is one tidy %d-%d job from %s &mdash; screenshot it, that's the peak of their tournament right there." % (nm, best_match[1], best_match[2], tnf(best_match[3]))))
     if gf >= 6:
         topgf = max(picks, key=lambda a: stat.get(a, {}).get("GF", 0))
         c.append((40 + gf, "goals",
-                  "%s's lot have collectively decided defending is for cowards &mdash; %d goals banged in (GD %s%d), spearheaded by %s." % (nm, gf, sign, gd, tnf(topgf))))
+                  "%s's lot couldn't defend a lead in a locked room, but by god they entertain &mdash; %d goals (GD %s%d), led by %s. Heart-attack football." % (nm, gf, sign, gd, tnf(topgf))))
     if ga >= 7:
         leak = max(played_teams, key=lambda a: stat[a]["GA"]) if played_teams else None
-        leaktxt = (", with %s alone waving in %d." % (tnf(leak), stat[leak]["GA"])) if leak else "."
+        leaktxt = (", with %s haemorrhaging %d on its own." % (tnf(leak), stat[leak]["GA"])) if leak else "."
         c.append((38 + ga, "leaky",
-                  "%s's backline has the structural integrity of a wet paper bag &mdash; %d shipped already%s" % (nm, ga, leaktxt)))
+                  "%s's defence is an active crime scene &mdash; %d shipped already%s" % (nm, ga, leaktxt)))
     if clean >= 2:
         c.append((44 + 6 * clean, "cleansheets",
-                  "%s is grinding out %d clean sheets like a man morally opposed to fun &mdash; ugly, effective, and a touch boring." % (nm, clean)))
+                  "%s is boring the entire office to death &mdash; %d clean sheets, no goals, no thrills, the footballing equivalent of a tax return." % (nm, clean)))
     if d >= 3:
         c.append((40 + 6 * d, "draws",
-                  "%s is the undisputed sultan of the stalemate: %d draws and counting. Edge-of-the-seat stuff it is not." % (nm, d)))
+                  "%s is the undisputed king of the goalless shrug &mdash; %d draws and counting. Paint dries faster and complains less." % (nm, d)))
     if worst_def and worst_def[0] >= 3:
         c.append((42 + worst_def[0], "thumped",
-                  "%s watched %s get taken to the absolute cleaners %d-%d &mdash; a scoreline best discussed in hushed, pitying tones." % (nm, tnf(worst_def[3]), worst_def[1], worst_def[2])))
+                  "%s watched %s get absolutely dismantled %d-%d &mdash; the kind of result the group chat will never let them forget." % (nm, tnf(worst_def[3]), worst_def[1], worst_def[2])))
     scoring_teams = [a for a in played_teams if contrib[a] > 0]
     if pts >= 6 and len(scoring_teams) >= 4 and share <= 35:
         c.append((46, "spread",
-                  "%s has spread the love like a sensible little pension fund &mdash; %d teams all chipping in, not a single passenger. Boringly effective." % (nm, len(scoring_teams))))
+                  "%s has hedged like a coward who won't commit to anyone &mdash; %d teams all chipping in scraps, not one hero among them." % (nm, len(scoring_teams))))
 
     c.append((5, "summary",
-              "%s is simply... there &mdash; %d pts from %d games (%dW %dD %dL), the beige wallpaper of the leaderboard." % (nm, pts, pld, w, d, l)))
+              "%s is just... there &mdash; %d pts, %dW %dD %dL. The human equivalent of beige wallpaper; nobody's talking about them and nobody ever will." % (nm, pts, w, d, l)))
     return c
 
 
