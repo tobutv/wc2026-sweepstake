@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 00:40",
+                 "stamp":  "28 Jun 2026 00:42",
                  "playedCount":  68,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -36,7 +36,8 @@
                                             "hex":  "#75AADB",
                                             "fg":  "#0a1730",
                                             "pts":  6,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "MEX",
@@ -45,7 +46,8 @@
                                             "hex":  "#006847",
                                             "fg":  "#ffffff",
                                             "pts":  9,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "AUT",
@@ -54,7 +56,8 @@
                                             "hex":  "#ED2939",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "SWE",
@@ -63,7 +66,8 @@
                                             "hex":  "#FECC00",
                                             "fg":  "#0a1730",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "RSA",
@@ -72,7 +76,8 @@
                                             "hex":  "#007749",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "BIH",
@@ -81,7 +86,8 @@
                                             "hex":  "#002F6C",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         }
                                     ]
                       },
@@ -112,7 +118,8 @@
                                             "hex":  "#C1272D",
                                             "fg":  "#ffffff",
                                             "pts":  7,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "BEL",
@@ -121,7 +128,8 @@
                                             "hex":  "#ED2939",
                                             "fg":  "#ffffff",
                                             "pts":  5,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "TUR",
@@ -130,7 +138,8 @@
                                             "hex":  "#E30A17",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "NOR",
@@ -139,7 +148,8 @@
                                             "hex":  "#BA0C2F",
                                             "fg":  "#ffffff",
                                             "pts":  6,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "SCO",
@@ -148,7 +158,8 @@
                                             "hex":  "#0065BD",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "CPV",
@@ -157,7 +168,8 @@
                                             "hex":  "#003893",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         }
                                     ]
                       },
@@ -188,7 +200,8 @@
                                             "hex":  "#FF6600",
                                             "fg":  "#ffffff",
                                             "pts":  7,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "COL",
@@ -197,7 +210,8 @@
                                             "hex":  "#FCD116",
                                             "fg":  "#0a1730",
                                             "pts":  6,
-                                            "live":  true
+                                            "live":  true,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "SUI",
@@ -206,7 +220,8 @@
                                             "hex":  "#DA291C",
                                             "fg":  "#ffffff",
                                             "pts":  7,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "CIV",
@@ -215,7 +230,8 @@
                                             "hex":  "#F77F00",
                                             "fg":  "#ffffff",
                                             "pts":  6,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "IRQ",
@@ -224,7 +240,8 @@
                                             "hex":  "#007A33",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "JOR",
@@ -233,12 +250,95 @@
                                             "hex":  "#1A1A1A",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         }
                                     ]
                       },
                       {
                           "rank":  4,
+                          "name":  "Ike",
+                          "isLeader":  false,
+                          "pts":  24,
+                          "pld":  17,
+                          "gd":  -1,
+                          "gf":  22,
+                          "ga":  23,
+                          "livePts":  3,
+                          "livePld":  1,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#AD933A",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#519D70",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#BC5761",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "FRA",
+                                            "name":  "France",
+                                            "iso":  "fr",
+                                            "hex":  "#002654",
+                                            "fg":  "#ffffff",
+                                            "pts":  9,
+                                            "live":  false,
+                                            "out":  false
+                                        },
+                                        {
+                                            "abbr":  "URU",
+                                            "name":  "Uruguay",
+                                            "iso":  "uy",
+                                            "hex":  "#4FA8E0",
+                                            "fg":  "#ffffff",
+                                            "pts":  2,
+                                            "live":  false,
+                                            "out":  false
+                                        },
+                                        {
+                                            "abbr":  "IRN",
+                                            "name":  "Iran",
+                                            "iso":  "ir",
+                                            "hex":  "#DA0000",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  false,
+                                            "out":  false
+                                        },
+                                        {
+                                            "abbr":  "ALG",
+                                            "name":  "Algeria",
+                                            "iso":  "dz",
+                                            "hex":  "#006233",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  false,
+                                            "out":  false
+                                        },
+                                        {
+                                            "abbr":  "UZB",
+                                            "name":  "Uzbekistan",
+                                            "iso":  "uz",
+                                            "hex":  "#0099B5",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  true,
+                                            "out":  true
+                                        },
+                                        {
+                                            "abbr":  "GHA",
+                                            "name":  "Ghana",
+                                            "iso":  "gh",
+                                            "hex":  "#FCD116",
+                                            "fg":  "#0a1730",
+                                            "pts":  4,
+                                            "live":  false,
+                                            "out":  false
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  5,
                           "name":  "Ellie",
                           "isLeader":  false,
                           "pts":  23,
@@ -264,7 +364,8 @@
                                             "hex":  "#AA151B",
                                             "fg":  "#ffffff",
                                             "pts":  7,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "GER",
@@ -273,7 +374,8 @@
                                             "hex":  "#000000",
                                             "fg":  "#ffffff",
                                             "pts":  6,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "ECU",
@@ -282,7 +384,8 @@
                                             "hex":  "#FFD100",
                                             "fg":  "#0a1730",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "CAN",
@@ -291,7 +394,8 @@
                                             "hex":  "#D52B1E",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "QAT",
@@ -300,7 +404,8 @@
                                             "hex":  "#8A1538",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "CUW",
@@ -309,28 +414,29 @@
                                             "hex":  "#002B7F",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         }
                                     ]
                       },
                       {
-                          "rank":  5,
+                          "rank":  6,
                           "name":  "Etan",
                           "isLeader":  false,
-                          "pts":  22,
+                          "pts":  21,
                           "pld":  18,
-                          "gd":  -1,
+                          "gd":  -2,
                           "gf":  20,
-                          "ga":  21,
-                          "livePts":  1,
+                          "ga":  22,
+                          "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#9F8A3B",
+                          "ptsBg":  "#99863C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4B926C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#AD535F",
+                          "gaBg":  "#B45560",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -340,7 +446,8 @@
                                             "hex":  "#1A1A6E",
                                             "fg":  "#ffffff",
                                             "pts":  7,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "SEN",
@@ -349,7 +456,8 @@
                                             "hex":  "#00853F",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "AUS",
@@ -358,7 +466,8 @@
                                             "hex":  "#00843D",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "PAR",
@@ -367,7 +476,8 @@
                                             "hex":  "#D52B1E",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "COG",
@@ -376,7 +486,8 @@
                                             "hex":  "#007FFF",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  true
+                                            "live":  true,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "KSA",
@@ -385,83 +496,8 @@
                                             "hex":  "#006C35",
                                             "fg":  "#ffffff",
                                             "pts":  2,
-                                            "live":  false
-                                        }
-                                    ]
-                      },
-                      {
-                          "rank":  6,
-                          "name":  "Ike",
-                          "isLeader":  false,
-                          "pts":  22,
-                          "pld":  17,
-                          "gd":  -2,
-                          "gf":  21,
-                          "ga":  23,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
-                          "ptsBg":  "#9F8A3B",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#4E986E",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#BC5761",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "FRA",
-                                            "name":  "France",
-                                            "iso":  "fr",
-                                            "hex":  "#002654",
-                                            "fg":  "#ffffff",
-                                            "pts":  9,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "URU",
-                                            "name":  "Uruguay",
-                                            "iso":  "uy",
-                                            "hex":  "#4FA8E0",
-                                            "fg":  "#ffffff",
-                                            "pts":  2,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "IRN",
-                                            "name":  "Iran",
-                                            "iso":  "ir",
-                                            "hex":  "#DA0000",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "ALG",
-                                            "name":  "Algeria",
-                                            "iso":  "dz",
-                                            "hex":  "#006233",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false
-                                        },
-                                        {
-                                            "abbr":  "UZB",
-                                            "name":  "Uzbekistan",
-                                            "iso":  "uz",
-                                            "hex":  "#0099B5",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  true
-                                        },
-                                        {
-                                            "abbr":  "GHA",
-                                            "name":  "Ghana",
-                                            "iso":  "gh",
-                                            "hex":  "#FCD116",
-                                            "fg":  "#0a1730",
-                                            "pts":  4,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         }
                                     ]
                       },
@@ -492,7 +528,8 @@
                                             "hex":  "#FEDF00",
                                             "fg":  "#0a1730",
                                             "pts":  7,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "CRO",
@@ -501,7 +538,8 @@
                                             "hex":  "#E60026",
                                             "fg":  "#ffffff",
                                             "pts":  6,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "JPN",
@@ -510,7 +548,8 @@
                                             "hex":  "#0033A0",
                                             "fg":  "#ffffff",
                                             "pts":  5,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "PAN",
@@ -519,7 +558,8 @@
                                             "hex":  "#DA121A",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "CZE",
@@ -528,7 +568,8 @@
                                             "hex":  "#D7141A",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "NZL",
@@ -537,7 +578,8 @@
                                             "hex":  "#1A1A1A",
                                             "fg":  "#ffffff",
                                             "pts":  1,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         }
                                     ]
                       },
@@ -568,7 +610,8 @@
                                             "hex":  "#C60B1E",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  true
+                                            "live":  true,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "USA",
@@ -577,7 +620,8 @@
                                             "hex":  "#3C3B6E",
                                             "fg":  "#ffffff",
                                             "pts":  6,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "KOR",
@@ -586,7 +630,8 @@
                                             "hex":  "#C5172E",
                                             "fg":  "#ffffff",
                                             "pts":  3,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "EGY",
@@ -595,7 +640,8 @@
                                             "hex":  "#CE1126",
                                             "fg":  "#ffffff",
                                             "pts":  5,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  false
                                         },
                                         {
                                             "abbr":  "TUN",
@@ -604,7 +650,8 @@
                                             "hex":  "#E70013",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "HAI",
@@ -613,7 +660,8 @@
                                             "hex":  "#00209F",
                                             "fg":  "#ffffff",
                                             "pts":  0,
-                                            "live":  false
+                                            "live":  false,
+                                            "out":  true
                                         }
                                     ]
                       }
@@ -632,8 +680,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "9\u0027",
-                     "detail":  "9\u0027"
+                     "clock":  "11\u0027",
+                     "detail":  "11\u0027"
                  },
                  {
                      "home":  "Congo DR",
@@ -644,17 +692,17 @@
                      "awayIso":  "uz",
                      "hOwn":  "Etan",
                      "aOwn":  "Ike",
-                     "hWin":  0,
-                     "aWin":  0,
+                     "hWin":  -1,
+                     "aWin":  1,
                      "hs":  0,
-                     "as":  0,
-                     "clock":  "8\u0027",
-                     "detail":  "8\u0027"
+                     "as":  1,
+                     "clock":  "11\u0027",
+                     "detail":  "11\u0027"
                  }
              ],
     "story":  [
                   "At the very summit, \u003cb\u003eQuince\u003c/b\u003e is grinding out 6 clean sheets like a man morally opposed to fun \u0026mdash; ugly, effective, and a touch boring. Hot on their heels, \u003cb\u003eSid\u003c/b\u003e is the undisputed sultan of the stalemate: 6 draws and counting. Edge-of-the-seat stuff it is not. Rounding out the smug end of the table, \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s lot have collectively decided defending is for cowards \u0026mdash; 28 goals banged in (GD +1), spearheaded by Netherlands (beautiful football, then a fistfight among themselves).",
-                  "Wading into the midtable swamp, \u003cb\u003eEllie\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 28 shipped already, with Qatar (lavishly funded, modestly threatening) alone waving in 10. Keeping them grim company, \u003cb\u003eEtan\u003c/b\u003e bagged the pasting of the tournament so far, Senegal (power, pace and swagger for days) romping home 5-0. Borderline rude. And clinging on by their fingernails, \u003cb\u003eIke\u003c/b\u003e is hauling Uzbekistan (the tournament\u0027s great unmarked mystery box) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all.",
+                  "Wading into the midtable swamp, \u003cb\u003eIke\u003c/b\u003e is hauling Uzbekistan (the tournament\u0027s great unmarked mystery box) around like a dead fridge up a fire escape \u0026mdash; it\u0027s played, and contributed the square root of sod all. Keeping them grim company, \u003cb\u003eEllie\u003c/b\u003e\u0027s backline has the structural integrity of a wet paper bag \u0026mdash; 28 shipped already, with Qatar (lavishly funded, modestly threatening) alone waving in 10. And clinging on by their fingernails, \u003cb\u003eEtan\u003c/b\u003e bagged the pasting of the tournament so far, Senegal (power, pace and swagger for days) romping home 5-0. Borderline rude.",
                   "Down in the cheap seats, \u003cb\u003eMurray\u003c/b\u003e watched New Zealand (the All Whites: good time, not a long time) get taken to the absolute cleaners 1-5 \u0026mdash; a scoreline best discussed in hushed, pitying tones. And scraping the very bottom of the barrel, \u003cb\u003eElsa\u003c/b\u003e has spread the love like a sensible little pension fund \u0026mdash; 4 teams all chipping in, not a single passenger. Boringly effective."
               ],
     "fixtures":  [
@@ -704,7 +752,7 @@
                          "state":  "live",
                          "ko":  "00:30",
                          "hs":  0,
-                         "as":  0
+                         "as":  1
                      },
                      {
                          "home":  "Colombia",
