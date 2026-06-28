@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 00:55",
+                 "stamp":  "28 Jun 2026 01:00",
                  "playedCount":  68,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -680,8 +680,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "24\u0027",
-                     "detail":  "24\u0027"
+                     "clock":  "29\u0027",
+                     "detail":  "29\u0027"
                  },
                  {
                      "home":  "Congo DR",
@@ -696,8 +696,8 @@
                      "aWin":  1,
                      "hs":  0,
                      "as":  1,
-                     "clock":  "24\u0027",
-                     "detail":  "24\u0027"
+                     "clock":  "29\u0027",
+                     "detail":  "29\u0027"
                  }
              ],
     "story":  [
@@ -707,96 +707,18 @@
               ],
     "fixtures":  [
                      {
-                         "home":  "Panama",
-                         "away":  "England",
-                         "homeAbbr":  "PAN",
-                         "awayAbbr":  "ENG",
-                         "homeIso":  "pa",
-                         "awayIso":  "gb-eng",
-                         "hOwn":  "Murray",
-                         "aOwn":  "Etan",
-                         "hWin":  -1,
-                         "aWin":  1,
-                         "state":  "ft",
-                         "ko":  "22:00",
-                         "hs":  0,
-                         "as":  2
-                     },
-                     {
-                         "home":  "Croatia",
-                         "away":  "Ghana",
-                         "homeAbbr":  "CRO",
-                         "awayAbbr":  "GHA",
-                         "homeIso":  "hr",
-                         "awayIso":  "gh",
-                         "hOwn":  "Murray",
-                         "aOwn":  "Ike",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "22:00",
-                         "hs":  2,
-                         "as":  1
-                     },
-                     {
-                         "home":  "Congo DR",
-                         "away":  "Uzbekistan",
-                         "homeAbbr":  "COG",
-                         "awayAbbr":  "UZB",
-                         "homeIso":  "cg",
-                         "awayIso":  "uz",
-                         "hOwn":  "Etan",
-                         "aOwn":  "Ike",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
-                         "ko":  "00:30",
-                         "hs":  0,
-                         "as":  1
-                     },
-                     {
-                         "home":  "Colombia",
-                         "away":  "Portugal",
-                         "homeAbbr":  "COL",
-                         "awayAbbr":  "POR",
-                         "homeIso":  "co",
-                         "awayIso":  "pt",
-                         "hOwn":  "Big Pewerk",
-                         "aOwn":  "Elsa",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
-                         "ko":  "00:30",
-                         "hs":  0,
-                         "as":  0
-                     },
-                     {
-                         "home":  "Jordan",
-                         "away":  "Argentina",
-                         "homeAbbr":  "JOR",
-                         "awayAbbr":  "ARG",
-                         "homeIso":  "jo",
-                         "awayIso":  "ar",
-                         "hOwn":  "Big Pewerk",
-                         "aOwn":  "Quince",
+                         "home":  "South Africa",
+                         "away":  "Canada",
+                         "homeAbbr":  "RSA",
+                         "awayAbbr":  "CAN",
+                         "homeIso":  "za",
+                         "awayIso":  "ca",
+                         "hOwn":  "Quince",
+                         "aOwn":  "Ellie",
                          "hWin":  0,
                          "aWin":  0,
                          "state":  "ko",
-                         "ko":  "03:00"
-                     },
-                     {
-                         "home":  "Algeria",
-                         "away":  "Austria",
-                         "homeAbbr":  "ALG",
-                         "awayAbbr":  "AUT",
-                         "homeIso":  "dz",
-                         "awayIso":  "at",
-                         "hOwn":  "Ike",
-                         "aOwn":  "Quince",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "03:00"
+                         "ko":  "20:00"
                      }
                  ],
     "results":  [
