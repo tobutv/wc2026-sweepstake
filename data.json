@@ -1,26 +1,26 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 20:00",
+                 "stamp":  "28 Jun 2026 20:10",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
-                 "leaderPts":  34,
-                 "ogDesc":  "Quince leads on 34 pts after 72/104 matches"
+                 "leaderPts":  35,
+                 "ogDesc":  "Quince leads on 35 pts after 72/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
                           "name":  "Quince",
                           "isLeader":  true,
-                          "pts":  34,
-                          "pld":  18,
+                          "pts":  35,
+                          "pld":  19,
                           "gd":  11,
                           "gf":  34,
                           "ga":  23,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
@@ -76,7 +76,7 @@
                                             "hex":  "#007749",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -104,7 +104,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#AB933A",
+                          "ptsBg":  "#A78F3A",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4F9A6F",
                           "gfFg":  "#ffffff",
@@ -186,7 +186,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#AB933A",
+                          "ptsBg":  "#A78F3A",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#57A873",
                           "gfFg":  "#ffffff",
@@ -268,7 +268,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#9A863B",
+                          "ptsBg":  "#96843C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#488C6A",
                           "gfFg":  "#ffffff",
@@ -341,16 +341,16 @@
                           "rank":  5,
                           "name":  "Ellie",
                           "isLeader":  false,
-                          "pts":  23,
-                          "pld":  18,
+                          "pts":  24,
+                          "pld":  19,
                           "gd":  0,
                           "gf":  28,
                           "ga":  28,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#94823C",
+                          "ptsBg":  "#96843C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#54A372",
                           "gfFg":  "#ffffff",
@@ -394,7 +394,7 @@
                                             "hex":  "#D52B1E",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -432,7 +432,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#8E7E3C",
+                          "ptsBg":  "#8B7C3D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4D966D",
                           "gfFg":  "#ffffff",
@@ -514,7 +514,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#83763D",
+                          "ptsBg":  "#80743D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4D966D",
                           "gfFg":  "#ffffff",
@@ -596,7 +596,7 @@
                           "livePld":  0,
                           "hasLive":  false,
                           "delta":  0,
-                          "ptsBg":  "#7D723E",
+                          "ptsBg":  "#7A703E",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4D966D",
                           "gfFg":  "#ffffff",
@@ -667,7 +667,22 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "South Africa",
+                     "away":  "Canada",
+                     "homeAbbr":  "RSA",
+                     "awayAbbr":  "CAN",
+                     "homeIso":  "za",
+                     "awayIso":  "ca",
+                     "hOwn":  "Quince",
+                     "aOwn":  "Ellie",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "10\u0027",
+                     "detail":  "10\u0027"
+                 }
              ],
     "story":  [
                   "Lording it at the top, \u003cb\u003eQuince\u003c/b\u003e is boring everyone into an early grave \u0026mdash; 6 clean sheets, zero entertainment. The kind of football that makes people emigrate. Smugly in tow, \u003cb\u003eSid\u003c/b\u003e has turned the goalless draw into an art form nobody asked for \u0026mdash; 6 of them. A black hole where fun goes to die. Rounding out the insufferable elite, \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s lot defend like the door\u0027s been left on the latch, but they\u0027ll at least outscore the misery \u0026mdash; 29 goals (GD -1), led by Netherlands (beautiful football, then a fistfight among themselves). Thrilling, doomed.",
@@ -686,8 +701,10 @@
                          "aOwn":  "Ellie",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "20:00"
+                         "state":  "live",
+                         "ko":  "20:00",
+                         "hs":  0,
+                         "as":  0
                      }
                  ],
     "results":  [
