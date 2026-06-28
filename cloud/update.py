@@ -169,53 +169,119 @@ def main():
                     elif int(ash or 0) > int(hsh or 0): pen = an
                 except Exception:
                     pass
+            # manner: penalties (shootout present), extra time (period > 2 regulation, or AET text),
+            # otherwise a 90-minute result. ESPN's `score` already counts ET goals and excludes the
+            # shootout, so GF/GA are correct as-is (ET counts, pens don't).
+            period = 0
+            try:
+                period = int(e["status"].get("period", 0) or 0)
+            except Exception:
+                pass
+            dtxt = ("%s %s %s" % (st.get("detail", ""), st.get("shortDetail", ""),
+                                  st.get("description", ""))).upper()
+            if pen is not None:
+                manner = "pen"
+            elif period > 2 or "AET" in dtxt or "EXTRA" in dtxt:
+                manner = "et"
+            else:
+                manner = "90"
             finished.append({"home": hn, "away": an,
                              "hs": int(h.get("score", 0)), "as": int(a.get("score", 0)),
-                             "ko": ko, "penWinner": pen})
+                             "ko": ko, "penWinner": pen, "manner": manner})
 
     print("ESPN finished=%d live=%d" % (len(finished), len(live)))
 
-    # --- team standings from finished matches (3/1/0 on FT score) ---
+    # group membership (built first: drives group-vs-knockout scoring AND elimination)
+    team_group = {}
+    for g, abs_ in groups.items():
+        for ab in abs_:
+            team_group[ab] = g
+
+    def is_ko_tie(ha, aa):
+        """A knockout tie is any match between teams from different groups."""
+        return bool(ha and aa and team_group.get(ha) and team_group.get(aa)
+                    and team_group[ha] != team_group[aa])
+
+    # --- team standings from finished matches ---
+    # Group stage: 3 win / 1 draw / 0 loss. Knockouts: 3 win in 90, 2 win in ET or pens,
+    # 1 loss in ET or pens, 0 loss in 90. GF/GA use ESPN's `score` everywhere (ET goals count,
+    # shootout goals don't). Points are summed per match (a flat W*3+D can't express 3/2/1/0).
     stat = {ab: {"Pld": 0, "W": 0, "D": 0, "GF": 0, "GA": 0, "Pts": 0} for ab in teams}
     team_matches = {ab: [] for ab in teams}   # per-team match log for "beyond the table" quirks
     for m in finished:
         ha, aa = resolve(m["home"]), resolve(m["away"])
         hs, as_ = m["hs"], m["as"]
+        ko_tie = is_ko_tie(ha, aa)
+        # winner: by score, else (knockouts only) by shootout
+        if hs > as_:
+            hwin = True
+        elif as_ > hs:
+            hwin = False
+        elif ko_tie and m.get("penWinner"):
+            hwin = (m["penWinner"] == m["home"])
+        else:
+            hwin = None                       # genuine draw (group stage)
+        manner = m.get("manner", "90")
+        if ko_tie and hwin is not None:
+            if hwin:
+                hp, ap = (3, 0) if manner == "90" else (2, 1)
+            else:
+                hp, ap = (0, 3) if manner == "90" else (1, 2)
+        else:
+            hp = 3 if hwin is True else (1 if hwin is None else 0)
+            ap = 3 if hwin is False else (1 if hwin is None else 0)
         if ha in stat:
-            s = stat[ha]; s["Pld"] += 1; s["GF"] += hs; s["GA"] += as_
-            if hs > as_: s["W"] += 1
-            elif hs == as_: s["D"] += 1
+            s = stat[ha]; s["Pld"] += 1; s["GF"] += hs; s["GA"] += as_; s["Pts"] += hp
+            if hwin is True: s["W"] += 1
+            elif hwin is None: s["D"] += 1
             team_matches[ha].append({"gf": hs, "ga": as_, "opp": m["away"]})
         if aa in stat:
-            s = stat[aa]; s["Pld"] += 1; s["GF"] += as_; s["GA"] += hs
-            if as_ > hs: s["W"] += 1
-            elif as_ == hs: s["D"] += 1
+            s = stat[aa]; s["Pld"] += 1; s["GF"] += as_; s["GA"] += hs; s["Pts"] += ap
+            if hwin is False: s["W"] += 1
+            elif hwin is None: s["D"] += 1
             team_matches[aa].append({"gf": as_, "ga": hs, "opp": m["home"]})
-    for ab, s in stat.items():
-        s["Pts"] = s["W"] * 3 + s["D"]
 
     team_pts = {ab: s["Pts"] for ab, s in stat.items()}
 
-    # --- eliminated teams: ESPN's authoritative group-stage notes + knockout losers ---
-    elim = fetch_eliminated(resolve)              # group stage (ESPN does the best-third maths)
-    team_group = {}
-    for g, abs_ in groups.items():
-        for ab in abs_:
-            team_group[ab] = g
-    for m in finished:                            # knockout = any finished inter-group tie
+    # --- eliminated teams ---
+    # ESPN's standings *notes* proved unreliable in the knockouts (kept labelling cut third-placed
+    # teams "Best 8 advance"). The bracket is the truth: once R32 is drawn, any group team not in a
+    # knockout fixture is OUT (catches bottoms + cut thirds), plus anyone who loses a knockout tie.
+    elim = fetch_eliminated(resolve)              # (1) pre-bracket fallback: ESPN group-stage notes
+    # (2) bracket truth: teams appearing in any inter-group knockout fixture (scheduled OR finished)
+    in_knockout = set()
+    try:
+        br = fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260628-20260720")
+        for e in br.get("events", []):
+            cs = e["competitions"][0]["competitors"]
+            h = next((c for c in cs if c["homeAway"] == "home"), None)
+            a = next((c for c in cs if c["homeAway"] == "away"), None)
+            if not h or not a:
+                continue
+            hi, ai = resolve(h["team"]["displayName"]), resolve(a["team"]["displayName"])
+            if is_ko_tie(hi, ai):
+                in_knockout.add(hi); in_knockout.add(ai)
+    except Exception as ex:
+        print("WARN bracket fetch failed: %s" % ex)
+    # only trust the bracket once it's substantially drawn (>=24 of 32), so we never wrongly grey
+    # everyone during the group->R32 transition.
+    if len(in_knockout) >= 24:
+        for ab in teams:
+            if ab not in in_knockout:
+                elim.add(ab)
+    # (3) knockout losers: any finished inter-group tie -> loser is out (incl. shootout defeats)
+    for m in finished:
         ha, aa = resolve(m["home"]), resolve(m["away"])
-        if not ha or not aa:
+        if not is_ko_tie(ha, aa):
             continue
-        if team_group.get(ha) and team_group.get(ha) == team_group.get(aa):
-            continue                              # intra-group = group match, never elimination
         hs, as_ = m["hs"], m["as"]
         loser = None
         if hs > as_: loser = aa
         elif as_ > hs: loser = ha
-        elif m.get("penWinner"): loser = aa if m["penWinner"] == ha else (ha if m["penWinner"] == aa else None)
+        elif m.get("penWinner"): loser = aa if m["penWinner"] == m["home"] else ha
         if loser:
             elim.add(loser)
-    print("eliminated: %s" % (", ".join(sorted(elim)) if elim else "(none)"))
+    print("eliminated (%d): %s" % (len(elim), ", ".join(sorted(elim)) if elim else "(none)"))
 
     # --- live overlay: provisional pts/goals from in-progress matches ---
     owner_of = {}
