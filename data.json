@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 02:20",
+                 "stamp":  "28 Jun 2026 02:25",
                  "playedCount":  68,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -261,8 +261,8 @@
                           "isLeader":  false,
                           "pts":  24,
                           "pld":  18,
-                          "gd":  0,
-                          "gf":  22,
+                          "gd":  1,
+                          "gf":  23,
                           "ga":  22,
                           "livePts":  3,
                           "livePld":  1,
@@ -270,7 +270,7 @@
                           "delta":  0,
                           "ptsBg":  "#AD933A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#519D70",
+                          "gfBg":  "#54A372",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#B45560",
                           "gaFg":  "#ffffff",
@@ -425,9 +425,9 @@
                           "isLeader":  false,
                           "pts":  21,
                           "pld":  17,
-                          "gd":  -3,
+                          "gd":  -4,
                           "gf":  22,
-                          "ga":  25,
+                          "ga":  26,
                           "livePts":  0,
                           "livePld":  1,
                           "hasLive":  true,
@@ -436,7 +436,7 @@
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#519D70",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#CB5C64",
+                          "gaBg":  "#D25E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -680,8 +680,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "88\u0027",
-                     "detail":  "88\u0027"
+                     "clock":  "90\u0027+3\u0027",
+                     "detail":  "90\u0027+3\u0027"
                  },
                  {
                      "home":  "Congo DR",
@@ -694,10 +694,10 @@
                      "aOwn":  "Ike",
                      "hWin":  1,
                      "aWin":  -1,
-                     "hs":  2,
+                     "hs":  3,
                      "as":  1,
-                     "clock":  "86\u0027",
-                     "detail":  "86\u0027"
+                     "clock":  "90\u0027+1\u0027",
+                     "detail":  "90\u0027+1\u0027"
                  }
              ],
     "story":  [
