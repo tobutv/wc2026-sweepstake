@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "29 Jun 2026 00:40",
+                 "stamp":  "29 Jun 2026 00:45",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -393,7 +393,7 @@
                                             "iso":  "ca",
                                             "hex":  "#D52B1E",
                                             "fg":  "#ffffff",
-                                            "pts":  4,
+                                            "pts":  7,
                                             "live":  false,
                                             "out":  false
                                         },
