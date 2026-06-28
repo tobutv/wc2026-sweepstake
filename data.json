@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 01:35",
+                 "stamp":  "28 Jun 2026 01:40",
                  "playedCount":  68,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -680,8 +680,8 @@
                      "aWin":  0,
                      "hs":  0,
                      "as":  0,
-                     "clock":  "45\u0027+3\u0027",
-                     "detail":  "HT"
+                     "clock":  "48\u0027",
+                     "detail":  "48\u0027"
                  },
                  {
                      "home":  "Congo DR",
@@ -696,8 +696,8 @@
                      "aWin":  1,
                      "hs":  0,
                      "as":  1,
-                     "clock":  "45\u0027+7\u0027",
-                     "detail":  "HT"
+                     "clock":  "46\u0027",
+                     "detail":  "46\u0027"
                  }
              ],
     "story":  [
