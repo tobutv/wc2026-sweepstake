@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "29 Jun 2026 00:35",
+                 "stamp":  "29 Jun 2026 00:40",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -159,7 +159,7 @@
                                             "fg":  "#ffffff",
                                             "pts":  3,
                                             "live":  false,
-                                            "out":  false
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "CPV",
@@ -457,7 +457,7 @@
                                             "fg":  "#ffffff",
                                             "pts":  2,
                                             "live":  false,
-                                            "out":  false
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "IRN",
@@ -467,7 +467,7 @@
                                             "fg":  "#ffffff",
                                             "pts":  3,
                                             "live":  false,
-                                            "out":  false
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "ALG",
@@ -631,7 +631,7 @@
                                             "fg":  "#ffffff",
                                             "pts":  3,
                                             "live":  false,
-                                            "out":  false
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "EGY",
