@@ -1,11 +1,11 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 02:25",
-                 "playedCount":  68,
+                 "stamp":  "28 Jun 2026 02:30",
+                 "playedCount":  69,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  30,
-                 "ogDesc":  "Quince leads on 30 pts after 68/104 matches"
+                 "ogDesc":  "Quince leads on 30 pts after 69/104 matches"
              },
     "anyLive":  true,
     "standings":  [
@@ -182,10 +182,10 @@
                           "gd":  1,
                           "gf":  28,
                           "ga":  27,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#C0A138",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
@@ -209,8 +209,8 @@
                                             "iso":  "co",
                                             "hex":  "#FCD116",
                                             "fg":  "#0a1730",
-                                            "pts":  6,
-                                            "live":  true,
+                                            "pts":  7,
+                                            "live":  false,
                                             "out":  false
                                         },
                                         {
@@ -592,10 +592,10 @@
                           "gd":  -6,
                           "gf":  25,
                           "ga":  31,
-                          "livePts":  1,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  1,
                           "ptsBg":  "#8C7C3C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#5AAE75",
@@ -609,8 +609,8 @@
                                             "iso":  "pt",
                                             "hex":  "#C60B1E",
                                             "fg":  "#ffffff",
-                                            "pts":  4,
-                                            "live":  true,
+                                            "pts":  5,
+                                            "live":  false,
                                             "out":  false
                                         },
                                         {
@@ -668,22 +668,6 @@
                   ],
     "live":  [
                  {
-                     "home":  "Colombia",
-                     "away":  "Portugal",
-                     "homeAbbr":  "COL",
-                     "awayAbbr":  "POR",
-                     "homeIso":  "co",
-                     "awayIso":  "pt",
-                     "hOwn":  "Big Pewerk",
-                     "aOwn":  "Elsa",
-                     "hWin":  0,
-                     "aWin":  0,
-                     "hs":  0,
-                     "as":  0,
-                     "clock":  "90\u0027+3\u0027",
-                     "detail":  "90\u0027+3\u0027"
-                 },
-                 {
                      "home":  "Congo DR",
                      "away":  "Uzbekistan",
                      "homeAbbr":  "COG",
@@ -696,8 +680,8 @@
                      "aWin":  -1,
                      "hs":  3,
                      "as":  1,
-                     "clock":  "90\u0027+1\u0027",
-                     "detail":  "90\u0027+1\u0027"
+                     "clock":  "90\u0027+6\u0027",
+                     "detail":  "90\u0027+6\u0027"
                  }
              ],
     "story":  [
@@ -722,6 +706,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Colombia",
+                        "away":  "Portugal",
+                        "homeAbbr":  "COL",
+                        "awayAbbr":  "POR",
+                        "homeIso":  "co",
+                        "awayIso":  "pt",
+                        "hOwn":  "Big Pewerk",
+                        "aOwn":  "Elsa",
+                        "hWin":  0,
+                        "aWin":  0,
+                        "hs":  0,
+                        "as":  0
+                    },
                     {
                         "home":  "Croatia",
                         "away":  "Ghana",
@@ -819,20 +817,6 @@
                         "aWin":  -1,
                         "hs":  5,
                         "as":  0
-                    },
-                    {
-                        "home":  "Norway",
-                        "away":  "France",
-                        "homeAbbr":  "NOR",
-                        "awayAbbr":  "FRA",
-                        "homeIso":  "no",
-                        "awayIso":  "fr",
-                        "hOwn":  "Sid",
-                        "aOwn":  "Ike",
-                        "hWin":  -1,
-                        "aWin":  1,
-                        "hs":  1,
-                        "as":  4
                     }
                 ]
 }
