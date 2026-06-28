@@ -154,6 +154,32 @@
     el('results').innerHTML = html;
   }
 
+  // ---- knockout bracket (round columns) ------------------------------------
+  function bracketMid(m) {
+    if (m.state === 'ft') {
+      var tag = m.manner === 'pen' ? 'PENS' : (m.manner === 'et' ? 'AET' : 'FT');
+      return "<span class='mscore'>" + m.hs + "&ndash;" + m.as + "</span><span class='mtag'>" + tag + "</span>";
+    }
+    if (m.state === 'live') {
+      return "<span class='mscore live'>" + m.hs + "&ndash;" + m.as + "</span><span class='mtag live'>LIVE</span>";
+    }
+    return "<span class='mscore ko'>" + esc(m.ko || 'TBD') + "</span><span class='mtag'>BST</span>";
+  }
+
+  function renderBracket(bracket) {
+    var sec = el('bracket-section');
+    if (!sec) return;
+    if (!bracket || !bracket.length) { sec.hidden = true; el('bracket').innerHTML = ''; return; }
+    var html = '';
+    bracket.forEach(function (rd) {
+      var cards = (rd.matches || []).map(function (m) { return matchCard(m, bracketMid(m)); }).join('');
+      html += "<div class='brkcol'><h3 class='brkrd'>" + esc(rd.round) +
+        "</h3>" + cards + "</div>";
+    });
+    el('bracket').innerHTML = html;
+    sec.hidden = false;
+  }
+
   function renderStory(story) {
     el('story').innerHTML = (story || []).map(function (p) { return "<p>" + p + "</p>"; }).join('');
   }
@@ -188,6 +214,7 @@
     renderStory(data.story);
     renderFixtures(data.fixtures);
     renderResults(data.results);
+    renderBracket(data.bracket);
   }
 
   function load() {
