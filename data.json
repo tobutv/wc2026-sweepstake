@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "28 Jun 2026 04:05",
+                 "stamp":  "28 Jun 2026 04:10",
                  "playedCount":  70,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -680,8 +680,8 @@
                      "aWin":  0,
                      "hs":  1,
                      "as":  1,
-                     "clock":  "45\u0027+4\u0027",
-                     "detail":  "HT"
+                     "clock":  "48\u0027",
+                     "detail":  "48\u0027"
                  },
                  {
                      "home":  "Jordan",
@@ -696,8 +696,8 @@
                      "aWin":  1,
                      "hs":  0,
                      "as":  2,
-                     "clock":  "45\u0027+6\u0027",
-                     "detail":  "HT"
+                     "clock":  "48\u0027",
+                     "detail":  "48\u0027"
                  }
              ],
     "story":  [
