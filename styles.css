@@ -99,5 +99,4 @@ tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
   .cards{grid-template-columns:1fr}
   th,td{padding:8px 4px;font-size:.8rem}
   .chip{padding:3px 6px;font-size:.66rem}
-  .brkcol{flex-basis:188px;min-width:188px}
 }
