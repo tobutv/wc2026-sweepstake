@@ -79,23 +79,21 @@ tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
 .story p:first-child{font-family:'Archivo',sans-serif;font-size:1.05rem;font-weight:800;color:#fff}
 .hint{color:#b69ad6;font-size:.72rem;margin:9px 0 0;text-align:center;font-style:italic}
 .foot{margin-top:20px;color:#9b86bf;font-size:.72rem;line-height:1.6}
-/* knockout bracket — round columns, scroll sideways; reuses .mcard visual language.
-   Columns stretch to equal height and distribute their matches with space-around, so each
-   round's matches sit vertically centred between the two feeders in the previous round
-   (the engines emit each round in bracket-tree order, so the alignment is also logically correct). */
-.bracket{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2px 2px 8px;align-items:stretch}
-.brkcol{flex:0 0 208px;min-width:208px;display:flex;flex-direction:column;gap:8px}
-.brkrd{flex:0 0 auto;font-family:'Archivo',sans-serif;font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:#ffb3e0;font-weight:800;text-align:center;margin:0;padding:5px 8px;background:rgba(123,47,247,.18);border:1px solid rgba(255,143,208,.2);border-radius:9px}
-.brkmatches{flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-around;gap:8px}
-.brkcol .mcard{padding:8px}
-.brkcol .mrow{gap:4px}
-.brkcol .mt{min-width:0;gap:4px;font-size:.8rem}
-.brkcol .mt img.flag{width:16px;height:12px}
-.brkcol .mmid{min-width:40px}
-.brkcol .mscore{font-size:.95rem;text-align:center}
-.brkcol .mscore.ko{font-size:.72rem;font-weight:800;line-height:1.25;color:#e7d6ff}
-.brkcol .mtag{font-size:.54rem}
-.brkcol .msub{font-size:.68rem;margin-top:6px;padding-top:5px}
+/* knockout bracket — CSS-grid tree. One row per R32 leaf (16) plus a headings row; each match
+   spans 2^level rows and is centred, so every match sits vertically between its two feeders and
+   the Final lands dead-centre on the right. Rounds are emitted in bracket-tree order. */
+.bracket{display:grid;grid-auto-flow:row;column-gap:12px;row-gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2px 2px 8px;align-items:stretch}
+.brkrd{align-self:start;font-family:'Archivo',sans-serif;font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:#ffb3e0;font-weight:800;text-align:center;margin:0;padding:5px 8px;background:rgba(123,47,247,.18);border:1px solid rgba(255,143,208,.2);border-radius:9px}
+.brkcell{display:flex;flex-direction:column;justify-content:center;min-width:0}
+.bracket .mcard{width:100%;padding:9px 14px}
+.bracket .mrow{gap:6px}
+.bracket .mt{min-width:0;gap:5px;font-size:.8rem}
+.bracket .mt img.flag{width:16px;height:12px}
+.bracket .mmid{min-width:42px}
+.bracket .mscore{font-size:.95rem;text-align:center}
+.bracket .mscore.ko{font-size:.72rem;font-weight:800;line-height:1.25;color:#e7d6ff}
+.bracket .mtag{font-size:.54rem}
+.bracket .msub{font-size:.68rem;margin-top:6px;padding-top:5px}
 .mab.tbc{color:#8c84a6;opacity:.75;font-weight:700}
 @media(max-width:520px){
   .cards{grid-template-columns:1fr}
