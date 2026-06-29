@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "29 Jun 2026 00:58",
+                 "stamp":  "29 Jun 2026 01:00",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -676,20 +676,46 @@
               ],
     "fixtures":  [
                      {
-                         "home":  "South Africa",
-                         "away":  "Canada",
-                         "homeAbbr":  "RSA",
-                         "awayAbbr":  "CAN",
-                         "homeIso":  "za",
-                         "awayIso":  "ca",
-                         "hOwn":  "Quince",
-                         "aOwn":  "Ellie",
-                         "hWin":  -1,
-                         "aWin":  1,
-                         "state":  "ft",
-                         "ko":  "20:00",
-                         "hs":  0,
-                         "as":  1
+                         "home":  "Brazil",
+                         "away":  "Japan",
+                         "homeAbbr":  "BRA",
+                         "awayAbbr":  "JPN",
+                         "homeIso":  "br",
+                         "awayIso":  "jp",
+                         "hOwn":  "Murray",
+                         "aOwn":  "Murray",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "18:00"
+                     },
+                     {
+                         "home":  "Germany",
+                         "away":  "Paraguay",
+                         "homeAbbr":  "GER",
+                         "awayAbbr":  "PAR",
+                         "homeIso":  "de",
+                         "awayIso":  "py",
+                         "hOwn":  "Ellie",
+                         "aOwn":  "Etan",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "21:30"
+                     },
+                     {
+                         "home":  "Netherlands",
+                         "away":  "Morocco",
+                         "homeAbbr":  "NED",
+                         "awayAbbr":  "MAR",
+                         "homeIso":  "nl",
+                         "awayIso":  "ma",
+                         "hOwn":  "Big Pewerk",
+                         "aOwn":  "Sid",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "02:00"
                      }
                  ],
     "results":  [
