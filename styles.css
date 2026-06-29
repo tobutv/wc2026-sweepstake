@@ -90,6 +90,7 @@ tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
 .brkcol .mmid{min-width:42px}
 .brkcol .mscore{font-size:1.05rem;text-align:center}
 .brkcol .mscore.ko{font-size:.78rem;font-weight:800;line-height:1.25;color:#e7d6ff}
+.mab.tbc{color:#8c84a6;opacity:.75;font-weight:700}
 @media(max-width:520px){
   .cards{grid-template-columns:1fr}
   th,td{padding:8px 4px;font-size:.8rem}
