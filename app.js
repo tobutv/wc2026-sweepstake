@@ -97,12 +97,13 @@
     var hCls = m.hWin === 1 ? ' wn' : (m.hWin === -1 ? ' ls' : '');
     var aCls = m.aWin === 1 ? ' wn' : (m.aWin === -1 ? ' ls' : '');
     var hAb = m.homeAbbr || m.home, aAb = m.awayAbbr || m.away;
+    var hT = hAb === 'TBC' ? ' tbc' : '', aT = aAb === 'TBC' ? ' tbc' : '';
     var sub = matchupLine(m);
     var subHtml = sub ? "<div class='msub'>" + sub + "</div>" : '';
     return "<div class='mcard'><div class='mrow'>" +
-      "<span class='mt home" + hCls + "'><span class='mab'>" + esc(hAb) + "</span>" + flag(m.homeIso, 20) + "</span>" +
+      "<span class='mt home" + hCls + "'><span class='mab" + hT + "'>" + esc(hAb) + "</span>" + flag(m.homeIso, 20) + "</span>" +
       "<span class='mmid'>" + midHtml + "</span>" +
-      "<span class='mt away" + aCls + "'>" + flag(m.awayIso, 20) + "<span class='mab'>" + esc(aAb) + "</span></span>" +
+      "<span class='mt away" + aCls + "'>" + flag(m.awayIso, 20) + "<span class='mab" + aT + "'>" + esc(aAb) + "</span></span>" +
       "</div>" + subHtml + "</div>";
   }
 
