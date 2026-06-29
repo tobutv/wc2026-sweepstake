@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "30 Jun 2026 00:30",
+                 "stamp":  "30 Jun 2026 00:35",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -674,7 +674,7 @@
                   "Wallowing in mid-table sludge, \u003cb\u003eEllie\u003c/b\u003e\u0027s defence is a public health hazard \u0026mdash; 28 shipped, Qatar (lavishly funded, modestly threatening) leaking 10 of them. Genuinely embarrassing to be associated with. Equally forgettable, \u003cb\u003eEtan\u003c/b\u003e will be replaying Senegal (power, pace and swagger for days)\u0027s 5-0 all tournament because, let\u0027s be honest, it\u0027s the only good thing their team will ever do. Frame it. Barely clinging to relevance, \u003cb\u003eMurray\u003c/b\u003e saw something in Panama (spirited gatecrashers having the time of their lives) that no scout, coach or sane human ever has \u0026mdash; played, did nothing, and is somehow still the jewel of that abysmal squad.",
                   "Down in the dregs, \u003cb\u003eIke\u003c/b\u003e had to sit and watch Uzbekistan (the tournament\u0027s great unmarked mystery box) get battered 0-5 \u0026mdash; and we\u0027ll be bringing it up at every opportunity for the rest of their natural life. And scraping the very bottom of the barrel, \u003cb\u003eElsa\u003c/b\u003e spread their picks out of sheer cowardice \u0026mdash; 4 teams all contributing scraps, not one brave enough to actually be good. Death by committee.",
                   "\u003cb\u003eThe cull.\u003c/b\u003e 18 teams have gone home, the biggest scalp so far being Japan (tidy, disciplined, devastatingly polite). \u003cb\u003eEtan\u003c/b\u003e and \u003cb\u003eQuince\u003c/b\u003e carry the most into the knockouts with 5 of six still breathing.",
-                  "Into the knockouts proper: \u003cb\u003eMurray\u003c/b\u003e\u0027s Brazil are through and waiting on an opponent; \u003cb\u003eEllie\u003c/b\u003e\u0027s Canada are through and waiting on an opponent. Spare a thought for \u003cb\u003eEtan\u003c/b\u003e, who owns both England and Congo Republic in the same R32 tie \u0026mdash; a guaranteed win and a guaranteed funeral. \u003cb\u003eIke\u003c/b\u003e\u0027s France versus \u003cb\u003eQuince\u003c/b\u003e\u0027s Sweden is the pick of the all-in-the-family R32 grudge matches."
+                  "Into the knockouts proper: \u003cb\u003eMurray\u003c/b\u003e\u0027s Brazil are through and waiting on an opponent; \u003cb\u003eEllie\u003c/b\u003e\u0027s Canada are through and waiting on an opponent; \u003cb\u003eEtan\u003c/b\u003e\u0027s Paraguay are through and waiting on an opponent. Spare a thought for \u003cb\u003eEtan\u003c/b\u003e, who owns both England and Congo Republic in the same R32 tie \u0026mdash; a guaranteed win and a guaranteed funeral. \u003cb\u003eIke\u003c/b\u003e\u0027s France versus \u003cb\u003eQuince\u003c/b\u003e\u0027s Sweden is the pick of the all-in-the-family R32 grudge matches."
               ],
     "fixtures":  [
                      {
@@ -1118,11 +1118,11 @@
                         "round":  "Round of 16",
                         "matches":  [
                                         {
-                                            "home":  "TBC",
+                                            "home":  "PAR",
                                             "away":  "TBC",
-                                            "homeAbbr":  "TBC",
+                                            "homeAbbr":  "PAR",
                                             "awayAbbr":  "TBC",
-                                            "homeIso":  null,
+                                            "homeIso":  "py",
                                             "awayIso":  null,
                                             "hs":  null,
                                             "as":  null,
@@ -1130,7 +1130,7 @@
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
-                                            "hOwn":  null,
+                                            "hOwn":  "Etan",
                                             "aOwn":  null,
                                             "ko":  "4 Jul 22:00"
                                         },
