@@ -112,8 +112,10 @@ def heat_bg(val, mx, target_hex):
 
 
 def round_info(slug, name=""):
-    """Map an ESPN knockout slug/name to (display-order, human label)."""
-    s = ((slug or "") + " " + (name or "")).lower()
+    """Map an ESPN knockout slug to (display-order, human label). Uses the slug ONLY — the
+    `name` of a forward fixture contains its feeder labels (e.g. 'Round of 32 5 Winner'),
+    which would otherwise misclassify the round."""
+    s = (slug or "").lower()
     if "32" in s: return (1, "Round of 32")
     if "16" in s: return (2, "Round of 16")
     if "quarter" in s: return (3, "Quarter-finals")
@@ -438,18 +440,40 @@ def main():
     except Exception as e:
         print("WARN fixtures: %s" % e)
 
-    # --- knockout bracket (round columns) from the date-range knockout fetch ---
-    brk = {}   # order -> {"round": label, "matches": [...]}
-    for e in bracket_events:
+    # --- knockout bracket (round columns): R32 (real ties) + forward rounds with placeholders ---
+    # R32 comes from the elimination fetch (real teams). The forward rounds (R16..Final) come from a
+    # second fetch; ESPN auto-advances qualified teams into their next slot and labels undecided slots
+    # ("Round of 32 3 Winner"), which we render as "TBC" so it's clear who's through and who they meet.
+    fwd_events = []
+    try:
+        fwd = fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260704-20260719")
+        fwd_events = fwd.get("events", [])
+    except Exception as ex:
+        print("WARN forward bracket fetch failed: %s" % ex)
+
+    def bracket_side(comp):
+        ab = resolve(comp["team"]["displayName"])
+        if ab and ab in teams:
+            return ab, teams[ab]["iso"], owner_of.get(ab)
+        return "TBC", None, None
+
+    brk = {}
+    seen_ids = set()
+    for e in list(bracket_events) + list(fwd_events):
+        eid = str(e.get("id"))
+        if eid in seen_ids:
+            continue
         cs = e["competitions"][0]["competitors"]
         h = next((c for c in cs if c["homeAway"] == "home"), None)
         a = next((c for c in cs if c["homeAway"] == "away"), None)
         if not h or not a:
             continue
-        hn, an = h["team"]["displayName"], a["team"]["displayName"]
-        ha, aa = resolve(hn), resolve(an)
-        if not is_ko_tie(ha, aa):
-            continue
+        order, rname = round_info(e.get("season", {}).get("slug", ""), e.get("name", ""))
+        if order <= 1 and not is_ko_tie(resolve(h["team"]["displayName"]), resolve(a["team"]["displayName"])):
+            continue  # R32: only real inter-group ties (skip any stray group match)
+        seen_ids.add(eid)
+        habbr, hiso, hown = bracket_side(h)
+        aabbr, aiso, aown = bracket_side(a)
         st = e["status"]["type"]
         state = st.get("state", "")
         period = 0
@@ -487,19 +511,24 @@ def main():
         if ko:
             kt = ko.astimezone(UK)
             ko_lbl = "%d %s %02d:%02d" % (kt.day, kt.strftime("%b"), kt.hour, kt.minute)
-        order, rname = round_info(e.get("season", {}).get("slug", ""), e.get("name", ""))
+        try:
+            sort_id = int(eid)
+        except Exception:
+            sort_id = 0
         brk.setdefault(order, {"round": rname, "matches": []})
         brk[order]["matches"].append({
-            "home": hn, "away": an, "homeAbbr": ha or hn, "awayAbbr": aa or an,
-            "homeIso": (teams.get(ha) or {}).get("iso"), "awayIso": (teams.get(aa) or {}).get("iso"),
+            "home": habbr, "away": aabbr, "homeAbbr": habbr, "awayAbbr": aabbr,
+            "homeIso": hiso, "awayIso": aiso,
             "hs": hs, "as": as_, "state": state_code, "manner": manner,
-            "hWin": hwin, "aWin": awin, "hOwn": owner_of.get(ha), "aOwn": owner_of.get(aa),
-            "ko": ko_lbl,
+            "hWin": hwin, "aWin": awin, "hOwn": hown, "aOwn": aown,
+            "ko": ko_lbl, "_id": sort_id,
         })
     bracket = []
     for order in sorted(brk.keys()):
         col = brk[order]
-        col["matches"].sort(key=lambda m: (m.get("ko") or "", m["home"]))
+        col["matches"].sort(key=lambda m: m["_id"])
+        for m in col["matches"]:
+            m.pop("_id", None)
         bracket.append(col)
 
     # --- The Story So Far ---
