@@ -85,6 +85,7 @@ tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
 .brkrd{font-family:'Archivo',sans-serif;font-size:.64rem;text-transform:uppercase;letter-spacing:.09em;color:#ffb3e0;font-weight:800;text-align:center;margin:0 0 2px;padding:5px 8px;background:rgba(123,47,247,.18);border:1px solid rgba(255,143,208,.2);border-radius:9px}
 .brkcol .mcard{padding:9px 10px}
 .brkcol .mscore{font-size:1.05rem}
+.brkcol .mscore.ko{font-size:.8rem;font-weight:800;line-height:1.2;color:#e7d6ff}
 @media(max-width:520px){
   .cards{grid-template-columns:1fr}
   th,td{padding:8px 4px;font-size:.8rem}
