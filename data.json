@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "29 Jun 2026 18:30",
+                 "stamp":  "29 Jun 2026 18:35",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -423,20 +423,20 @@
                           "rank":  6,
                           "name":  "Murray",
                           "isLeader":  false,
-                          "pts":  22,
+                          "pts":  23,
                           "pld":  20,
                           "gd":  -4,
-                          "gf":  25,
-                          "ga":  29,
-                          "livePts":  2,
+                          "gf":  26,
+                          "ga":  30,
+                          "livePts":  3,
                           "livePld":  2,
                           "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#8E7E3C",
+                          "ptsBg":  "#94823C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#4D966D",
+                          "gfBg":  "#4F9A6F",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E96569",
+                          "gaBg":  "#F0676A",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -676,12 +676,12 @@
                      "awayIso":  "jp",
                      "hOwn":  "Murray",
                      "aOwn":  "Murray",
-                     "hWin":  0,
-                     "aWin":  0,
+                     "hWin":  -1,
+                     "aWin":  1,
                      "hs":  0,
-                     "as":  0,
-                     "clock":  "30\u0027",
-                     "detail":  "30\u0027"
+                     "as":  1,
+                     "clock":  "35\u0027",
+                     "detail":  "35\u0027"
                  }
              ],
     "story":  [
@@ -706,7 +706,7 @@
                          "state":  "live",
                          "ko":  "18:00",
                          "hs":  0,
-                         "as":  0
+                         "as":  1
                      },
                      {
                          "home":  "Germany",
@@ -999,11 +999,11 @@
                                             "homeIso":  "br",
                                             "awayIso":  "jp",
                                             "hs":  0,
-                                            "as":  0,
+                                            "as":  1,
                                             "state":  "live",
                                             "manner":  "",
-                                            "hWin":  0,
-                                            "aWin":  0,
+                                            "hWin":  -1,
+                                            "aWin":  1,
                                             "hOwn":  "Murray",
                                             "aOwn":  "Murray",
                                             "ko":  "29 Jun 18:00"
