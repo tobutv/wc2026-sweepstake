@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "30 Jun 2026 00:15",
+                 "stamp":  "30 Jun 2026 00:20",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -680,8 +680,8 @@
                      "aWin":  0,
                      "hs":  1,
                      "as":  1,
-                     "clock":  "120\u0027+2\u0027",
-                     "detail":  "AET-pens"
+                     "clock":  "120\u0027",
+                     "detail":  "Pens"
                  }
              ],
     "story":  [
