@@ -111,6 +111,18 @@ def heat_bg(val, mx, target_hex):
     return "#%02X%02X%02X" % (r, g, b)
 
 
+def round_info(slug, name=""):
+    """Map an ESPN knockout slug/name to (display-order, human label)."""
+    s = ((slug or "") + " " + (name or "")).lower()
+    if "32" in s: return (1, "Round of 32")
+    if "16" in s: return (2, "Round of 16")
+    if "quarter" in s: return (3, "Quarter-finals")
+    if "semi" in s: return (4, "Semi-finals")
+    if "3rd" in s or "third" in s: return (5, "Third-place play-off")
+    if "final" in s: return (6, "Final")
+    return (9, (slug or "Knockout").replace("-", " ").title())
+
+
 def main():
     cfg = json.load(open(CONFIG, encoding="utf-8"))
     teams = cfg["teams"]
@@ -250,9 +262,11 @@ def main():
     elim = fetch_eliminated(resolve)              # (1) pre-bracket fallback: ESPN group-stage notes
     # (2) bracket truth: teams appearing in any inter-group knockout fixture (scheduled OR finished)
     in_knockout = set()
+    bracket_events = []                           # reused below to build the visual bracket
     try:
         br = fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260628-20260720")
-        for e in br.get("events", []):
+        bracket_events = br.get("events", [])
+        for e in bracket_events:
             cs = e["competitions"][0]["competitors"]
             h = next((c for c in cs if c["homeAway"] == "home"), None)
             a = next((c for c in cs if c["homeAway"] == "away"), None)
@@ -424,6 +438,70 @@ def main():
     except Exception as e:
         print("WARN fixtures: %s" % e)
 
+    # --- knockout bracket (round columns) from the date-range knockout fetch ---
+    brk = {}   # order -> {"round": label, "matches": [...]}
+    for e in bracket_events:
+        cs = e["competitions"][0]["competitors"]
+        h = next((c for c in cs if c["homeAway"] == "home"), None)
+        a = next((c for c in cs if c["homeAway"] == "away"), None)
+        if not h or not a:
+            continue
+        hn, an = h["team"]["displayName"], a["team"]["displayName"]
+        ha, aa = resolve(hn), resolve(an)
+        if not is_ko_tie(ha, aa):
+            continue
+        st = e["status"]["type"]
+        state = st.get("state", "")
+        period = 0
+        try:
+            period = int(e["status"].get("period", 0) or 0)
+        except Exception:
+            pass
+        hs = as_ = None
+        manner = ""
+        hwin = awin = 0
+        if state in ("post", "in"):
+            hs = int(h.get("score", 0) or 0); as_ = int(a.get("score", 0) or 0)
+        if state == "post":
+            pen = None
+            hsh, ash = h.get("shootoutScore"), a.get("shootoutScore")
+            if hsh is not None or ash is not None:
+                try:
+                    if int(hsh or 0) > int(ash or 0): pen = "h"
+                    elif int(ash or 0) > int(hsh or 0): pen = "a"
+                except Exception:
+                    pass
+            dtxt = ("%s %s %s" % (st.get("detail", ""), st.get("shortDetail", ""),
+                                  st.get("description", ""))).upper()
+            manner = "pen" if pen else ("et" if (period > 2 or "AET" in dtxt or "EXTRA" in dtxt) else "90")
+            if hs > as_: hwin, awin = 1, -1
+            elif as_ > hs: hwin, awin = -1, 1
+            elif pen == "h": hwin, awin = 1, -1
+            elif pen == "a": hwin, awin = -1, 1
+        elif state == "in":
+            if hs > as_: hwin, awin = 1, -1
+            elif as_ > hs: hwin, awin = -1, 1
+        state_code = "ft" if state == "post" else ("live" if state == "in" else "ko")
+        ko = parse_iso(e.get("date"))
+        ko_lbl = ""
+        if ko:
+            kt = ko.astimezone(UK)
+            ko_lbl = "%d %s %02d:%02d" % (kt.day, kt.strftime("%b"), kt.hour, kt.minute)
+        order, rname = round_info(e.get("season", {}).get("slug", ""), e.get("name", ""))
+        brk.setdefault(order, {"round": rname, "matches": []})
+        brk[order]["matches"].append({
+            "home": hn, "away": an, "homeAbbr": ha or hn, "awayAbbr": aa or an,
+            "homeIso": (teams.get(ha) or {}).get("iso"), "awayIso": (teams.get(aa) or {}).get("iso"),
+            "hs": hs, "as": as_, "state": state_code, "manner": manner,
+            "hWin": hwin, "aWin": awin, "hOwn": owner_of.get(ha), "aOwn": owner_of.get(aa),
+            "ko": ko_lbl,
+        })
+    bracket = []
+    for order in sorted(brk.keys()):
+        col = brk[order]
+        col["matches"].sort(key=lambda m: (m.get("ko") or "", m["home"]))
+        bracket.append(col)
+
     # --- The Story So Far ---
     played = len(finished)
     story = build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches, flair)
@@ -442,6 +520,7 @@ def main():
         "story": story,
         "fixtures": fixtures,
         "results": results,
+        "bracket": bracket,
     }
 
     out = os.path.join(OUT_DIR, "data.json")
