@@ -553,6 +553,7 @@ def main():
     # --- The Story So Far ---
     played = len(finished)
     story = build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches, flair)
+    story += build_knockout_story(players_cfg, stat, teams, elim, bracket, flair)
 
     leader = ranked[0]
     stamp = datetime.now(UK).strftime("%d %b %Y %H:%M")
@@ -575,6 +576,111 @@ def main():
     with open(out, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     print("DATA written: %s (played=%d, leader=%s %d)" % (out, played, leader["name"], leader["ProjPts"]))
+
+
+def _join_names(items):
+    """Join names with Oxford-style 'and': [a]->a, [a,b]->'a and b', [a,b,c]->'a, b and c'."""
+    items = ["<b>%s</b>" % x for x in items]
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return items[0] + " and " + items[1]
+    return ", ".join(items[:-1]) + " and " + items[-1]
+
+
+def build_knockout_story(players_cfg, stat, teams, elim, bracket, flair):
+    """Knockout-aware paragraphs appended to the story: who's surviving vs eliminated, the biggest
+    casualties, who's already through, and the juicy bracket routes/grudge matches ahead. Returns
+    0-2 paragraph strings. Fully deterministic (explicit tie-breaks) so the PS engine can mirror it
+    byte-for-byte and the two never flip-flop data.json."""
+    if not elim:
+        return []
+
+    def tn(ab):
+        return teams.get(ab, {}).get("name", ab)
+
+    def tnf(ab):
+        fl = flair.get(ab, "")
+        return ("%s (%s)" % (tn(ab), fl)) if fl else tn(ab)
+
+    # survival count per player
+    surv = []
+    for p in players_cfg:
+        alive = sum(1 for ab in p["picks"] if ab not in elim)
+        surv.append((p["name"], alive))
+    surv.sort(key=lambda s: (-s[1], s[0]))
+    most_n = surv[0][1] if surv else 0
+    leaders = sorted([n for (n, c) in surv if c == most_n and most_n > 0])
+    wiped = sorted([n for (n, c) in surv if c == 0])
+
+    # biggest casualty: eliminated team with most points (tie-break: abbr)
+    elim_teams = sorted([ab for ab in stat if ab in elim], key=lambda ab: (-stat[ab]["Pts"], ab))
+    casualty = elim_teams[0] if elim_teams else None
+
+    # --- Paragraph A: the cull ---
+    a = "<b>The cull.</b> %d team%s gone home" % (len(elim), " has" if len(elim) == 1 else "s have")
+    if casualty:
+        a += ", the biggest scalp so far being %s" % tnf(casualty)
+    a += ". "
+    if leaders:
+        a += "%s %s the most into the knockouts with %d of six still breathing. " % (
+            _join_names(leaders), "carry" if len(leaders) != 1 else "carries", most_n)
+    if wiped:
+        a += "%s %s nothing left &mdash; every last pick eliminated, now reduced to %s. " % (
+            _join_names(wiped), "have" if len(wiped) != 1 else "has",
+            "spectators" if len(wiped) != 1 else "a spectator")
+
+    # --- Paragraph B: routes & grudge matches ---
+    advanced = {}  # abbr -> (depth, round, owner, opp_or_None)
+    for depth, col in enumerate(bracket):
+        if col["round"] == "Round of 32":
+            continue
+        for m in col["matches"]:
+            for ab, own, opp in ((m["homeAbbr"], m.get("hOwn"), m["awayAbbr"]),
+                                 (m["awayAbbr"], m.get("aOwn"), m["homeAbbr"])):
+                if ab != "TBC" and ab in teams:
+                    advanced[ab] = (depth, col["round"], own, None if opp == "TBC" else opp)
+    adv_list = sorted(advanced.items(), key=lambda kv: (-kv[1][0], kv[0]))[:3]
+
+    self_clash = None
+    pvp = None
+    for col in bracket:
+        if col["round"] != "Round of 32":
+            continue
+        for m in col["matches"]:
+            ho, ao = m.get("hOwn"), m.get("aOwn")
+            ha, aa = m["homeAbbr"], m["awayAbbr"]
+            if ho and ao and ha != "TBC" and aa != "TBC" and m.get("state") != "ft":
+                if ho == ao and self_clash is None:
+                    self_clash = (ho, ha, aa)
+                elif ho != ao and pvp is None:
+                    pvp = (ho, ha, ao, aa)
+
+    b = []
+    if adv_list:
+        bits = []
+        for ab, (depth, rnd, own, opp) in adv_list:
+            who = ("<b>%s</b>'s " % own) if own else ""
+            if opp:
+                bits.append("%s%s have a date with %s" % (who, tn(ab), tn(opp)))
+            else:
+                bits.append("%s%s are through and waiting on an opponent" % (who, tn(ab)))
+        b.append("Into the knockouts proper: " + "; ".join(bits) + ".")
+    if self_clash:
+        o, h, aw = self_clash
+        b.append("Spare a thought for <b>%s</b>, who owns both %s and %s in the same R32 tie "
+                 "&mdash; a guaranteed win and a guaranteed funeral." % (o, tn(h), tn(aw)))
+    if pvp:
+        o1, h, o2, aw = pvp
+        b.append("<b>%s</b>'s %s versus <b>%s</b>'s %s is the pick of the all-in-the-family "
+                 "R32 grudge matches." % (o1, tn(h), o2, tn(aw)))
+
+    out = []
+    if a.strip():
+        out.append(a.strip())
+    if b:
+        out.append(" ".join(b))
+    return out
 
 
 def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches, flair):
