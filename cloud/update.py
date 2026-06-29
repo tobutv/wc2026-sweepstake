@@ -32,9 +32,9 @@ UK = timezone(timedelta(hours=1))  # BST during the tournament (Jun–Jul)
 # every match sits between its two feeders we order each round by this fixed sequence. Stable for
 # this tournament; any id not listed sorts to the end.
 BRACKET_ORDER = [
-    # Round of 32 (leaf order)
-    760487, 760490, 760486, 760488, 760496, 760497, 760494, 760495,
-    760489, 760491, 760492, 760493, 760499, 760501, 760498, 760500,
+    # Round of 32 (ESPN bracket-page leaf order, top-to-bottom)
+    760489, 760492, 760486, 760488, 760496, 760497, 760494, 760493,
+    760487, 760490, 760491, 760495, 760500, 760499, 760498, 760501,
     # Round of 16
     760503, 760502, 760506, 760507, 760504, 760505, 760509, 760508,
     # Quarter-finals
