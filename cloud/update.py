@@ -27,6 +27,25 @@ ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboa
 
 UK = timezone(timedelta(hours=1))  # BST during the tournament (Jun–Jul)
 
+# Knockout bracket layout order (ESPN gameIds, top-to-bottom bracket-tree/leaf order). The forward
+# feeders are NOT adjacent pairs (e.g. R16 M90 = winners of R32 #1 and #3), so to draw a tree where
+# every match sits between its two feeders we order each round by this fixed sequence. Stable for
+# this tournament; any id not listed sorts to the end.
+BRACKET_ORDER = [
+    # Round of 32 (leaf order)
+    760487, 760490, 760486, 760488, 760496, 760497, 760494, 760495,
+    760489, 760491, 760492, 760493, 760499, 760501, 760498, 760500,
+    # Round of 16
+    760503, 760502, 760506, 760507, 760504, 760505, 760509, 760508,
+    # Quarter-finals
+    760510, 760511, 760512, 760513,
+    # Semi-finals
+    760514, 760515,
+    # Final, then 3rd-place
+    760517, 760516,
+]
+BRACKET_POS = {gid: i for i, gid in enumerate(BRACKET_ORDER)}
+
 ALIASES = {
     "southkorea": "korearepublic", "korearepublic": "korearepublic",
     "unitedstates": "usa", "usa": "usa",
@@ -526,7 +545,7 @@ def main():
     bracket = []
     for order in sorted(brk.keys()):
         col = brk[order]
-        col["matches"].sort(key=lambda m: m["_id"])
+        col["matches"].sort(key=lambda m: BRACKET_POS.get(m["_id"], 10000))
         for m in col["matches"]:
             m.pop("_id", None)
         bracket.append(col)
