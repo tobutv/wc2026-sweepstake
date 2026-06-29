@@ -83,9 +83,13 @@ tbody tr.leader td.pos{color:#ffd54a} tbody tr.leader td.player{color:#ffe69a}
 .bracket{display:flex;gap:14px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2px 2px 8px}
 .brkcol{flex:0 0 224px;min-width:224px;display:flex;flex-direction:column;gap:10px}
 .brkrd{font-family:'Archivo',sans-serif;font-size:.64rem;text-transform:uppercase;letter-spacing:.09em;color:#ffb3e0;font-weight:800;text-align:center;margin:0 0 2px;padding:5px 8px;background:rgba(123,47,247,.18);border:1px solid rgba(255,143,208,.2);border-radius:9px}
-.brkcol .mcard{padding:9px 10px}
-.brkcol .mscore{font-size:1.05rem}
-.brkcol .mscore.ko{font-size:.8rem;font-weight:800;line-height:1.2;color:#e7d6ff}
+.brkcol .mcard{padding:9px 8px}
+.brkcol .mrow{gap:5px}
+.brkcol .mt{min-width:0;gap:5px;font-size:.84rem}
+.brkcol .mt img.flag{width:18px;height:14px}
+.brkcol .mmid{min-width:42px}
+.brkcol .mscore{font-size:1.05rem;text-align:center}
+.brkcol .mscore.ko{font-size:.78rem;font-weight:800;line-height:1.25;color:#e7d6ff}
 @media(max-width:520px){
   .cards{grid-template-columns:1fr}
   th,td{padding:8px 4px;font-size:.8rem}
