@@ -175,7 +175,7 @@
     bracket.forEach(function (rd) {
       var cards = (rd.matches || []).map(function (m) { return matchCard(m, bracketMid(m)); }).join('');
       html += "<div class='brkcol'><h3 class='brkrd'>" + esc(rd.round) +
-        "</h3>" + cards + "</div>";
+        "</h3><div class='brkmatches'>" + cards + "</div></div>";
     });
     el('bracket').innerHTML = html;
     sec.hidden = false;
