@@ -170,14 +170,28 @@
   function renderBracket(bracket) {
     var sec = el('bracket-section');
     if (!sec) return;
-    if (!bracket || !bracket.length) { sec.hidden = true; el('bracket').innerHTML = ''; return; }
+    var grid = el('bracket');
+    if (!bracket || !bracket.length) { sec.hidden = true; grid.innerHTML = ''; return; }
+    // Deterministic bracket tree: a CSS grid with one row per R32 leaf (16). Each match spans
+    // 2^level rows and is centred in them, so a round's match sits exactly between its two feeders
+    // (rounds are emitted in bracket-tree order). Row 1 holds the round headings.
+    var ROWS = 16;
+    grid.style.gridTemplateColumns = 'repeat(' + bracket.length + ', 190px)';
+    grid.style.gridTemplateRows = 'auto repeat(' + ROWS + ', auto)';
     var html = '';
-    bracket.forEach(function (rd) {
-      var cards = (rd.matches || []).map(function (m) { return matchCard(m, bracketMid(m)); }).join('');
-      html += "<div class='brkcol'><h3 class='brkrd'>" + esc(rd.round) +
-        "</h3><div class='brkmatches'>" + cards + "</div></div>";
+    bracket.forEach(function (rd, ci) {
+      html += "<h3 class='brkrd' style='grid-column:" + (ci + 1) + ";grid-row:1'>" + esc(rd.round) + "</h3>";
+      var ms = rd.matches || [];
+      var n = ms.length || 1;
+      var span = Math.max(1, Math.round(ROWS / n));
+      ms.forEach(function (m, mi) {
+        var rowStart = mi * span + 2; // +2: row 1 is the headings row
+        html += "<div class='brkcell' style='grid-column:" + (ci + 1) +
+          ";grid-row:" + rowStart + " / span " + span + "'>" +
+          matchCard(m, bracketMid(m)) + "</div>";
+      });
     });
-    el('bracket').innerHTML = html;
+    grid.innerHTML = html;
     sec.hidden = false;
   }
 
