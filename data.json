@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "29 Jun 2026 23:25",
+                 "stamp":  "29 Jun 2026 23:30",
                  "playedCount":  72,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -680,8 +680,8 @@
                      "aWin":  0,
                      "hs":  1,
                      "as":  1,
-                     "clock":  "90\u0027+1\u0027",
-                     "detail":  "90\u0027+1\u0027"
+                     "clock":  "90\u0027+6\u0027",
+                     "detail":  "ET"
                  }
              ],
     "story":  [
@@ -719,10 +719,8 @@
                          "aOwn":  "Etan",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "live",
-                         "ko":  "21:30",
-                         "hs":  1,
-                         "as":  1
+                         "state":  "ko",
+                         "ko":  "21:30"
                      },
                      {
                          "home":  "Netherlands",
