@@ -192,7 +192,7 @@ def main():
                              "clock": e["status"].get("displayClock", ""),
                              "detail": st.get("shortDetail", "")})
                 continue
-            if st.get("name") != "STATUS_FULL_TIME":
+            if not (state == "post" and st.get("completed")):
                 continue
             pen = None
             hsh, ash = h.get("shootoutScore"), a.get("shootoutScore")
@@ -440,16 +440,16 @@ def main():
             ko = parse_iso(e.get("date"))
             ko = ko.astimezone(UK) if ko else datetime.now(UK)
             rows.append({"ko": ko, "home": h["team"]["displayName"], "away": a["team"]["displayName"],
-                         "state": e["status"]["type"].get("name", ""),
+                         "state": e["status"]["type"].get("state", ""),
                          "hs": h.get("score"), "as": a.get("score")})
         for m in sorted(rows, key=lambda r: r["ko"]):
             hw = aw = 0
             state = "ko"; hs = as_ = None
-            if m["state"] == "STATUS_FULL_TIME":
+            if m["state"] == "post":
                 hs, as_ = int(m["hs"]), int(m["as"]); state = "ft"
                 hw = 1 if hs > as_ else (-1 if hs < as_ else 0)
                 aw = 1 if as_ > hs else (-1 if as_ < hs else 0)
-            elif "HALF" in m["state"] or m["state"] == "STATUS_IN_PROGRESS" or "FIRST" in m["state"] or "SECOND" in m["state"]:
+            elif m["state"] == "in":
                 hs, as_ = int(m["hs"]), int(m["as"]); state = "live"
             o = match_obj(m["home"], m["away"], hw, aw)
             o["state"] = state; o["ko"] = m["ko"].strftime("%H:%M")
