@@ -1,11 +1,11 @@
 {
     "meta":  {
-                 "stamp":  "30 Jun 2026 19:20",
-                 "playedCount":  72,
+                 "stamp":  "30 Jun 2026 19:24",
+                 "playedCount":  74,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  34,
-                 "ogDesc":  "Quince leads on 34 pts after 72/104 matches"
+                 "ogDesc":  "Quince leads on 34 pts after 74/104 matches"
              },
     "anyLive":  true,
     "standings":  [
@@ -680,8 +680,8 @@
                      "aWin":  1,
                      "hs":  0,
                      "as":  1,
-                     "clock":  "60\u0027",
-                     "detail":  "60\u0027"
+                     "clock":  "64\u0027",
+                     "detail":  "64\u0027"
                  }
              ],
     "story":  [
@@ -739,18 +739,32 @@
                  ],
     "results":  [
                     {
-                        "home":  "Jordan",
-                        "away":  "Argentina",
-                        "homeAbbr":  "JOR",
-                        "awayAbbr":  "ARG",
-                        "homeIso":  "jo",
-                        "awayIso":  "ar",
-                        "hOwn":  "Big Pewerk",
-                        "aOwn":  "Quince",
+                        "home":  "Brazil",
+                        "away":  "Japan",
+                        "homeAbbr":  "BRA",
+                        "awayAbbr":  "JPN",
+                        "homeIso":  "br",
+                        "awayIso":  "jp",
+                        "hOwn":  "Murray",
+                        "aOwn":  "Murray",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  2,
+                        "as":  1
+                    },
+                    {
+                        "home":  "South Africa",
+                        "away":  "Canada",
+                        "homeAbbr":  "RSA",
+                        "awayAbbr":  "CAN",
+                        "homeIso":  "za",
+                        "awayIso":  "ca",
+                        "hOwn":  "Quince",
+                        "aOwn":  "Ellie",
                         "hWin":  -1,
                         "aWin":  1,
-                        "hs":  1,
-                        "as":  3
+                        "hs":  0,
+                        "as":  1
                     },
                     {
                         "home":  "Algeria",
@@ -767,18 +781,18 @@
                         "as":  3
                     },
                     {
-                        "home":  "Congo Republic",
-                        "away":  "Uzbekistan",
-                        "homeAbbr":  "COG",
-                        "awayAbbr":  "UZB",
-                        "homeIso":  "cg",
-                        "awayIso":  "uz",
-                        "hOwn":  "Etan",
-                        "aOwn":  "Ike",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  3,
-                        "as":  1
+                        "home":  "Jordan",
+                        "away":  "Argentina",
+                        "homeAbbr":  "JOR",
+                        "awayAbbr":  "ARG",
+                        "homeIso":  "jo",
+                        "awayIso":  "ar",
+                        "hOwn":  "Big Pewerk",
+                        "aOwn":  "Quince",
+                        "hWin":  -1,
+                        "aWin":  1,
+                        "hs":  1,
+                        "as":  3
                     },
                     {
                         "home":  "Colombia",
@@ -793,6 +807,20 @@
                         "aWin":  0,
                         "hs":  0,
                         "as":  0
+                    },
+                    {
+                        "home":  "Congo DR",
+                        "away":  "Uzbekistan",
+                        "homeAbbr":  "COG",
+                        "awayAbbr":  "UZB",
+                        "homeIso":  "cg",
+                        "awayIso":  "uz",
+                        "hOwn":  "Etan",
+                        "aOwn":  "Ike",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  3,
+                        "as":  1
                     },
                     {
                         "home":  "Croatia",
@@ -821,34 +849,6 @@
                         "aWin":  1,
                         "hs":  0,
                         "as":  2
-                    },
-                    {
-                        "home":  "New Zealand",
-                        "away":  "Belgium",
-                        "homeAbbr":  "NZL",
-                        "awayAbbr":  "BEL",
-                        "homeIso":  "nz",
-                        "awayIso":  "be",
-                        "hOwn":  "Murray",
-                        "aOwn":  "Sid",
-                        "hWin":  -1,
-                        "aWin":  1,
-                        "hs":  1,
-                        "as":  5
-                    },
-                    {
-                        "home":  "Egypt",
-                        "away":  "Iran",
-                        "homeAbbr":  "EGY",
-                        "awayAbbr":  "IRN",
-                        "homeIso":  "eg",
-                        "awayIso":  "ir",
-                        "hOwn":  "Elsa",
-                        "aOwn":  "Ike",
-                        "hWin":  0,
-                        "aWin":  0,
-                        "hs":  1,
-                        "as":  1
                     }
                 ],
     "bracket":  [
