@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "01 Jul 2026 18:35",
+                 "stamp":  "01 Jul 2026 18:40",
                  "playedCount":  79,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -177,20 +177,20 @@
                           "rank":  3,
                           "name":  "Etan",
                           "isLeader":  false,
-                          "pts":  29,
+                          "pts":  28,
                           "pld":  21,
                           "gd":  1,
-                          "gf":  25,
-                          "ga":  24,
-                          "livePts":  3,
+                          "gf":  26,
+                          "ga":  25,
+                          "livePts":  2,
                           "livePld":  2,
                           "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#A9913A",
+                          "ptsBg":  "#A48D3B",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#498F6B",
+                          "gfBg":  "#4C946C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#B85661",
+                          "gaBg":  "#C05962",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -676,12 +676,12 @@
                      "awayIso":  "cg",
                      "hOwn":  "Etan",
                      "aOwn":  "Etan",
-                     "hWin":  -1,
-                     "aWin":  1,
-                     "hs":  0,
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  1,
                      "as":  1,
-                     "clock":  "71\u0027",
-                     "detail":  "71\u0027"
+                     "clock":  "77\u0027",
+                     "detail":  "77\u0027"
                  }
              ],
     "story":  [
@@ -705,7 +705,7 @@
                          "aWin":  0,
                          "state":  "live",
                          "ko":  "17:00",
-                         "hs":  0,
+                         "hs":  1,
                          "as":  1
                      },
                      {
@@ -1049,12 +1049,12 @@
                                             "awayAbbr":  "COG",
                                             "homeIso":  "gb-eng",
                                             "awayIso":  "cg",
-                                            "hs":  0,
+                                            "hs":  1,
                                             "as":  1,
                                             "state":  "live",
                                             "manner":  "",
-                                            "hWin":  -1,
-                                            "aWin":  1,
+                                            "hWin":  0,
+                                            "aWin":  0,
                                             "hOwn":  "Etan",
                                             "aOwn":  "Etan",
                                             "ko":  "1 Jul 17:00"
