@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "01 Jul 2026 19:00",
-                 "playedCount":  79,
+                 "stamp":  "01 Jul 2026 19:05",
+                 "playedCount":  80,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  37,
-                 "ogDesc":  "Quince leads on 37 pts after 79/104 matches"
+                 "ogDesc":  "Quince leads on 37 pts after 80/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -182,10 +182,10 @@
                           "gd":  1,
                           "gf":  27,
                           "ga":  26,
-                          "livePts":  3,
-                          "livePld":  2,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#A9913A",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4E986E",
@@ -199,8 +199,8 @@
                                             "iso":  "gb-eng",
                                             "hex":  "#1A1A6E",
                                             "fg":  "#ffffff",
-                                            "pts":  7,
-                                            "live":  true,
+                                            "pts":  10,
+                                            "live":  false,
                                             "out":  false
                                         },
                                         {
@@ -240,8 +240,8 @@
                                             "hex":  "#007FFF",
                                             "fg":  "#ffffff",
                                             "pts":  4,
-                                            "live":  true,
-                                            "out":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "KSA",
@@ -667,29 +667,14 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "England",
-                     "away":  "Congo DR",
-                     "homeAbbr":  "ENG",
-                     "awayAbbr":  "COG",
-                     "homeIso":  "gb-eng",
-                     "awayIso":  "cg",
-                     "hOwn":  "Etan",
-                     "aOwn":  "Etan",
-                     "hWin":  1,
-                     "aWin":  -1,
-                     "hs":  2,
-                     "as":  1,
-                     "clock":  "90\u0027+7\u0027",
-                     "detail":  "90\u0027+7\u0027"
-                 }
+
              ],
     "story":  [
-                  "Lording it at the top, \u003cb\u003eQuince\u003c/b\u003e is boring everyone into an early grave \u0026mdash; 7 clean sheets, zero entertainment. The kind of football that makes people emigrate. Smugly in tow, \u003cb\u003eSid\u003c/b\u003e has turned the goalless draw into an art form nobody asked for \u0026mdash; 6 of them. A black hole where fun goes to die. Rounding out the insufferable elite, \u003cb\u003eEtan\u003c/b\u003e\u0027s lot defend like the door\u0027s been left on the latch, but they\u0027ll at least outscore the misery \u0026mdash; 24 goals (GD +1), led by Senegal (power, pace and swagger for days). Thrilling, doomed.",
+                  "Lording it at the top, \u003cb\u003eQuince\u003c/b\u003e is boring everyone into an early grave \u0026mdash; 7 clean sheets, zero entertainment. The kind of football that makes people emigrate. Smugly in tow, \u003cb\u003eSid\u003c/b\u003e has turned the goalless draw into an art form nobody asked for \u0026mdash; 6 of them. A black hole where fun goes to die. Rounding out the insufferable elite, \u003cb\u003eEtan\u003c/b\u003e\u0027s lot defend like the door\u0027s been left on the latch, but they\u0027ll at least outscore the misery \u0026mdash; 27 goals (GD +1), led by Senegal (power, pace and swagger for days). Thrilling, doomed.",
                   "Wallowing in mid-table sludge, \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s defence is a public health hazard \u0026mdash; 33 shipped, Iraq (all passion, light on polish) leaking 12 of them. Genuinely embarrassing to be associated with. Equally forgettable, \u003cb\u003eEllie\u003c/b\u003e will be replaying Germany (ruthlessly, tediously efficient)\u0027s 7-1 all tournament because, let\u0027s be honest, it\u0027s the only good thing their team will ever do. Frame it. Barely clinging to relevance, \u003cb\u003eIke\u003c/b\u003e saw something in Uzbekistan (the tournament\u0027s great unmarked mystery box) that no scout, coach or sane human ever has \u0026mdash; played, did nothing, and is somehow still the jewel of that abysmal squad.",
                   "Down in the dregs, \u003cb\u003eMurray\u003c/b\u003e had to sit and watch New Zealand (the All Whites: good time, not a long time) get battered 1-5 \u0026mdash; and we\u0027ll be bringing it up at every opportunity for the rest of their natural life. And scraping the very bottom of the barrel, \u003cb\u003eElsa\u003c/b\u003e spread their picks out of sheer cowardice \u0026mdash; 4 teams all contributing scraps, not one brave enough to actually be good. Death by committee.",
-                  "\u003cb\u003eThe cull.\u003c/b\u003e 23 teams have gone home, the biggest scalp so far being Netherlands (beautiful football, then a fistfight among themselves). \u003cb\u003eEtan\u003c/b\u003e carries the most into the knockouts with 5 of six still breathing.",
-                  "Into the knockouts proper: \u003cb\u003eMurray\u003c/b\u003e\u0027s Brazil have a date with Norway; \u003cb\u003eEllie\u003c/b\u003e\u0027s Canada have a date with Morocco; \u003cb\u003eIke\u003c/b\u003e\u0027s France have a date with Paraguay. Spare a thought for \u003cb\u003eEtan\u003c/b\u003e, who owns both England and Congo Republic in the same R32 tie \u0026mdash; a guaranteed win and a guaranteed funeral. \u003cb\u003eElsa\u003c/b\u003e\u0027s Portugal versus \u003cb\u003eMurray\u003c/b\u003e\u0027s Croatia is the pick of the all-in-the-family R32 grudge matches."
+                  "\u003cb\u003eThe cull.\u003c/b\u003e 24 teams have gone home, the biggest scalp so far being Netherlands (beautiful football, then a fistfight among themselves). \u003cb\u003eEtan\u003c/b\u003e, \u003cb\u003eQuince\u003c/b\u003e and \u003cb\u003eSid\u003c/b\u003e carry the most into the knockouts with 4 of six still breathing.",
+                  "Into the knockouts proper: \u003cb\u003eMurray\u003c/b\u003e\u0027s Brazil have a date with Norway; \u003cb\u003eEllie\u003c/b\u003e\u0027s Canada have a date with Morocco; \u003cb\u003eEtan\u003c/b\u003e\u0027s England have a date with Mexico. \u003cb\u003eElsa\u003c/b\u003e\u0027s Portugal versus \u003cb\u003eMurray\u003c/b\u003e\u0027s Croatia is the pick of the all-in-the-family R32 grudge matches."
               ],
     "fixtures":  [
                      {
@@ -701,9 +686,9 @@
                          "awayIso":  "cg",
                          "hOwn":  "Etan",
                          "aOwn":  "Etan",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
+                         "hWin":  1,
+                         "aWin":  -1,
+                         "state":  "ft",
                          "ko":  "17:00",
                          "hs":  2,
                          "as":  1
@@ -738,6 +723,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "England",
+                        "away":  "Congo DR",
+                        "homeAbbr":  "ENG",
+                        "awayAbbr":  "COG",
+                        "homeIso":  "gb-eng",
+                        "awayIso":  "cg",
+                        "hOwn":  "Etan",
+                        "aOwn":  "Etan",
+                        "hWin":  1,
+                        "aWin":  -1,
+                        "hs":  2,
+                        "as":  1
+                    },
                     {
                         "home":  "Mexico",
                         "away":  "Ecuador",
@@ -835,20 +834,6 @@
                         "aWin":  1,
                         "hs":  0,
                         "as":  1
-                    },
-                    {
-                        "home":  "Algeria",
-                        "away":  "Austria",
-                        "homeAbbr":  "ALG",
-                        "awayAbbr":  "AUT",
-                        "homeIso":  "dz",
-                        "awayIso":  "at",
-                        "hOwn":  "Ike",
-                        "aOwn":  "Quince",
-                        "hWin":  0,
-                        "aWin":  0,
-                        "hs":  3,
-                        "as":  3
                     }
                 ],
     "bracket":  [
@@ -1051,8 +1036,8 @@
                                             "awayIso":  "cg",
                                             "hs":  2,
                                             "as":  1,
-                                            "state":  "live",
-                                            "manner":  "",
+                                            "state":  "ft",
+                                            "manner":  "90",
                                             "hWin":  1,
                                             "aWin":  -1,
                                             "hOwn":  "Etan",
@@ -1219,11 +1204,11 @@
                                         },
                                         {
                                             "home":  "MEX",
-                                            "away":  "TBC",
+                                            "away":  "ENG",
                                             "homeAbbr":  "MEX",
-                                            "awayAbbr":  "TBC",
+                                            "awayAbbr":  "ENG",
                                             "homeIso":  "mx",
-                                            "awayIso":  null,
+                                            "awayIso":  "gb-eng",
                                             "hs":  null,
                                             "as":  null,
                                             "state":  "ko",
@@ -1231,7 +1216,7 @@
                                             "hWin":  0,
                                             "aWin":  0,
                                             "hOwn":  "Quince",
-                                            "aOwn":  null,
+                                            "aOwn":  "Etan",
                                             "ko":  "6 Jul 01:00"
                                         },
                                         {
