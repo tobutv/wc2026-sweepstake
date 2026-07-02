@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "03 Jul 2026 00:00",
+                 "stamp":  "03 Jul 2026 00:05",
                  "playedCount":  83,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  37,
                  "ogDesc":  "Quince leads on 37 pts after 83/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -505,16 +505,16 @@
                           "rank":  7,
                           "name":  "Murray",
                           "isLeader":  false,
-                          "pts":  23,
-                          "pld":  20,
+                          "pts":  24,
+                          "pld":  21,
                           "gd":  -4,
                           "gf":  28,
                           "ga":  32,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#897B3D",
+                          "ptsBg":  "#8F7F3C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#509C6F",
                           "gfFg":  "#ffffff",
@@ -538,7 +538,7 @@
                                             "hex":  "#E60026",
                                             "fg":  "#ffffff",
                                             "pts":  6,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -587,16 +587,16 @@
                           "rank":  8,
                           "name":  "Elsa",
                           "isLeader":  false,
-                          "pts":  22,
-                          "pld":  19,
+                          "pts":  23,
+                          "pld":  20,
                           "gd":  -4,
                           "gf":  27,
                           "ga":  31,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  1,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#84773D",
+                          "ptsBg":  "#897B3D",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4E986E",
                           "gfFg":  "#ffffff",
@@ -610,7 +610,7 @@
                                             "hex":  "#C60B1E",
                                             "fg":  "#ffffff",
                                             "pts":  5,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -667,7 +667,22 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Portugal",
+                     "away":  "Croatia",
+                     "homeAbbr":  "POR",
+                     "awayAbbr":  "CRO",
+                     "homeIso":  "pt",
+                     "awayIso":  "hr",
+                     "hOwn":  "Elsa",
+                     "aOwn":  "Murray",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "5\u0027",
+                     "detail":  "5\u0027"
+                 }
              ],
     "story":  [
                   "Lording it at the top, \u003cb\u003eQuince\u003c/b\u003e is boring everyone into an early grave \u0026mdash; 7 clean sheets, zero entertainment. The kind of football that makes people emigrate. Smugly in tow, \u003cb\u003eSid\u003c/b\u003e has turned the goalless draw into an art form nobody asked for \u0026mdash; 6 of them. A black hole where fun goes to die. Rounding out the insufferable elite, \u003cb\u003eEllie\u003c/b\u003e\u0027s lot defend like the door\u0027s been left on the latch, but they\u0027ll at least outscore the misery \u0026mdash; 33 goals (GD +2), led by Germany (ruthlessly, tediously efficient). Thrilling, doomed.",
@@ -704,8 +719,10 @@
                          "aOwn":  "Murray",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "00:00"
+                         "state":  "live",
+                         "ko":  "00:00",
+                         "hs":  0,
+                         "as":  0
                      },
                      {
                          "home":  "Switzerland",
@@ -915,9 +932,9 @@
                                             "awayAbbr":  "CRO",
                                             "homeIso":  "pt",
                                             "awayIso":  "hr",
-                                            "hs":  null,
-                                            "as":  null,
-                                            "state":  "ko",
+                                            "hs":  0,
+                                            "as":  0,
+                                            "state":  "live",
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
