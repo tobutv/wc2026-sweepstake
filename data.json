@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "03 Jul 2026 02:10",
+                 "stamp":  "03 Jul 2026 02:15",
                  "playedCount":  84,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -513,7 +513,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#94823C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#53A071",
@@ -1150,11 +1150,11 @@
                                             "ko":  "4 Jul 18:00"
                                         },
                                         {
-                                            "home":  "TBC",
+                                            "home":  "POR",
                                             "away":  "ESP",
-                                            "homeAbbr":  "TBC",
+                                            "homeAbbr":  "POR",
                                             "awayAbbr":  "ESP",
-                                            "homeIso":  null,
+                                            "homeIso":  "pt",
                                             "awayIso":  "es",
                                             "hs":  null,
                                             "as":  null,
@@ -1162,7 +1162,7 @@
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
-                                            "hOwn":  null,
+                                            "hOwn":  "Elsa",
                                             "aOwn":  "Ellie",
                                             "ko":  "6 Jul 20:00"
                                         },
