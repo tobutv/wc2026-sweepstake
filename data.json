@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "03 Jul 2026 22:00",
+                 "stamp":  "03 Jul 2026 23:00",
                  "playedCount":  86,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
@@ -267,7 +267,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  1,
+                          "delta":  0,
                           "ptsBg":  "#B49939",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#55A472",
@@ -431,7 +431,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  2,
+                          "delta":  0,
                           "ptsBg":  "#9F8A3B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#55A472",
