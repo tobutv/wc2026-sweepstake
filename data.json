@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "04 Jul 2026 02:00",
+                 "stamp":  "04 Jul 2026 03:00",
                  "playedCount":  87,
                  "totalMatches":  104,
                  "leaderName":  "Quince",
                  "leaderPts":  39,
                  "ogDesc":  "Quince leads on 39 pts after 87/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -21,7 +21,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  2,
+                          "delta":  0,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
@@ -103,7 +103,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  1,
+                          "delta":  0,
                           "ptsBg":  "#C0A139",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#58AA74",
@@ -177,18 +177,18 @@
                           "rank":  3,
                           "name":  "Big Pewerk",
                           "isLeader":  false,
-                          "pts":  31,
-                          "pld":  21,
-                          "gd":  0,
-                          "gf":  33,
+                          "pts":  34,
+                          "pld":  22,
+                          "gd":  1,
+                          "gf":  34,
                           "ga":  33,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  3,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#AC933A",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#56A673",
+                          "ptsBg":  "#BB9D39",
+                          "ptsFg":  "#0a1730",
+                          "gfBg":  "#58AA74",
                           "gfFg":  "#ffffff",
                           "gaBg":  "#F1676A",
                           "gaFg":  "#ffffff",
@@ -210,7 +210,7 @@
                                             "hex":  "#FCD116",
                                             "fg":  "#0a1730",
                                             "pts":  7,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -506,19 +506,19 @@
                           "name":  "Ike",
                           "isLeader":  false,
                           "pts":  25,
-                          "pld":  20,
-                          "gd":  -3,
+                          "pld":  21,
+                          "gd":  -4,
                           "gf":  28,
-                          "ga":  31,
+                          "ga":  32,
                           "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
                           "ptsBg":  "#8D7D3C",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4B936C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E36368",
+                          "gaBg":  "#EA6569",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -578,7 +578,7 @@
                                             "hex":  "#FCD116",
                                             "fg":  "#0a1730",
                                             "pts":  4,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         }
                                     ]
@@ -667,7 +667,22 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Colombia",
+                     "away":  "Ghana",
+                     "homeAbbr":  "COL",
+                     "awayAbbr":  "GHA",
+                     "homeIso":  "co",
+                     "awayIso":  "gh",
+                     "hOwn":  "Big Pewerk",
+                     "aOwn":  "Ike",
+                     "hWin":  1,
+                     "aWin":  -1,
+                     "hs":  1,
+                     "as":  0,
+                     "clock":  "29\u0027",
+                     "detail":  "29\u0027"
+                 }
              ],
     "story":  [
                   "Lording it at the top, \u003cb\u003eQuince\u003c/b\u003e is boring everyone into an early grave \u0026mdash; 7 clean sheets, zero entertainment. The kind of football that makes people emigrate. Smugly in tow, \u003cb\u003eSid\u003c/b\u003e has turned the goalless draw into an art form nobody asked for \u0026mdash; 6 of them. A black hole where fun goes to die. Rounding out the insufferable elite, \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s lot defend like the door\u0027s been left on the latch, but they\u0027ll at least outscore the misery \u0026mdash; 33 goals (GD +0), led by Netherlands (beautiful football, then a fistfight among themselves). Thrilling, doomed.",
@@ -1086,12 +1101,12 @@
                                             "awayAbbr":  "GHA",
                                             "homeIso":  "co",
                                             "awayIso":  "gh",
-                                            "hs":  null,
-                                            "as":  null,
-                                            "state":  "ko",
+                                            "hs":  1,
+                                            "as":  0,
+                                            "state":  "live",
                                             "manner":  "",
-                                            "hWin":  0,
-                                            "aWin":  0,
+                                            "hWin":  1,
+                                            "aWin":  -1,
                                             "hOwn":  "Big Pewerk",
                                             "aOwn":  "Ike",
                                             "ko":  "4 Jul 02:30"
