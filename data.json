@@ -1,6 +1,6 @@
 {
   "meta": {
-    "stamp": "05 Jul 2026 00:43",
+    "stamp": "05 Jul 2026 10:46",
     "playedCount": 90,
     "totalMatches": 104,
     "leaderName": "Quince",
@@ -676,36 +676,32 @@
   ],
   "fixtures": [
     {
-      "home": "Canada",
-      "away": "Morocco",
-      "homeAbbr": "CAN",
-      "awayAbbr": "MAR",
-      "homeIso": "ca",
-      "awayIso": "ma",
-      "hOwn": "Ellie",
+      "home": "Brazil",
+      "away": "Norway",
+      "homeAbbr": "BRA",
+      "awayAbbr": "NOR",
+      "homeIso": "br",
+      "awayIso": "no",
+      "hOwn": "Murray",
       "aOwn": "Sid",
-      "hWin": -1,
-      "aWin": 1,
-      "state": "ft",
-      "ko": "18:00",
-      "hs": 0,
-      "as": 3
+      "hWin": 0,
+      "aWin": 0,
+      "state": "ko",
+      "ko": "21:00"
     },
     {
-      "home": "Paraguay",
-      "away": "France",
-      "homeAbbr": "PAR",
-      "awayAbbr": "FRA",
-      "homeIso": "py",
-      "awayIso": "fr",
-      "hOwn": "Etan",
-      "aOwn": "Ike",
-      "hWin": -1,
-      "aWin": 1,
-      "state": "ft",
-      "ko": "22:00",
-      "hs": 0,
-      "as": 1
+      "home": "Mexico",
+      "away": "England",
+      "homeAbbr": "MEX",
+      "awayAbbr": "ENG",
+      "homeIso": "mx",
+      "awayIso": "gb-eng",
+      "hOwn": "Quince",
+      "aOwn": "Etan",
+      "hWin": 0,
+      "aWin": 0,
+      "state": "ko",
+      "ko": "01:00"
     }
   ],
   "results": [
