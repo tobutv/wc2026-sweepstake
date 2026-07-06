@@ -617,63 +617,39 @@ def build_knockout_story(players_cfg, stat, teams, elim, bracket, flair):
     elim_teams = sorted([ab for ab in stat if ab in elim], key=lambda ab: (-stat[ab]["Pts"], ab))
     casualty = elim_teams[0] if elim_teams else None
 
-    # --- Paragraph A: the cull ---
-    a = "<b>The cull.</b> %d team%s gone home" % (len(elim), " has" if len(elim) == 1 else "s have")
+    # --- Paragraph A: the cull (survivors + biggest casualty) ---
+    a = "<b>The cull.</b> %d team%s out" % (len(elim), " is" if len(elim) == 1 else "s are")
     if casualty:
-        a += ", the biggest scalp so far being %s" % tnf(casualty)
+        a += " &mdash; %s the marquee casualty" % tnf(casualty)
     a += ". "
     if leaders:
-        a += "%s %s the most into the knockouts with %d of six still breathing. " % (
-            _join_names(leaders), "carry" if len(leaders) != 1 else "carries", most_n)
+        a += "%s still %s the most skin in the game, %d of six alive. " % (
+            _join_names(leaders), "have" if len(leaders) != 1 else "has", most_n)
     if wiped:
-        a += "%s %s nothing left &mdash; every last pick eliminated, now reduced to %s. " % (
-            _join_names(wiped), "have" if len(wiped) != 1 else "has",
-            "spectators" if len(wiped) != 1 else "a spectator")
+        a += "%s %s out cold, every last pick gone. " % (
+            _join_names(wiped), "are" if len(wiped) != 1 else "is")
 
-    # --- Paragraph B: routes & grudge matches ---
-    advanced = {}  # abbr -> (depth, round, owner, opp_or_None)
-    for depth, col in enumerate(bracket):
+    # --- Paragraph B: the ties in the deepest round that's taken shape (each listed once) ---
+    def side(ab, own):
+        if ab == "TBC":
+            return "TBC"
+        return ("<b>%s</b>'s %s" % (own, tn(ab))) if own else tn(ab)
+
+    live_round = None
+    for col in bracket:
         if col["round"] == "Round of 32":
             continue
-        for m in col["matches"]:
-            for ab, own, opp in ((m["homeAbbr"], m.get("hOwn"), m["awayAbbr"]),
-                                 (m["awayAbbr"], m.get("aOwn"), m["homeAbbr"])):
-                if ab != "TBC" and ab in teams:
-                    advanced[ab] = (depth, col["round"], own, None if opp == "TBC" else opp)
-    adv_list = sorted(advanced.items(), key=lambda kv: (-kv[1][0], kv[0]))[:3]
-
-    self_clash = None
-    pvp = None
-    for col in bracket:
-        if col["round"] != "Round of 32":
-            continue
-        for m in col["matches"]:
-            ho, ao = m.get("hOwn"), m.get("aOwn")
-            ha, aa = m["homeAbbr"], m["awayAbbr"]
-            if ho and ao and ha != "TBC" and aa != "TBC" and m.get("state") != "ft":
-                if ho == ao and self_clash is None:
-                    self_clash = (ho, ha, aa)
-                elif ho != ao and pvp is None:
-                    pvp = (ho, ha, ao, aa)
-
+        if any(m["homeAbbr"] != "TBC" or m["awayAbbr"] != "TBC" for m in col["matches"]):
+            live_round = col
     b = []
-    if adv_list:
-        bits = []
-        for ab, (depth, rnd, own, opp) in adv_list:
-            who = ("<b>%s</b>'s " % own) if own else ""
-            if opp:
-                bits.append("%s%s have a date with %s" % (who, tn(ab), tn(opp)))
-            else:
-                bits.append("%s%s are through and waiting on an opponent" % (who, tn(ab)))
-        b.append("Into the knockouts proper: " + "; ".join(bits) + ".")
-    if self_clash:
-        o, h, aw = self_clash
-        b.append("Spare a thought for <b>%s</b>, who owns both %s and %s in the same R32 tie "
-                 "&mdash; a guaranteed win and a guaranteed funeral." % (o, tn(h), tn(aw)))
-    if pvp:
-        o1, h, o2, aw = pvp
-        b.append("<b>%s</b>'s %s versus <b>%s</b>'s %s is the pick of the all-in-the-family "
-                 "R32 grudge matches." % (o1, tn(h), o2, tn(aw)))
+    if live_round:
+        ties = []
+        for m in live_round["matches"]:
+            if m["homeAbbr"] == "TBC" and m["awayAbbr"] == "TBC":
+                continue
+            ties.append("%s v %s" % (side(m["homeAbbr"], m.get("hOwn")), side(m["awayAbbr"], m.get("aOwn"))))
+        if ties:
+            b.append("Next up, the %s: %s." % (live_round["round"].lower(), "; ".join(ties)))
 
     out = []
     if a.strip():
@@ -684,140 +660,32 @@ def build_knockout_story(players_cfg, stat, teams, elim, bracket, flair):
 
 
 def build_story(ranked, players_cfg, stat, team_pts, teams, played, team_matches, flair):
-    """A funny, flowing 3-paragraph round-up. Each participant (first to last) gets a
-    distinct 'beyond the table' quirk, stitched together with connective tissue.
-    Deterministic so it only changes when the stats do, not on every refresh."""
+    """One tight, current scene-setter: the race at the top and the wooden spoon. The knockout
+    detail (survivors, casualties, the ties taking shape) lives in build_knockout_story so the
+    write-up stays short and stops rehashing stale group-stage stats. Deterministic."""
     if played == 0:
-        return ["Not a ball kicked, not a point banked &mdash; just eight grown adults who should know "
-                "better, about to be exposed as the fools they are. Pull up a chair."]
-    n = len(ranked)
-    used = set()
-    beats = []
-    for idx, rp in enumerate(ranked):
-        cands = player_insights(rp, idx + 1, n, players_cfg, stat, teams, team_matches, flair)
-        cands.sort(key=lambda c: -c[0])
-        chosen = next((c for c in cands if c[1] not in used), cands[0] if cands else None)
-        if chosen:
-            used.add(chosen[1])
-            beats.append(chosen[2])
+        return ["Not a ball kicked, not a point banked &mdash; just eight grown adults about to be "
+                "exposed as the fools they are. Pull up a chair."]
+
+    def nm(p):
+        return "<b>%s</b>" % p["name"]
+
+    lead = ranked[0]
+    second = ranked[1] if len(ranked) > 1 else None
+    last = ranked[-1]
+    lp = lead["ProjPts"]
+    if second is None:
+        top = "%s stands alone at the top on %d." % (nm(lead), lp)
+    else:
+        gap = lp - second["ProjPts"]
+        if gap == 0:
+            top = "%s and %s are locked together at the summit on %d, split only by the fine print." % (nm(lead), nm(second), lp)
+        elif gap <= 3:
+            top = "%s leads on %d, but %s is right on their shoulder &mdash; %d back and sharpening the knives." % (nm(lead), lp, nm(second), gap)
         else:
-            beats.append("<b>%s</b> is doing absolutely nothing worth the keystrokes." % rp["name"])
-
-    p1 = ["Lording it at the top, ", "Smugly in tow, ", "Rounding out the insufferable elite, "]
-    p2 = ["Wallowing in mid-table sludge, ", "Equally forgettable, ", "Barely clinging to relevance, "]
-    p3 = ["Down in the dregs, ", "And scraping the very bottom of the barrel, "]
-
-    def para(slice_, leads):
-        out = []
-        for i, b in enumerate(slice_):
-            out.append((leads[i] if i < len(leads) else "Then ") + b)
-        return " ".join(out)
-
-    paras = [para(beats[0:3], p1), para(beats[3:6], p2), para(beats[6:], p3)]
-    return [p for p in paras if p]
-
-
-def tname(teams, ab):
-    return teams.get(ab, {}).get("name", ab)
-
-
-def player_insights(rp, rank, n, players_cfg, stat, teams, team_matches, flair):
-    """Return a list of (salience, type, html) candidate observations for one player.
-    Texts are name-led and self-contained (paragraph assembly handles position)."""
-    name = rp["name"]
-    picks = next(p["picks"] for p in players_cfg if p["name"] == name)
-    pts = gf = ga = w = d = l = pld = 0
-    contrib = {}
-    yet = []
-    played_teams = []
-    zero_played = []
-    best_match = None
-    big_rout = None
-    worst_def = None
-    clean = 0
-    for ab in picks:
-        s = stat.get(ab, {"Pld": 0, "W": 0, "D": 0, "GF": 0, "GA": 0, "Pts": 0})
-        pts += s["Pts"]; gf += s["GF"]; ga += s["GA"]; w += s["W"]; d += s["D"]; pld += s["Pld"]
-        contrib[ab] = s["Pts"]
-        if s["Pld"] == 0:
-            yet.append(ab)
-        else:
-            played_teams.append(ab)
-            if s["Pts"] == 0:
-                zero_played.append(ab)
-        for m in team_matches.get(ab, []):
-            margin = m["gf"] - m["ga"]
-            if m["ga"] == 0:
-                clean += 1
-            if m["gf"] > m["ga"] and (best_match is None or margin > best_match[0]):
-                best_match = (margin, m["gf"], m["ga"], ab)
-            if big_rout is None or m["gf"] > big_rout[0]:
-                big_rout = (m["gf"], m["ga"], ab)
-            if m["ga"] > m["gf"] and (worst_def is None or (m["ga"] - m["gf"]) > worst_def[0]):
-                worst_def = (m["ga"] - m["gf"], m["gf"], m["ga"], ab)
-    l = pld - w - d
-    gd = gf - ga
-    best_ab = max(contrib, key=lambda k: contrib[k]) if contrib else None
-    share = round(100.0 * contrib[best_ab] / pts) if (best_ab and pts > 0) else 0
-    sign = "+" if gd >= 0 else ""
-    nm = "<b>%s</b>" % name
-
-    def tnf(ab):  # team name + national cliché, e.g. "Germany (ruthlessly, tediously efficient)"
-        base = tname(teams, ab)
-        fl = flair.get(ab, "")
-        return ("%s (%s)" % (base, fl)) if fl else base
-
-    c = []
-
-    if pts > 0 and share >= 50 and contrib[best_ab] > 0:
-        c.append((share + 20, "reliance",
-                  "%s is a one-team con artist &mdash; %s does %d%% of the work while the other five collect appearance money. Take it away and there's nothing left but excuses." % (nm, tnf(best_ab), share)))
-    if pld >= 2 and l == 0 and w >= 2 and d == 0:
-        c.append((92, "perfect",
-                  "%s is winning and being a complete bellend about it &mdash; every team they own that's played has won, and we've all had to hear about every single one. Someone hide their phone." % nm))
-    if pld >= 2 and w == 0:
-        tail = ("just %d draw%s for company" % (d, "" if d == 1 else "s")) if d > 0 else "and nothing whatsoever to show for it"
-        c.append((88, "winless",
-                  "%s is still chasing a first win like it owes them money &mdash; %d games, zero wins, %s. Maybe pick a sport you understand." % (nm, pld, tail)))
-    if len(yet) >= 1:
-        names = ", ".join(tname(teams, a) for a in yet)
-        c.append((40 + 12 * len(yet), "inhand",
-                  "%s has %d team(s) yet to kick a ball (%s) &mdash; clinging to 'games in hand' like it's a personality. It won't save them." % (nm, len(yet), names)))
-    if zero_played:
-        c.append((62, "deadweight",
-                  "%s saw something in %s that no scout, coach or sane human ever has &mdash; played, did nothing, and is somehow still the jewel of that abysmal squad." % (nm, tnf(zero_played[0]))))
-    if big_rout and big_rout[0] >= 4:
-        c.append((58 + big_rout[0], "rout",
-                  "%s will be replaying %s's %d-%d all tournament because, let's be honest, it's the only good thing their team will ever do. Frame it." % (nm, tnf(big_rout[2]), big_rout[0], big_rout[1])))
-    elif best_match and best_match[0] >= 2:
-        c.append((50 + best_match[0], "bigwin",
-                  "%s's solitary highlight is a %d-%d win for %s &mdash; screenshotted, set as wallpaper, shown to disinterested colleagues. It's all they've got." % (nm, best_match[1], best_match[2], tnf(best_match[3]))))
-    if gf >= 6:
-        topgf = max(picks, key=lambda a: stat.get(a, {}).get("GF", 0))
-        c.append((40 + gf, "goals",
-                  "%s's lot defend like the door's been left on the latch, but they'll at least outscore the misery &mdash; %d goals (GD %s%d), led by %s. Thrilling, doomed." % (nm, gf, sign, gd, tnf(topgf))))
-    if ga >= 7:
-        leak = max(played_teams, key=lambda a: stat[a]["GA"]) if played_teams else None
-        leaktxt = (", %s leaking %d of them. Genuinely embarrassing to be associated with." % (tnf(leak), stat[leak]["GA"])) if leak else ". Genuinely embarrassing to be associated with."
-        c.append((38 + ga, "leaky",
-                  "%s's defence is a public health hazard &mdash; %d shipped%s" % (nm, ga, leaktxt)))
-    if clean >= 2:
-        c.append((44 + 6 * clean, "cleansheets",
-                  "%s is boring everyone into an early grave &mdash; %d clean sheets, zero entertainment. The kind of football that makes people emigrate." % (nm, clean)))
-    if d >= 3:
-        c.append((40 + 6 * d, "draws",
-                  "%s has turned the goalless draw into an art form nobody asked for &mdash; %d of them. A black hole where fun goes to die." % (nm, d)))
-    if worst_def and worst_def[0] >= 3:
-        c.append((42 + worst_def[0], "thumped",
-                  "%s had to sit and watch %s get battered %d-%d &mdash; and we'll be bringing it up at every opportunity for the rest of their natural life." % (nm, tnf(worst_def[3]), worst_def[1], worst_def[2])))
-    scoring_teams = [a for a in played_teams if contrib[a] > 0]
-    if pts >= 6 and len(scoring_teams) >= 4 and share <= 35:
-        c.append((46, "spread",
-                  "%s spread their picks out of sheer cowardice &mdash; %d teams all contributing scraps, not one brave enough to actually be good. Death by committee." % (nm, len(scoring_teams))))
-
-    c.append((5, "summary",
-              "%s is just... there. %d pts, %dW %dD %dL. A complete non-entity &mdash; we genuinely forgot they were playing until just now." % (nm, pts, w, d, l)))
-    return c
+            top = "%s has bolted clear on %d, %d ahead of %s and out of sight." % (nm(lead), lp, gap, nm(second))
+    tail = " Down at the bottom, %s is nailed to the foot of the table on %d." % (nm(last), last["ProjPts"])
+    return [top + tail]
 
 
 if __name__ == "__main__":
