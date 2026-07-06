@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "06 Jul 2026 22:00",
-                 "playedCount":  92,
+                 "stamp":  "06 Jul 2026 23:00",
+                 "playedCount":  93,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
                  "leaderPts":  41,
-                 "ogDesc":  "Sid leads on 41 pts after 92/104 matches"
+                 "ogDesc":  "Sid leads on 41 pts after 93/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -346,10 +346,10 @@
                           "gd":  0,
                           "gf":  34,
                           "ga":  34,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#AE943A",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#55A472",
@@ -363,8 +363,8 @@
                                             "iso":  "es",
                                             "hex":  "#AA151B",
                                             "fg":  "#ffffff",
-                                            "pts":  10,
-                                            "live":  true,
+                                            "pts":  13,
+                                            "live":  false,
                                             "out":  false
                                         },
                                         {
@@ -511,8 +511,8 @@
                           "gf":  30,
                           "ga":  34,
                           "livePts":  0,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
                           "ptsBg":  "#91803C",
                           "ptsFg":  "#ffffff",
@@ -528,8 +528,8 @@
                                             "hex":  "#C60B1E",
                                             "fg":  "#ffffff",
                                             "pts":  8,
-                                            "live":  true,
-                                            "out":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "USA",
@@ -667,27 +667,12 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "Portugal",
-                     "away":  "Spain",
-                     "homeAbbr":  "POR",
-                     "awayAbbr":  "ESP",
-                     "homeIso":  "pt",
-                     "awayIso":  "es",
-                     "hOwn":  "Elsa",
-                     "aOwn":  "Ellie",
-                     "hWin":  -1,
-                     "aWin":  1,
-                     "hs":  0,
-                     "as":  1,
-                     "clock":  "90\u0027+7\u0027",
-                     "detail":  "90\u0027+7\u0027"
-                 }
+
              ],
     "story":  [
                   "\u003cb\u003eSid\u003c/b\u003e leads on 41, but \u003cb\u003eQuince\u003c/b\u003e is right on their shoulder \u0026mdash; 2 back and sharpening the knives. Down at the bottom, \u003cb\u003eMurray\u003c/b\u003e is nailed to the foot of the table on 23.",
-                  "\u003cb\u003eThe cull.\u003c/b\u003e 36 teams are out \u0026mdash; Mexico (all noise and heart, last-16 exit pre-booked) the marquee casualty. \u003cb\u003eElsa\u003c/b\u003e and \u003cb\u003eSid\u003c/b\u003e still have the most skin in the game, 3 of six alive. \u003cb\u003eMurray\u003c/b\u003e is out cold, every last pick gone.",
-                  "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England."
+                  "\u003cb\u003eThe cull.\u003c/b\u003e 37 teams are out \u0026mdash; Mexico (all noise and heart, last-16 exit pre-booked) the marquee casualty. \u003cb\u003eSid\u003c/b\u003e still has the most skin in the game, 3 of six alive. \u003cb\u003eMurray\u003c/b\u003e is out cold, every last pick gone.",
+                  "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v TBC; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England."
               ],
     "fixtures":  [
                      {
@@ -699,9 +684,9 @@
                          "awayIso":  "es",
                          "hOwn":  "Elsa",
                          "aOwn":  "Ellie",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "live",
+                         "hWin":  -1,
+                         "aWin":  1,
+                         "state":  "ft",
                          "ko":  "20:00",
                          "hs":  0,
                          "as":  1
@@ -722,6 +707,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "Portugal",
+                        "away":  "Spain",
+                        "homeAbbr":  "POR",
+                        "awayAbbr":  "ESP",
+                        "homeIso":  "pt",
+                        "awayIso":  "es",
+                        "hOwn":  "Elsa",
+                        "aOwn":  "Ellie",
+                        "hWin":  -1,
+                        "aWin":  1,
+                        "hs":  0,
+                        "as":  1
+                    },
                     {
                         "home":  "Mexico",
                         "away":  "England",
@@ -819,20 +818,6 @@
                         "aWin":  0,
                         "hs":  1,
                         "as":  1
-                    },
-                    {
-                        "home":  "Switzerland",
-                        "away":  "Algeria",
-                        "homeAbbr":  "SUI",
-                        "awayAbbr":  "ALG",
-                        "homeIso":  "ch",
-                        "awayIso":  "dz",
-                        "hOwn":  "Big Pewerk",
-                        "aOwn":  "Ike",
-                        "hWin":  1,
-                        "aWin":  -1,
-                        "hs":  2,
-                        "as":  0
                     }
                 ],
     "bracket":  [
@@ -1159,8 +1144,8 @@
                                             "awayIso":  "es",
                                             "hs":  0,
                                             "as":  1,
-                                            "state":  "live",
-                                            "manner":  "",
+                                            "state":  "ft",
+                                            "manner":  "90",
                                             "hWin":  -1,
                                             "aWin":  1,
                                             "hOwn":  "Elsa",
@@ -1275,11 +1260,11 @@
                                             "ko":  "9 Jul 21:00"
                                         },
                                         {
-                                            "home":  "TBC",
+                                            "home":  "ESP",
                                             "away":  "TBC",
-                                            "homeAbbr":  "TBC",
+                                            "homeAbbr":  "ESP",
                                             "awayAbbr":  "TBC",
-                                            "homeIso":  null,
+                                            "homeIso":  "es",
                                             "awayIso":  null,
                                             "hs":  null,
                                             "as":  null,
@@ -1287,7 +1272,7 @@
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
-                                            "hOwn":  null,
+                                            "hOwn":  "Ellie",
                                             "aOwn":  null,
                                             "ko":  "10 Jul 20:00"
                                         },
