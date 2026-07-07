@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "07 Jul 2026 03:00",
+                 "stamp":  "07 Jul 2026 04:00",
                  "playedCount":  94,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -21,7 +21,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
@@ -672,7 +672,7 @@
     "story":  [
                   "\u003cb\u003eSid\u003c/b\u003e has bolted clear on 44, 5 ahead of \u003cb\u003eQuince\u003c/b\u003e and out of sight. Down at the bottom, \u003cb\u003eMurray\u003c/b\u003e is nailed to the foot of the table on 23.",
                   "\u003cb\u003eThe cull.\u003c/b\u003e 38 teams are out \u0026mdash; Mexico (all noise and heart, last-16 exit pre-booked) the marquee casualty. \u003cb\u003eSid\u003c/b\u003e still has the most skin in the game, 3 of six alive. \u003cb\u003eMurray\u003c/b\u003e is out cold, every last pick gone.",
-                  "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v TBC; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England."
+                  "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v \u003cb\u003eSid\u003c/b\u003e\u0027s Belgium; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England."
               ],
     "fixtures":  [
                      {
@@ -1259,11 +1259,11 @@
                                         },
                                         {
                                             "home":  "ESP",
-                                            "away":  "TBC",
+                                            "away":  "BEL",
                                             "homeAbbr":  "ESP",
-                                            "awayAbbr":  "TBC",
+                                            "awayAbbr":  "BEL",
                                             "homeIso":  "es",
-                                            "awayIso":  null,
+                                            "awayIso":  "be",
                                             "hs":  null,
                                             "as":  null,
                                             "state":  "ko",
@@ -1271,7 +1271,7 @@
                                             "hWin":  0,
                                             "aWin":  0,
                                             "hOwn":  "Ellie",
-                                            "aOwn":  null,
+                                            "aOwn":  "Sid",
                                             "ko":  "10 Jul 20:00"
                                         },
                                         {
