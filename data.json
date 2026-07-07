@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "07 Jul 2026 21:00",
+                 "stamp":  "07 Jul 2026 22:00",
                  "playedCount":  95,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
                  "leaderPts":  44,
                  "ogDesc":  "Sid leads on 44 pts after 95/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -177,16 +177,16 @@
                           "rank":  3,
                           "name":  "Big Pewerk",
                           "isLeader":  false,
-                          "pts":  34,
-                          "pld":  22,
+                          "pts":  36,
+                          "pld":  24,
                           "gd":  1,
                           "gf":  34,
                           "ga":  33,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePts":  2,
+                          "livePld":  2,
+                          "hasLive":  true,
                           "delta":  0,
-                          "ptsBg":  "#A7903A",
+                          "ptsBg":  "#B0963A",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#509B6F",
                           "gfFg":  "#ffffff",
@@ -210,7 +210,7 @@
                                             "hex":  "#FCD116",
                                             "fg":  "#0a1730",
                                             "pts":  10,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -220,7 +220,7 @@
                                             "hex":  "#DA291C",
                                             "fg":  "#ffffff",
                                             "pts":  10,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -667,7 +667,22 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Switzerland",
+                     "away":  "Colombia",
+                     "homeAbbr":  "SUI",
+                     "awayAbbr":  "COL",
+                     "homeIso":  "ch",
+                     "awayIso":  "co",
+                     "hOwn":  "Big Pewerk",
+                     "aOwn":  "Big Pewerk",
+                     "hWin":  0,
+                     "aWin":  0,
+                     "hs":  0,
+                     "as":  0,
+                     "clock":  "45\u0027+3\u0027",
+                     "detail":  "HT"
+                 }
              ],
     "story":  [
                   "\u003cb\u003eSid\u003c/b\u003e leads on 44, but \u003cb\u003eQuince\u003c/b\u003e is right on their shoulder \u0026mdash; 2 back and sharpening the knives. Down at the bottom, \u003cb\u003eMurray\u003c/b\u003e is nailed to the foot of the table on 23.",
@@ -702,8 +717,10 @@
                          "aOwn":  "Big Pewerk",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "21:00"
+                         "state":  "live",
+                         "ko":  "21:00",
+                         "hs":  0,
+                         "as":  0
                      }
                  ],
     "results":  [
@@ -1227,9 +1244,9 @@
                                             "awayAbbr":  "COL",
                                             "homeIso":  "ch",
                                             "awayIso":  "co",
-                                            "hs":  null,
-                                            "as":  null,
-                                            "state":  "ko",
+                                            "hs":  0,
+                                            "as":  0,
+                                            "state":  "live",
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
