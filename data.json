@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "07 Jul 2026 02:00",
-                 "playedCount":  93,
+                 "stamp":  "07 Jul 2026 03:00",
+                 "playedCount":  94,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
                  "leaderPts":  44,
-                 "ogDesc":  "Sid leads on 44 pts after 93/104 matches"
+                 "ogDesc":  "Sid leads on 44 pts after 94/104 matches"
              },
-    "anyLive":  true,
+    "anyLive":  false,
     "standings":  [
                       {
                           "rank":  1,
@@ -15,18 +15,18 @@
                           "isLeader":  true,
                           "pts":  44,
                           "pld":  25,
-                          "gd":  9,
-                          "gf":  41,
+                          "gd":  11,
+                          "gf":  43,
                           "ga":  32,
-                          "livePts":  3,
-                          "livePld":  1,
-                          "hasLive":  true,
-                          "delta":  0,
+                          "livePts":  0,
+                          "livePld":  0,
+                          "hasLive":  false,
+                          "delta":  3,
                           "ptsBg":  "#D4AF37",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
                           "gfFg":  "#0a1730",
-                          "gaBg":  "#D96066",
+                          "gaBg":  "#D35E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -45,8 +45,8 @@
                                             "iso":  "be",
                                             "hex":  "#ED2939",
                                             "fg":  "#ffffff",
-                                            "pts":  7,
-                                            "live":  true,
+                                            "pts":  10,
+                                            "live":  false,
                                             "out":  false
                                         },
                                         {
@@ -106,9 +106,9 @@
                           "delta":  0,
                           "ptsBg":  "#BE9F39",
                           "ptsFg":  "#0a1730",
-                          "gfBg":  "#63BE7B",
-                          "gfFg":  "#0a1730",
-                          "gaBg":  "#F8696B",
+                          "gfBg":  "#5FB779",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#F2676A",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -188,9 +188,9 @@
                           "delta":  0,
                           "ptsBg":  "#A7903A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#55A472",
+                          "gfBg":  "#519E70",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#DF6267",
+                          "gaBg":  "#D96066",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -270,9 +270,9 @@
                           "delta":  0,
                           "ptsBg":  "#A7903A",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#53A071",
+                          "gfBg":  "#4F9A6F",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#DF6267",
+                          "gaBg":  "#D96066",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -352,9 +352,9 @@
                           "delta":  0,
                           "ptsBg":  "#A38C3B",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#55A472",
+                          "gfBg":  "#519E70",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#E56368",
+                          "gaBg":  "#DF6267",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -434,9 +434,9 @@
                           "delta":  0,
                           "ptsBg":  "#8C7D3C",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#4A916B",
+                          "gfBg":  "#488C6A",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#D96066",
+                          "gaBg":  "#D35E65",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -507,18 +507,18 @@
                           "isLeader":  false,
                           "pts":  27,
                           "pld":  23,
-                          "gd":  -5,
+                          "gd":  -7,
                           "gf":  31,
-                          "ga":  36,
+                          "ga":  38,
                           "livePts":  0,
-                          "livePld":  1,
-                          "hasLive":  true,
+                          "livePld":  0,
+                          "hasLive":  false,
                           "delta":  0,
                           "ptsBg":  "#887A3D",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#4F996E",
+                          "gfBg":  "#4C936C",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#F2676A",
+                          "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -538,8 +538,8 @@
                                             "hex":  "#3C3B6E",
                                             "fg":  "#ffffff",
                                             "pts":  9,
-                                            "live":  true,
-                                            "out":  false
+                                            "live":  false,
+                                            "out":  true
                                         },
                                         {
                                             "abbr":  "KOR",
@@ -598,9 +598,9 @@
                           "delta":  0,
                           "ptsBg":  "#766D3E",
                           "ptsFg":  "#ffffff",
-                          "gfBg":  "#4C956D",
+                          "gfBg":  "#4A906B",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#F2676A",
+                          "gaBg":  "#EC6569",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -667,26 +667,11 @@
                       }
                   ],
     "live":  [
-                 {
-                     "home":  "United States",
-                     "away":  "Belgium",
-                     "homeAbbr":  "USA",
-                     "awayAbbr":  "BEL",
-                     "homeIso":  "us",
-                     "awayIso":  "be",
-                     "hOwn":  "Elsa",
-                     "aOwn":  "Sid",
-                     "hWin":  -1,
-                     "aWin":  1,
-                     "hs":  1,
-                     "as":  2,
-                     "clock":  "45\u0027+6\u0027",
-                     "detail":  "HT"
-                 }
+
              ],
     "story":  [
                   "\u003cb\u003eSid\u003c/b\u003e has bolted clear on 44, 5 ahead of \u003cb\u003eQuince\u003c/b\u003e and out of sight. Down at the bottom, \u003cb\u003eMurray\u003c/b\u003e is nailed to the foot of the table on 23.",
-                  "\u003cb\u003eThe cull.\u003c/b\u003e 37 teams are out \u0026mdash; Mexico (all noise and heart, last-16 exit pre-booked) the marquee casualty. \u003cb\u003eSid\u003c/b\u003e still has the most skin in the game, 3 of six alive. \u003cb\u003eMurray\u003c/b\u003e is out cold, every last pick gone.",
+                  "\u003cb\u003eThe cull.\u003c/b\u003e 38 teams are out \u0026mdash; Mexico (all noise and heart, last-16 exit pre-booked) the marquee casualty. \u003cb\u003eSid\u003c/b\u003e still has the most skin in the game, 3 of six alive. \u003cb\u003eMurray\u003c/b\u003e is out cold, every last pick gone.",
                   "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v TBC; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England."
               ],
     "fixtures":  [
@@ -720,6 +705,20 @@
                      }
                  ],
     "results":  [
+                    {
+                        "home":  "United States",
+                        "away":  "Belgium",
+                        "homeAbbr":  "USA",
+                        "awayAbbr":  "BEL",
+                        "homeIso":  "us",
+                        "awayIso":  "be",
+                        "hOwn":  "Elsa",
+                        "aOwn":  "Sid",
+                        "hWin":  -1,
+                        "aWin":  1,
+                        "hs":  1,
+                        "as":  4
+                    },
                     {
                         "home":  "Portugal",
                         "away":  "Spain",
@@ -817,20 +816,6 @@
                         "aWin":  -1,
                         "hs":  3,
                         "as":  2
-                    },
-                    {
-                        "home":  "Australia",
-                        "away":  "Egypt",
-                        "homeAbbr":  "AUS",
-                        "awayAbbr":  "EGY",
-                        "homeIso":  "au",
-                        "awayIso":  "eg",
-                        "hOwn":  "Etan",
-                        "aOwn":  "Elsa",
-                        "hWin":  0,
-                        "aWin":  0,
-                        "hs":  1,
-                        "as":  1
                     }
                 ],
     "bracket":  [
@@ -1173,9 +1158,9 @@
                                             "homeIso":  "us",
                                             "awayIso":  "be",
                                             "hs":  1,
-                                            "as":  2,
-                                            "state":  "live",
-                                            "manner":  "",
+                                            "as":  4,
+                                            "state":  "ft",
+                                            "manner":  "90",
                                             "hWin":  -1,
                                             "aWin":  1,
                                             "hOwn":  "Elsa",
