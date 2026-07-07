@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "07 Jul 2026 20:00",
+                 "stamp":  "07 Jul 2026 21:00",
                  "playedCount":  95,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -103,7 +103,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#CBA938",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#63BE7B",
