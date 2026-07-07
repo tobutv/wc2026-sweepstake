@@ -1,13 +1,13 @@
 {
     "meta":  {
-                 "stamp":  "07 Jul 2026 17:00",
+                 "stamp":  "07 Jul 2026 18:00",
                  "playedCount":  94,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
                  "leaderPts":  44,
                  "ogDesc":  "Sid leads on 44 pts after 94/104 matches"
              },
-    "anyLive":  false,
+    "anyLive":  true,
     "standings":  [
                       {
                           "rank":  1,
@@ -96,19 +96,19 @@
                           "name":  "Quince",
                           "isLeader":  false,
                           "pts":  39,
-                          "pld":  25,
-                          "gd":  4,
+                          "pld":  26,
+                          "gd":  3,
                           "gf":  41,
-                          "ga":  37,
+                          "ga":  38,
                           "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
+                          "livePld":  1,
+                          "hasLive":  true,
                           "delta":  0,
                           "ptsBg":  "#BE9F39",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#5FB779",
                           "gfFg":  "#ffffff",
-                          "gaBg":  "#F2676A",
+                          "gaBg":  "#F8696B",
                           "gaFg":  "#ffffff",
                           "picks":  [
                                         {
@@ -118,7 +118,7 @@
                                             "hex":  "#75AADB",
                                             "fg":  "#0a1730",
                                             "pts":  11,
-                                            "live":  false,
+                                            "live":  true,
                                             "out":  false
                                         },
                                         {
@@ -421,6 +421,88 @@
                       },
                       {
                           "rank":  6,
+                          "name":  "Elsa",
+                          "isLeader":  false,
+                          "pts":  30,
+                          "pld":  24,
+                          "gd":  -6,
+                          "gf":  32,
+                          "ga":  38,
+                          "livePts":  3,
+                          "livePld":  1,
+                          "hasLive":  true,
+                          "delta":  0,
+                          "ptsBg":  "#95833C",
+                          "ptsFg":  "#ffffff",
+                          "gfBg":  "#4E976D",
+                          "gfFg":  "#ffffff",
+                          "gaBg":  "#F8696B",
+                          "gaFg":  "#ffffff",
+                          "picks":  [
+                                        {
+                                            "abbr":  "POR",
+                                            "name":  "Portugal",
+                                            "iso":  "pt",
+                                            "hex":  "#C60B1E",
+                                            "fg":  "#ffffff",
+                                            "pts":  8,
+                                            "live":  false,
+                                            "out":  true
+                                        },
+                                        {
+                                            "abbr":  "USA",
+                                            "name":  "USA",
+                                            "iso":  "us",
+                                            "hex":  "#3C3B6E",
+                                            "fg":  "#ffffff",
+                                            "pts":  9,
+                                            "live":  false,
+                                            "out":  true
+                                        },
+                                        {
+                                            "abbr":  "KOR",
+                                            "name":  "Korea Republic",
+                                            "iso":  "kr",
+                                            "hex":  "#C5172E",
+                                            "fg":  "#ffffff",
+                                            "pts":  3,
+                                            "live":  false,
+                                            "out":  true
+                                        },
+                                        {
+                                            "abbr":  "EGY",
+                                            "name":  "Egypt",
+                                            "iso":  "eg",
+                                            "hex":  "#CE1126",
+                                            "fg":  "#ffffff",
+                                            "pts":  7,
+                                            "live":  true,
+                                            "out":  false
+                                        },
+                                        {
+                                            "abbr":  "TUN",
+                                            "name":  "Tunisia",
+                                            "iso":  "tn",
+                                            "hex":  "#E70013",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false,
+                                            "out":  true
+                                        },
+                                        {
+                                            "abbr":  "HAI",
+                                            "name":  "Haiti",
+                                            "iso":  "ht",
+                                            "hex":  "#00209F",
+                                            "fg":  "#ffffff",
+                                            "pts":  0,
+                                            "live":  false,
+                                            "out":  true
+                                        }
+                                    ]
+                      },
+                      {
+                          "rank":  7,
                           "name":  "Ike",
                           "isLeader":  false,
                           "pts":  28,
@@ -496,88 +578,6 @@
                                             "hex":  "#FCD116",
                                             "fg":  "#0a1730",
                                             "pts":  4,
-                                            "live":  false,
-                                            "out":  true
-                                        }
-                                    ]
-                      },
-                      {
-                          "rank":  7,
-                          "name":  "Elsa",
-                          "isLeader":  false,
-                          "pts":  27,
-                          "pld":  23,
-                          "gd":  -7,
-                          "gf":  31,
-                          "ga":  38,
-                          "livePts":  0,
-                          "livePld":  0,
-                          "hasLive":  false,
-                          "delta":  0,
-                          "ptsBg":  "#887A3D",
-                          "ptsFg":  "#ffffff",
-                          "gfBg":  "#4C936C",
-                          "gfFg":  "#ffffff",
-                          "gaBg":  "#F8696B",
-                          "gaFg":  "#ffffff",
-                          "picks":  [
-                                        {
-                                            "abbr":  "POR",
-                                            "name":  "Portugal",
-                                            "iso":  "pt",
-                                            "hex":  "#C60B1E",
-                                            "fg":  "#ffffff",
-                                            "pts":  8,
-                                            "live":  false,
-                                            "out":  true
-                                        },
-                                        {
-                                            "abbr":  "USA",
-                                            "name":  "USA",
-                                            "iso":  "us",
-                                            "hex":  "#3C3B6E",
-                                            "fg":  "#ffffff",
-                                            "pts":  9,
-                                            "live":  false,
-                                            "out":  true
-                                        },
-                                        {
-                                            "abbr":  "KOR",
-                                            "name":  "Korea Republic",
-                                            "iso":  "kr",
-                                            "hex":  "#C5172E",
-                                            "fg":  "#ffffff",
-                                            "pts":  3,
-                                            "live":  false,
-                                            "out":  true
-                                        },
-                                        {
-                                            "abbr":  "EGY",
-                                            "name":  "Egypt",
-                                            "iso":  "eg",
-                                            "hex":  "#CE1126",
-                                            "fg":  "#ffffff",
-                                            "pts":  7,
-                                            "live":  false,
-                                            "out":  false
-                                        },
-                                        {
-                                            "abbr":  "TUN",
-                                            "name":  "Tunisia",
-                                            "iso":  "tn",
-                                            "hex":  "#E70013",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
-                                            "live":  false,
-                                            "out":  true
-                                        },
-                                        {
-                                            "abbr":  "HAI",
-                                            "name":  "Haiti",
-                                            "iso":  "ht",
-                                            "hex":  "#00209F",
-                                            "fg":  "#ffffff",
-                                            "pts":  0,
                                             "live":  false,
                                             "out":  true
                                         }
@@ -667,7 +667,22 @@
                       }
                   ],
     "live":  [
-
+                 {
+                     "home":  "Argentina",
+                     "away":  "Egypt",
+                     "homeAbbr":  "ARG",
+                     "awayAbbr":  "EGY",
+                     "homeIso":  "ar",
+                     "awayIso":  "eg",
+                     "hOwn":  "Quince",
+                     "aOwn":  "Elsa",
+                     "hWin":  -1,
+                     "aWin":  1,
+                     "hs":  0,
+                     "as":  1,
+                     "clock":  "45\u0027+6\u0027",
+                     "detail":  "HT"
+                 }
              ],
     "story":  [
                   "\u003cb\u003eSid\u003c/b\u003e has bolted clear on 44, 5 ahead of \u003cb\u003eQuince\u003c/b\u003e and out of sight. Down at the bottom, \u003cb\u003eMurray\u003c/b\u003e is nailed to the foot of the table on 23.",
@@ -686,8 +701,10 @@
                          "aOwn":  "Elsa",
                          "hWin":  0,
                          "aWin":  0,
-                         "state":  "ko",
-                         "ko":  "17:00"
+                         "state":  "live",
+                         "ko":  "17:00",
+                         "hs":  0,
+                         "as":  1
                      },
                      {
                          "home":  "Switzerland",
@@ -1208,12 +1225,12 @@
                                             "awayAbbr":  "EGY",
                                             "homeIso":  "ar",
                                             "awayIso":  "eg",
-                                            "hs":  null,
-                                            "as":  null,
-                                            "state":  "ko",
+                                            "hs":  0,
+                                            "as":  1,
+                                            "state":  "live",
                                             "manner":  "",
-                                            "hWin":  0,
-                                            "aWin":  0,
+                                            "hWin":  -1,
+                                            "aWin":  1,
                                             "hOwn":  "Quince",
                                             "aOwn":  "Elsa",
                                             "ko":  "7 Jul 17:00"
