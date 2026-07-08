@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "08 Jul 2026 00:00",
+                 "stamp":  "08 Jul 2026 01:00",
                  "playedCount":  96,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -185,7 +185,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#B59939",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#509B6F",
@@ -675,38 +675,7 @@
                   "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v \u003cb\u003eSid\u003c/b\u003e\u0027s Belgium; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England; \u003cb\u003eQuince\u003c/b\u003e\u0027s Argentina v \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s Switzerland."
               ],
     "fixtures":  [
-                     {
-                         "home":  "Argentina",
-                         "away":  "Egypt",
-                         "homeAbbr":  "ARG",
-                         "awayAbbr":  "EGY",
-                         "homeIso":  "ar",
-                         "awayIso":  "eg",
-                         "hOwn":  "Quince",
-                         "aOwn":  "Elsa",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "17:00",
-                         "hs":  3,
-                         "as":  2
-                     },
-                     {
-                         "home":  "Switzerland",
-                         "away":  "Colombia",
-                         "homeAbbr":  "SUI",
-                         "awayAbbr":  "COL",
-                         "homeIso":  "ch",
-                         "awayIso":  "co",
-                         "hOwn":  "Big Pewerk",
-                         "aOwn":  "Big Pewerk",
-                         "hWin":  0,
-                         "aWin":  0,
-                         "state":  "ft",
-                         "ko":  "21:00",
-                         "hs":  0,
-                         "as":  0
-                     }
+
                  ],
     "results":  [
                     {
