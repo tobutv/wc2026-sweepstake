@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "09 Jul 2026 00:00",
+                 "stamp":  "09 Jul 2026 01:00",
                  "playedCount":  96,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -675,7 +675,20 @@
                   "Next up, the quarter-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eSid\u003c/b\u003e\u0027s Morocco; \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v \u003cb\u003eSid\u003c/b\u003e\u0027s Belgium; \u003cb\u003eSid\u003c/b\u003e\u0027s Norway v \u003cb\u003eEtan\u003c/b\u003e\u0027s England; \u003cb\u003eQuince\u003c/b\u003e\u0027s Argentina v \u003cb\u003eBig Pewerk\u003c/b\u003e\u0027s Switzerland."
               ],
     "fixtures":  [
-
+                     {
+                         "home":  "France",
+                         "away":  "Morocco",
+                         "homeAbbr":  "FRA",
+                         "awayAbbr":  "MAR",
+                         "homeIso":  "fr",
+                         "awayIso":  "ma",
+                         "hOwn":  "Ike",
+                         "aOwn":  "Sid",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "21:00"
+                     }
                  ],
     "results":  [
                     {
