@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "10 Jul 2026 00:00",
+                 "stamp":  "10 Jul 2026 01:00",
                  "playedCount":  97,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -431,7 +431,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#9A863B",
                           "ptsFg":  "#ffffff",
                           "gfBg":  "#4A916B",
@@ -676,20 +676,18 @@
               ],
     "fixtures":  [
                      {
-                         "home":  "France",
-                         "away":  "Morocco",
-                         "homeAbbr":  "FRA",
-                         "awayAbbr":  "MAR",
-                         "homeIso":  "fr",
-                         "awayIso":  "ma",
-                         "hOwn":  "Ike",
+                         "home":  "Spain",
+                         "away":  "Belgium",
+                         "homeAbbr":  "ESP",
+                         "awayAbbr":  "BEL",
+                         "homeIso":  "es",
+                         "awayIso":  "be",
+                         "hOwn":  "Ellie",
                          "aOwn":  "Sid",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "21:00",
-                         "hs":  2,
-                         "as":  0
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "20:00"
                      }
                  ],
     "results":  [
