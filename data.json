@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "11 Jul 2026 00:00",
+                 "stamp":  "11 Jul 2026 01:00",
                  "playedCount":  98,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -676,20 +676,32 @@
               ],
     "fixtures":  [
                      {
-                         "home":  "Spain",
-                         "away":  "Belgium",
-                         "homeAbbr":  "ESP",
-                         "awayAbbr":  "BEL",
-                         "homeIso":  "es",
-                         "awayIso":  "be",
-                         "hOwn":  "Ellie",
-                         "aOwn":  "Sid",
-                         "hWin":  1,
-                         "aWin":  -1,
-                         "state":  "ft",
-                         "ko":  "20:00",
-                         "hs":  2,
-                         "as":  1
+                         "home":  "Norway",
+                         "away":  "England",
+                         "homeAbbr":  "NOR",
+                         "awayAbbr":  "ENG",
+                         "homeIso":  "no",
+                         "awayIso":  "gb-eng",
+                         "hOwn":  "Sid",
+                         "aOwn":  "Etan",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "22:00"
+                     },
+                     {
+                         "home":  "Argentina",
+                         "away":  "Switzerland",
+                         "homeAbbr":  "ARG",
+                         "awayAbbr":  "SUI",
+                         "homeIso":  "ar",
+                         "awayIso":  "ch",
+                         "hOwn":  "Quince",
+                         "aOwn":  "Big Pewerk",
+                         "hWin":  0,
+                         "aWin":  0,
+                         "state":  "ko",
+                         "ko":  "02:00"
                      }
                  ],
     "results":  [
