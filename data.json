@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "stamp":  "14 Jul 2026 22:00",
+                 "stamp":  "14 Jul 2026 23:00",
                  "playedCount":  101,
                  "totalMatches":  104,
                  "leaderName":  "Sid",
@@ -185,7 +185,7 @@
                           "livePts":  0,
                           "livePld":  0,
                           "hasLive":  false,
-                          "delta":  3,
+                          "delta":  0,
                           "ptsBg":  "#BA9D39",
                           "ptsFg":  "#0a1730",
                           "gfBg":  "#53A171",
@@ -672,7 +672,7 @@
     "story":  [
                   "\u003cb\u003eSid\u003c/b\u003e leads on 45, but \u003cb\u003eQuince\u003c/b\u003e is right on their shoulder \u0026mdash; 1 back and sharpening the knives. Down at the bottom, \u003cb\u003eMurray\u003c/b\u003e is nailed to the foot of the table on 23.",
                   "\u003cb\u003eThe cull.\u003c/b\u003e 45 teams are out \u0026mdash; France (world-beaters one dressing-room row from civil war) the marquee casualty. \u003cb\u003eEllie\u003c/b\u003e, \u003cb\u003eEtan\u003c/b\u003e and \u003cb\u003eQuince\u003c/b\u003e still have the most skin in the game, 1 of six alive. \u003cb\u003eBig Pewerk\u003c/b\u003e, \u003cb\u003eElsa\u003c/b\u003e, \u003cb\u003eIke\u003c/b\u003e, \u003cb\u003eMurray\u003c/b\u003e and \u003cb\u003eSid\u003c/b\u003e are out cold, every last pick gone.",
-                  "Next up, the semi-finals: \u003cb\u003eIke\u003c/b\u003e\u0027s France v \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain; \u003cb\u003eEtan\u003c/b\u003e\u0027s England v \u003cb\u003eQuince\u003c/b\u003e\u0027s Argentina."
+                  "Next up, the final: \u003cb\u003eEllie\u003c/b\u003e\u0027s Spain v TBC."
               ],
     "fixtures":  [
                      {
@@ -1341,11 +1341,11 @@
                         "round":  "Third-place play-off",
                         "matches":  [
                                         {
-                                            "home":  "TBC",
+                                            "home":  "FRA",
                                             "away":  "TBC",
-                                            "homeAbbr":  "TBC",
+                                            "homeAbbr":  "FRA",
                                             "awayAbbr":  "TBC",
-                                            "homeIso":  null,
+                                            "homeIso":  "fr",
                                             "awayIso":  null,
                                             "hs":  null,
                                             "as":  null,
@@ -1353,7 +1353,7 @@
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
-                                            "hOwn":  null,
+                                            "hOwn":  "Ike",
                                             "aOwn":  null,
                                             "ko":  "18 Jul 22:00"
                                         }
@@ -1363,11 +1363,11 @@
                         "round":  "Final",
                         "matches":  [
                                         {
-                                            "home":  "TBC",
+                                            "home":  "ESP",
                                             "away":  "TBC",
-                                            "homeAbbr":  "TBC",
+                                            "homeAbbr":  "ESP",
                                             "awayAbbr":  "TBC",
-                                            "homeIso":  null,
+                                            "homeIso":  "es",
                                             "awayIso":  null,
                                             "hs":  null,
                                             "as":  null,
@@ -1375,7 +1375,7 @@
                                             "manner":  "",
                                             "hWin":  0,
                                             "aWin":  0,
-                                            "hOwn":  null,
+                                            "hOwn":  "Ellie",
                                             "aOwn":  null,
                                             "ko":  "19 Jul 20:00"
                                         }
