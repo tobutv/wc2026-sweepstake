@@ -1,6 +1,6 @@
 {
   "meta": {
-    "stamp": "18 Jul 2026 22:31",
+    "stamp": "18 Jul 2026 23:27",
     "playedCount": 102,
     "totalMatches": 104,
     "leaderName": "Quince",
@@ -262,17 +262,17 @@
       "pts": 39,
       "pld": 28,
       "gd": 2,
-      "gf": 38,
-      "ga": 36,
+      "gf": 40,
+      "ga": 38,
       "livePts": 3,
       "livePld": 1,
       "hasLive": true,
       "delta": 0,
       "ptsBg": "#B29739",
       "ptsFg": "#ffffff",
-      "gfBg": "#509B6F",
+      "gfBg": "#53A171",
       "gfFg": "#ffffff",
-      "gaBg": "#DB6066",
+      "gaBg": "#E66468",
       "gaFg": "#ffffff",
       "picks": [
         {
@@ -426,17 +426,17 @@
       "pts": 31,
       "pld": 25,
       "gd": -5,
-      "gf": 31,
-      "ga": 36,
+      "gf": 33,
+      "ga": 38,
       "livePts": 0,
       "livePld": 1,
       "hasLive": true,
       "delta": 0,
       "ptsBg": "#90803C",
       "ptsFg": "#ffffff",
-      "gfBg": "#448567",
+      "gfBg": "#478C69",
       "gfFg": "#ffffff",
-      "gaBg": "#DB6066",
+      "gaBg": "#E66468",
       "gaFg": "#ffffff",
       "picks": [
         {
@@ -678,10 +678,10 @@
       "aOwn": "Etan",
       "hWin": -1,
       "aWin": 1,
-      "hs": 0,
-      "as": 2,
-      "clock": "31'",
-      "detail": "31'"
+      "hs": 2,
+      "as": 4,
+      "clock": "64'",
+      "detail": "64'"
     }
   ],
   "story": [
@@ -703,8 +703,8 @@
       "aWin": 0,
       "state": "live",
       "ko": "22:00",
-      "hs": 0,
-      "as": 2
+      "hs": 2,
+      "as": 4
     }
   ],
   "results": [
@@ -1362,8 +1362,8 @@
           "awayAbbr": "ENG",
           "homeIso": "fr",
           "awayIso": "gb-eng",
-          "hs": 0,
-          "as": 2,
+          "hs": 2,
+          "as": 4,
           "state": "live",
           "manner": "",
           "hWin": -1,
