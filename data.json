@@ -1,13 +1,13 @@
 {
   "meta": {
-    "stamp": "18 Jul 2026 23:27",
-    "playedCount": 102,
+    "stamp": "19 Jul 2026 00:30",
+    "playedCount": 103,
     "totalMatches": 104,
     "leaderName": "Quince",
     "leaderPts": 47,
-    "ogDesc": "Quince leads on 47 pts after 102/104 matches"
+    "ogDesc": "Quince leads on 47 pts after 103/104 matches"
   },
-  "anyLive": true,
+  "anyLive": false,
   "standings": [
     {
       "rank": 1,
@@ -262,17 +262,17 @@
       "pts": 39,
       "pld": 28,
       "gd": 2,
-      "gf": 40,
-      "ga": 38,
-      "livePts": 3,
-      "livePld": 1,
-      "hasLive": true,
+      "gf": 42,
+      "ga": 40,
+      "livePts": 0,
+      "livePld": 0,
+      "hasLive": false,
       "delta": 0,
       "ptsBg": "#B29739",
       "ptsFg": "#ffffff",
-      "gfBg": "#53A171",
+      "gfBg": "#57A873",
       "gfFg": "#ffffff",
-      "gaBg": "#E66468",
+      "gaBg": "#F2676A",
       "gaFg": "#ffffff",
       "picks": [
         {
@@ -281,8 +281,8 @@
           "iso": "gb-eng",
           "hex": "#1A1A6E",
           "fg": "#ffffff",
-          "pts": 15,
-          "live": true,
+          "pts": 18,
+          "live": false,
           "out": true
         },
         {
@@ -426,17 +426,17 @@
       "pts": 31,
       "pld": 25,
       "gd": -5,
-      "gf": 33,
-      "ga": 38,
+      "gf": 35,
+      "ga": 40,
       "livePts": 0,
-      "livePld": 1,
-      "hasLive": true,
+      "livePld": 0,
+      "hasLive": false,
       "delta": 0,
       "ptsBg": "#90803C",
       "ptsFg": "#ffffff",
-      "gfBg": "#478C69",
+      "gfBg": "#4B926B",
       "gfFg": "#ffffff",
-      "gaBg": "#E66468",
+      "gaBg": "#F2676A",
       "gaFg": "#ffffff",
       "picks": [
         {
@@ -446,7 +446,7 @@
           "hex": "#002654",
           "fg": "#ffffff",
           "pts": 18,
-          "live": true,
+          "live": false,
           "out": true
         },
         {
@@ -666,27 +666,10 @@
       ]
     }
   ],
-  "live": [
-    {
-      "home": "France",
-      "away": "England",
-      "homeAbbr": "FRA",
-      "awayAbbr": "ENG",
-      "homeIso": "fr",
-      "awayIso": "gb-eng",
-      "hOwn": "Ike",
-      "aOwn": "Etan",
-      "hWin": -1,
-      "aWin": 1,
-      "hs": 2,
-      "as": 4,
-      "clock": "64'",
-      "detail": "64'"
-    }
-  ],
+  "live": [],
   "story": [
     "<b>Quince</b> leads on 47, but <b>Sid</b> is right on their shoulder &mdash; 2 back and sharpening the knives. Down at the bottom, <b>Murray</b> is nailed to the foot of the table on 23.",
-    "<b>The cull.</b> 46 teams are out &mdash; France (world-beaters one dressing-room row from civil war) the marquee casualty. <b>Ellie</b> and <b>Quince</b> still have the most skin in the game, 1 of six alive. <b>Big Pewerk</b>, <b>Elsa</b>, <b>Etan</b>, <b>Ike</b>, <b>Murray</b> and <b>Sid</b> are out cold, every last pick gone.",
+    "<b>The cull.</b> 46 teams are out &mdash; England (bravely marching toward an inevitable penalty heartbreak) the marquee casualty. <b>Ellie</b> and <b>Quince</b> still have the most skin in the game, 1 of six alive. <b>Big Pewerk</b>, <b>Elsa</b>, <b>Etan</b>, <b>Ike</b>, <b>Murray</b> and <b>Sid</b> are out cold, every last pick gone.",
     "Next up, the final: <b>Ellie</b>'s Spain v <b>Quince</b>'s Argentina."
   ],
   "fixtures": [
@@ -699,15 +682,29 @@
       "awayIso": "gb-eng",
       "hOwn": "Ike",
       "aOwn": "Etan",
-      "hWin": 0,
-      "aWin": 0,
-      "state": "live",
+      "hWin": -1,
+      "aWin": 1,
+      "state": "ft",
       "ko": "22:00",
-      "hs": 2,
-      "as": 4
+      "hs": 4,
+      "as": 6
     }
   ],
   "results": [
+    {
+      "home": "France",
+      "away": "England",
+      "homeAbbr": "FRA",
+      "awayAbbr": "ENG",
+      "homeIso": "fr",
+      "awayIso": "gb-eng",
+      "hOwn": "Ike",
+      "aOwn": "Etan",
+      "hWin": -1,
+      "aWin": 1,
+      "hs": 4,
+      "as": 6
+    },
     {
       "home": "England",
       "away": "Argentina",
@@ -805,20 +802,6 @@
       "aWin": 0,
       "hs": 0,
       "as": 0
-    },
-    {
-      "home": "Argentina",
-      "away": "Egypt",
-      "homeAbbr": "ARG",
-      "awayAbbr": "EGY",
-      "homeIso": "ar",
-      "awayIso": "eg",
-      "hOwn": "Quince",
-      "aOwn": "Elsa",
-      "hWin": 1,
-      "aWin": -1,
-      "hs": 3,
-      "as": 2
     }
   ],
   "bracket": [
@@ -1362,10 +1345,10 @@
           "awayAbbr": "ENG",
           "homeIso": "fr",
           "awayIso": "gb-eng",
-          "hs": 2,
-          "as": 4,
-          "state": "live",
-          "manner": "",
+          "hs": 4,
+          "as": 6,
+          "state": "ft",
+          "manner": "90",
           "hWin": -1,
           "aWin": 1,
           "hOwn": "Ike",
