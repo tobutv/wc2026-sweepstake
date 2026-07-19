@@ -1,6 +1,6 @@
 {
   "meta": {
-    "stamp": "19 Jul 2026 00:30",
+    "stamp": "19 Jul 2026 02:05",
     "playedCount": 103,
     "totalMatches": 104,
     "leaderName": "Quince",
@@ -674,20 +674,18 @@
   ],
   "fixtures": [
     {
-      "home": "France",
-      "away": "England",
-      "homeAbbr": "FRA",
-      "awayAbbr": "ENG",
-      "homeIso": "fr",
-      "awayIso": "gb-eng",
-      "hOwn": "Ike",
-      "aOwn": "Etan",
-      "hWin": -1,
-      "aWin": 1,
-      "state": "ft",
-      "ko": "22:00",
-      "hs": 4,
-      "as": 6
+      "home": "Spain",
+      "away": "Argentina",
+      "homeAbbr": "ESP",
+      "awayAbbr": "ARG",
+      "homeIso": "es",
+      "awayIso": "ar",
+      "hOwn": "Ellie",
+      "aOwn": "Quince",
+      "hWin": 0,
+      "aWin": 0,
+      "state": "ko",
+      "ko": "20:00"
     }
   ],
   "results": [
